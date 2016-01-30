@@ -208,6 +208,7 @@ namespace Assets.GGJ2016.Scripts.Entities
             // Horizontal
             var moveX = _controller.MoveX;
             var baseSpeedMultiplier = _controller.IsRunning ? _runMultiplier : WalkMultiplier;
+            //BUG: _timeInMotion is still > _timeUntilMaxSpeed if run, let go, then run again
             var speedMultiplier = Mathf.Lerp(WalkMultiplier, baseSpeedMultiplier, _timeInMotion / _timeUntilMaxSpeed);
 
             if (_controller.IsJumping)

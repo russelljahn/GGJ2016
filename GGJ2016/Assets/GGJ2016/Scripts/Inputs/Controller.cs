@@ -121,40 +121,42 @@ namespace Assets.OutOfTheBox.Scripts.Inputs
             _actionSet = new GearVrActionSet();
 
             _actionSet.Attack.AddDefaultBinding(InputControlType.RightTrigger);
-            _actionSet.Attack.AddDefaultBinding(Key.D);
+            _actionSet.Attack.AddDefaultBinding(Key.K);
 
             _actionSet.Jump.AddDefaultBinding(InputControlType.Action1);
             _actionSet.Jump.AddDefaultBinding(Key.Space);
+            _actionSet.Jump.AddDefaultBinding(Key.J);
 
             _actionSet.Run.AddDefaultBinding(InputControlType.Action3);
             _actionSet.Run.AddDefaultBinding(Key.Shift);
 
             _actionSet.Submit.AddDefaultBinding(InputControlType.Action1);
-            _actionSet.Submit.AddDefaultBinding(InputControlType.Action3);
-            _actionSet.Submit.AddDefaultBinding(Key.Space);
             _actionSet.Submit.AddDefaultBinding(InputControlType.Start);
             _actionSet.Submit.AddDefaultBinding(Mouse.LeftButton);
 
             _actionSet.Cancel.AddDefaultBinding(InputControlType.Action2);
-            _actionSet.Cancel.AddDefaultBinding(InputControlType.Action4);
             _actionSet.Cancel.AddDefaultBinding(Key.Escape);
             _actionSet.Cancel.AddDefaultBinding(Mouse.RightButton);
 
             _actionSet.MoveLeft.AddDefaultBinding(InputControlType.LeftStickLeft);
             _actionSet.MoveLeft.AddDefaultBinding(InputControlType.DPadLeft);
             _actionSet.MoveLeft.AddDefaultBinding(Key.LeftArrow);
+            _actionSet.MoveLeft.AddDefaultBinding(Key.A);
 
             _actionSet.MoveRight.AddDefaultBinding(InputControlType.LeftStickRight);
             _actionSet.MoveRight.AddDefaultBinding(InputControlType.DPadRight);
             _actionSet.MoveRight.AddDefaultBinding(Key.RightArrow);
+            _actionSet.MoveRight.AddDefaultBinding(Key.D);
 
             _actionSet.MoveUp.AddDefaultBinding(InputControlType.LeftStickUp);
             _actionSet.MoveUp.AddDefaultBinding(InputControlType.DPadUp);
             _actionSet.MoveUp.AddDefaultBinding(Key.UpArrow);
+            _actionSet.MoveUp.AddDefaultBinding(Key.W);
 
             _actionSet.MoveDown.AddDefaultBinding(InputControlType.LeftStickDown);
             _actionSet.MoveDown.AddDefaultBinding(InputControlType.DPadDown);
             _actionSet.MoveDown.AddDefaultBinding(Key.DownArrow);
+            _actionSet.MoveDown.AddDefaultBinding(Key.S);
 
             _actionSet.CameraLeft.AddDefaultBinding(InputControlType.RightStickLeft);
             _actionSet.CameraRight.AddDefaultBinding(InputControlType.RightStickRight);
