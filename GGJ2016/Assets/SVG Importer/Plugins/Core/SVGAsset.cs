@@ -8,6 +8,7 @@ using UnityEngine.Serialization;
 
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 
 namespace SVGImporter 
 {
@@ -1232,7 +1233,7 @@ namespace SVGImporter
                     output += ", Tangents";
                 */
                 
-                var fileInfo = new System.IO.FileInfo(UnityEditor.AssetDatabase.GetAssetPath(this));
+                var fileInfo = new FileInfo(UnityEditor.AssetDatabase.GetAssetPath(this));
                 if(fileInfo != null)
                 {
                     output += ", FileSize: "+string.Format(new FileSizeFormatProvider(), "{0:fs}", fileInfo.Length);
