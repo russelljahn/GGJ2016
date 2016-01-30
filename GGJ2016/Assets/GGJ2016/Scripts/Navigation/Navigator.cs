@@ -1,6 +1,6 @@
 ﻿using System;
+using Assets.GGJ2016.Scripts;
 using Assets.OutOfTheBox.Scripts.Extensions;
-using Sense.Common.Navigation;
 
 namespace Assets.OutOfTheBox.Scripts.Navigation
 {

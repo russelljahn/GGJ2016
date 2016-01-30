@@ -1,4 +1,4 @@
-namespace Sense.Common.Navigation
+namespace Assets.GGJ2016.Scripts
 {
     public class StateChange<T>
     {

@@ -2,7 +2,6 @@
 using Assets.OutOfTheBox.Scripts.Extensions;
 using Assets.OutOfTheBox.Scripts.Inputs;
 using Assets.OutOfTheBox.Scripts.Utils;
-using Sense.Common.Navigation;
 using Sense.Injection;
 using Sense.PropertyAttributes;
 using UnityEditor;
@@ -233,7 +232,7 @@ namespace Assets.GGJ2016.Scripts.Entities
             _speedX = Mathf.Clamp(_speedX, -MaxSpeedX, MaxSpeedX);
             displacement.x = _speedX * Time.deltaTime;
 
-            Debug.Log("_speedX: " + _speedX + ", speedMultiplier: " + speedMultiplier);
+            //Debug.Log("_speedX: " + _speedX + ", speedMultiplier: " + speedMultiplier);
 
             // Vertical
             var moveY = _controller.IsJumping ? 1.0f : 0.0f;

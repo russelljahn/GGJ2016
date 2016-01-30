@@ -7,6 +7,8 @@ namespace Assets.OutOfTheBox.Scripts
 {
     public class AppSettings : MonoBehaviour
     {
+        public float AttackCooldown = 0.25f;
+        public float ScratchDamage = 10.0f;
 
     }
 }

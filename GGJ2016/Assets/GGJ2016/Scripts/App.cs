@@ -1,6 +1,6 @@
+using Assets.GGJ2016.Scripts;
 using Assets.OutOfTheBox.Scripts.Navigation;
 using InControl;
-using Sense.Common.Navigation;
 using Sense.Injection;
 using UnityEngine;
 using Zenject;
@@ -13,7 +13,7 @@ namespace Assets.OutOfTheBox.Scripts
 
         protected override void OnPostInject()
         {
-            _navigator.AppState = AppStates.Splash;
+            _navigator.AppState = AppStates.MainMenu;
             _navigator.ImmersionClockEnabled = false;
 
             _navigator.AppStateChanged += NavigatorOnAppStateChanged;
