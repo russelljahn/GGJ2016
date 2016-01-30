@@ -1,6 +1,7 @@
 ﻿using System.Runtime.CompilerServices;
 using Assets.OutOfTheBox.Scripts.Extensions;
 using Assets.OutOfTheBox.Scripts.Inputs;
+using Assets.OutOfTheBox.Scripts.Utils;
 using Sense.Common.Navigation;
 using Sense.Injection;
 using Sense.PropertyAttributes;
@@ -19,15 +20,22 @@ namespace Assets.GGJ2016.Scripts.Entities
 
         [SerializeField] private float _walkSpeed = 10.0f;
         [SerializeField] private float _runMultiplier = 1.75f;
+        [SerializeField] private float _jumpMultiplierX = 1.25f;
+        [SerializeField] private float _jumpMultiplierY = 2.0f;
+
         [SerializeField] private float _frictionMultiplier = 0.975f;
 
         [SerializeField] private float _timeUntilMaxSpeed = 1.0f;
+        [SerializeField] private float _timeUntilMaxJump = 1.0f;
+        [SerializeField] private float _gravity = -0.0075f;
 
-        [SerializeField] private float _timeInMotion;
-
-        private float WalkMultiplier = 1.0f;
+        [SerializeField, Readonly] private float _timeInMotion;
+        [SerializeField, Readonly] private float _timeInJump;
         [SerializeField, Readonly] private float _speedX;
 
+        [SerializeField] private AnimationCurve _jumpSpeedCurve = AnimationCurveUtils.GetLinearCurve();
+
+        private const float WalkMultiplier = 1.0f;
         private const float IdleSpeedThreshold = 0.1f;
 
         private Rigidbody2D _rigidbody2D;
@@ -62,6 +70,11 @@ namespace Assets.GGJ2016.Scripts.Entities
             get { return _walkSpeed*_runMultiplier; }
         }
 
+        private float MaxSpeedY
+        {
+            get { return _walkSpeed * _jumpMultiplierY; }
+        }
+
         protected override void OnPostInject()
         {
             _rigidbody2D = GetComponent<Rigidbody2D>();
@@ -79,7 +92,6 @@ namespace Assets.GGJ2016.Scripts.Entities
             switch (State)
             {
                 case StateType.Initial:
-                    InInitial();
                     break;
 
                 case StateType.Idle:
@@ -104,82 +116,111 @@ namespace Assets.GGJ2016.Scripts.Entities
 
         private void OnStateChanged(StateChange<StateType> stateChange)
         {
-            switch (State)
+            switch (stateChange.Previous)
             {
                 case StateType.Initial:
-                    OnInitial();
                     break;
 
                 case StateType.Idle:
-                    OnIdle();
                     break;
 
                 case StateType.Moving:
-                    OnMoving();
                     break;
 
                 case StateType.Jumping:
-                    OnJumping();
+                    _timeInJump = 0.0f;
                     break;
 
                 case StateType.Falling:
-                    OnFalling();
+                    break;
+            }
+
+            switch (stateChange.Next)
+            {
+                case StateType.Initial:
+                    break;
+
+                case StateType.Idle:
+                    _timeInMotion = 0f;
+                    break;
+
+                case StateType.Moving:
+                    break;
+
+                case StateType.Jumping:
+                    break;
+
+                case StateType.Falling:
                     break;
             }
         }
 
-        private void OnInitial()
-        {
-            
-        }
-
-        private void OnIdle()
-        {
-            _timeInMotion = 0f;
-        }
-
-        private void OnMoving()
-        {
-            
-        }
-
-        private void OnJumping()
-        {
-            
-        }
-
-        private void OnFalling()
-        {
-            
-        }
-
-        private void InInitial()
-        {
-            
-        }
-
         private void InIdle()
         {
+            HandleDisplacement();
+
             var movement = _controller.MoveX;
             if (!movement.IsApproximatelyZero())
             {
                 State = StateType.Moving;
             }
-
+            if (_controller.IsJumping)
+            {
+                State = StateType.Jumping;
+            }
         }
 
         private void InMoving()
         {
-            var moveX = _controller.MoveX;
-            var baseSpeedMultiplier = _controller.Run ? _runMultiplier : WalkMultiplier;
-            var speedMultiplier = Mathf.Lerp(WalkMultiplier, baseSpeedMultiplier, _timeInMotion/_timeUntilMaxSpeed);
+            HandleDisplacement();
 
-            var fasterThanWalking = Mathf.Abs(_speedX) > _walkSpeed;
-            if (_controller.Run || !fasterThanWalking)
+            if (Mathf.Abs(_speedX) <= IdleSpeedThreshold)
             {
-                _speedX += moveX*speedMultiplier;
+                State = StateType.Idle;
             }
-            if (moveX.IsApproximatelyZero() || fasterThanWalking)
+            if (_controller.IsJumping)
+            {
+                State = StateType.Jumping;
+            }
+        }
+
+        private void InJumping()
+        {
+            _timeInJump += Time.deltaTime;
+
+            HandleDisplacement();
+
+            if (!_controller.IsJumping)
+            {
+                State = StateType.Moving;
+            }
+        }
+
+        private void InFalling()
+        {
+            
+        }
+
+        private void HandleDisplacement()
+        {
+            var displacement = Vector3.zero;
+
+            // Horizontal
+            var moveX = _controller.MoveX;
+            var baseSpeedMultiplier = _controller.IsRunning ? _runMultiplier : WalkMultiplier;
+            var speedMultiplier = Mathf.Lerp(WalkMultiplier, baseSpeedMultiplier, _timeInMotion / _timeUntilMaxSpeed);
+
+            if (_controller.IsJumping)
+            {
+                speedMultiplier *= _jumpMultiplierX;
+            }
+
+            var speedIsFasterThanWalking = Mathf.Abs(_speedX) > _walkSpeed;
+            if (_controller.IsRunning || !speedIsFasterThanWalking)
+            {
+                _speedX += moveX * speedMultiplier;
+            }
+            if (moveX.IsApproximatelyZero() || speedIsFasterThanWalking)
             {
                 _speedX *= _frictionMultiplier;
             }
@@ -189,24 +230,22 @@ namespace Assets.GGJ2016.Scripts.Entities
             }
 
             _speedX = Mathf.Clamp(_speedX, -MaxSpeedX, MaxSpeedX);
-            var displacementX = new Vector3(_speedX * Time.deltaTime, 0f, 0f);
-            _rigidbody2D.MovePosition(transform.position + displacementX);
+            displacement.x = _speedX * Time.deltaTime;
 
-            if (Mathf.Abs(_speedX) <= IdleSpeedThreshold)
-            {
-                State = StateType.Idle;
-            }
             Debug.Log("_speedX: " + _speedX + ", speedMultiplier: " + speedMultiplier);
-        }
 
-        private void InJumping()
-        {
-            
-        }
+            // Vertical
+            var moveY = _controller.IsJumping ? 1.0f : 0.0f;
+            if (_timeInJump < _timeUntilMaxJump)
+            {
+                var speedY = moveY*_jumpMultiplierY*_jumpSpeedCurve.Evaluate(Mathf.Clamp01(_timeInJump/_timeUntilMaxJump));
+                speedY = Mathf.Clamp(speedY, -MaxSpeedY, MaxSpeedY);
+                displacement.y += speedY * Time.deltaTime;
+            }
 
-        private void InFalling()
-        {
-            
+            displacement.y += _gravity;
+
+            _rigidbody2D.MovePosition(transform.position + displacement);
         }
     }
 }

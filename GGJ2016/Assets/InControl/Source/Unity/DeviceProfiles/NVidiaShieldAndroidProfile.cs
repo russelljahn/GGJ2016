@@ -67,7 +67,7 @@ namespace InControl
 				},
 //				new InputControlMapping
 //				{
-//					Handle = "Cancel",
+//					Handle = "IsCancelling",
 //					Target = InputControlType.Select,
 //					Source = Button8
 //				},

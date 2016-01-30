@@ -161,7 +161,7 @@ namespace SVGImporter
                 }
             }
             GUILayout.FlexibleSpace();
-            if(GUILayout.Button("Cancel"))
+            if(GUILayout.Button("IsCancelling"))
             {
                 this.Close();
             }

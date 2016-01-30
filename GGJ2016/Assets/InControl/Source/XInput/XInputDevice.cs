@@ -59,7 +59,7 @@ namespace InControl
 			AddControl( InputControlType.RightStickButton, "Right Stick Button" );
 
 			AddControl( InputControlType.Start, "Start" );
-			AddControl( InputControlType.Back, "Cancel" );
+			AddControl( InputControlType.Back, "IsCancelling" );
 		}
 
 

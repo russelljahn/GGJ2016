@@ -7,7 +7,7 @@ using ModestTree.Util;
 namespace Zenject
 {
     // Responsibilities:
-    // - Run Initialize() on all Iinitializable's, in the order specified by InitPriority
+    // - IsRunning Initialize() on all Iinitializable's, in the order specified by InitPriority
     public class InitializableManager
     {
         readonly SingletonInstanceHelper _singletonInstanceHelper = null;

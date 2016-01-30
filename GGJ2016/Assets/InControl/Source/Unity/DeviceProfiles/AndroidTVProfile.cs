@@ -71,7 +71,7 @@ namespace InControl
 					Source = Button12
 				},
 				new InputControlMapping {
-					Handle = "Cancel",
+					Handle = "IsCancelling",
 					Target = InputControlType.Back,
 					Source = EscapeKey
 				},

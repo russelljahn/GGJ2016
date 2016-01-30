@@ -274,7 +274,7 @@ namespace SVGImporter.Rendering
                     SceneView.RepaintAll();
                 }
 
-                // Cancel Operation
+                // IsCancelling Operation
                 if (Event.current.type == EventType.keyDown && Event.current.keyCode == KeyCode.Escape)
                 {
                     vrTrs.SetTransform(origVrTransform);

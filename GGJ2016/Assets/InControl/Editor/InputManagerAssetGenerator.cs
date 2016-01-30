@@ -197,10 +197,10 @@ namespace InControl
 				} );
 			}
 
-			if (!HasAxisPreset( "Submit" ))
+			if (!HasAxisPreset( "IsSubmitting" ))
 			{
 				axisPresets.Add( new AxisPreset() {
-					name = "Submit",
+					name = "IsSubmitting",
 					positiveButton = "return",
 					altPositiveButton = "joystick button 0",
 					gravity = 1000.0f,
@@ -212,7 +212,7 @@ namespace InControl
 				} );
 
 				axisPresets.Add( new AxisPreset() {
-					name = "Submit",
+					name = "IsSubmitting",
 					positiveButton = "enter",
 					altPositiveButton = "space",
 					gravity = 1000.0f,
@@ -224,10 +224,10 @@ namespace InControl
 				} );
 			}
 
-			if (!HasAxisPreset( "Cancel" ))
+			if (!HasAxisPreset( "IsCancelling" ))
 			{
 				axisPresets.Add( new AxisPreset() {
-					name = "Cancel",
+					name = "IsCancelling",
 					positiveButton = "escape",
 					altPositiveButton = "joystick button 1",
 					gravity = 1000.0f,

@@ -29,7 +29,7 @@ namespace InControl
 					Source = Button0
 				},
 				new InputControlMapping {
-					Handle = "Cancel",
+					Handle = "IsCancelling",
 					Target = InputControlType.Back,
 					Source = EscapeKey
 				},

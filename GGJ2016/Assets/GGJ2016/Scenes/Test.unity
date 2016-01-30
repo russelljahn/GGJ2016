@@ -592,15 +592,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 536653d07e66fc042afb7cf994fa76bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _immersionTime: 60
-  _clockMenuHideCooldown: 3
-  _ringMenuCooldown: 2
-  _bgMusic1Volume: 1
-  _ambiencePresets:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1 &1160921505
 GameObject:
   m_ObjectHideFlags: 0
@@ -862,7 +853,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -879,7 +870,7 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.01}
   serializedVersion: 2
   m_Radius: 0.1
 --- !u!114 &1393872669
@@ -896,10 +887,31 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 1619128090}
   _walkSpeed: 10
   _runMultiplier: 2.25
+  _jumpMultiplierX: 1.25
+  _jumpMultiplierY: 30
   _frictionMultiplier: 0.9
   _timeUntilMaxSpeed: 1
+  _timeUntilMaxJump: 0.25
+  _gravity: -0.075
   _timeInMotion: 0
+  _timeInJump: 0
   _speedX: 0
+  _jumpSpeedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
   _state: 0
 --- !u!1 &1467793835
 GameObject:
@@ -1210,7 +1222,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 301a5bd3665cbb646a94c385c97b4251, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

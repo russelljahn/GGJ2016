@@ -62,7 +62,7 @@ namespace InControl
 					Source = Button11
 				},
 				new InputControlMapping {
-					Handle = "Cancel",
+					Handle = "IsCancelling",
 					Target = InputControlType.Back,
 					Source = Button8
 				},

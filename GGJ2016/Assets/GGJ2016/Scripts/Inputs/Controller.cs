@@ -30,12 +30,12 @@ namespace Assets.OutOfTheBox.Scripts.Inputs
 
             public GearVrActionSet()
             {
-                Submit = CreatePlayerAction("Submit");
-                Cancel = CreatePlayerAction("Cancel");
+                Submit = CreatePlayerAction("IsSubmitting");
+                Cancel = CreatePlayerAction("IsCancelling");
 
-                Run = CreatePlayerAction("Run");
-                Jump = CreatePlayerAction("Jump");
-                Attack = CreatePlayerAction("Attack");
+                Run = CreatePlayerAction("IsRunning");
+                Jump = CreatePlayerAction("IsJumping");
+                Attack = CreatePlayerAction("IsAttacking");
 
                 MoveLeft = CreatePlayerAction("MoveLeft");
                 MoveRight = CreatePlayerAction("MoveRight");
@@ -55,31 +55,30 @@ namespace Assets.OutOfTheBox.Scripts.Inputs
         [Inject] private InControlInputModule _inControlInputModule;
         private GearVrActionSet _actionSet;
 
-        public bool Submit
+        public bool IsSubmitting
         {
             get { return _actionSet.Submit; }
         }
 
-        public bool Cancel
+        public bool IsCancelling
         {
             get { return _actionSet.Cancel; }
         }
 
-        public bool Run
+        public bool IsRunning
         {
             get { return _actionSet.Run; }
         }
 
-        public bool Attack
+        public bool IsAttacking
         {
             get { return _actionSet.Attack; }
         }
 
-        public bool Jump
+        public bool IsJumping
         {
             get { return _actionSet.Jump; }
         }
-
 
         public float MoveX
         {
@@ -144,22 +143,18 @@ namespace Assets.OutOfTheBox.Scripts.Inputs
             _actionSet.MoveLeft.AddDefaultBinding(InputControlType.LeftStickLeft);
             _actionSet.MoveLeft.AddDefaultBinding(InputControlType.DPadLeft);
             _actionSet.MoveLeft.AddDefaultBinding(Key.LeftArrow);
-            //_actionSet.MoveLeft.AddDefaultBinding(Mouse.NegativeX);
 
             _actionSet.MoveRight.AddDefaultBinding(InputControlType.LeftStickRight);
             _actionSet.MoveRight.AddDefaultBinding(InputControlType.DPadRight);
             _actionSet.MoveRight.AddDefaultBinding(Key.RightArrow);
-            //_actionSet.MoveRight.AddDefaultBinding(Mouse.PositiveX);
 
             _actionSet.MoveUp.AddDefaultBinding(InputControlType.LeftStickUp);
             _actionSet.MoveUp.AddDefaultBinding(InputControlType.DPadUp);
             _actionSet.MoveUp.AddDefaultBinding(Key.UpArrow);
-            //_actionSet.MoveUp.AddDefaultBinding(Mouse.PositiveY);
 
             _actionSet.MoveDown.AddDefaultBinding(InputControlType.LeftStickDown);
             _actionSet.MoveDown.AddDefaultBinding(InputControlType.DPadDown);
             _actionSet.MoveDown.AddDefaultBinding(Key.DownArrow);
-            //_actionSet.MoveDown.AddDefaultBinding(Mouse.NegativeY);
 
             _actionSet.CameraLeft.AddDefaultBinding(InputControlType.RightStickLeft);
             _actionSet.CameraRight.AddDefaultBinding(InputControlType.RightStickRight);

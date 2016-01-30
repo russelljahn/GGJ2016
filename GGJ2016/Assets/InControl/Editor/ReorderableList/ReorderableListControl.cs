@@ -823,7 +823,7 @@ namespace InControl.ReorderableList
 				case EventType.MouseDown:
 					if (_tracking)
 					{
-						// Cancel drag when other mouse button is pressed.
+						// IsCancelling drag when other mouse button is pressed.
 						s_TrackingCancelBlockContext = true;
 						Event.current.Use();
 					}

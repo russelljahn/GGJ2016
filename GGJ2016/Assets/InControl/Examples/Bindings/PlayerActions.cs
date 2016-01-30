@@ -19,7 +19,7 @@ namespace BindingsExample
 		public PlayerActions()
 		{
 			Fire = CreatePlayerAction( "Fire" );
-			Jump = CreatePlayerAction( "Jump" );
+			Jump = CreatePlayerAction( "IsJumping" );
 			Left = CreatePlayerAction( "Move Left" );
 			Right = CreatePlayerAction( "Move Right" );
 			Up = CreatePlayerAction( "Move Up" );

@@ -96,7 +96,7 @@ namespace Zenject
         {
             if (TryGetSceneCompositionRoot() != null)
             {
-                var shouldContinue = EditorUtility.DisplayDialog("Error", "There already exists a SceneCompositionRoot in the scene.  Are you sure you want to add another?", "Yes", "Cancel");
+                var shouldContinue = EditorUtility.DisplayDialog("Error", "There already exists a SceneCompositionRoot in the scene.  Are you sure you want to add another?", "Yes", "IsCancelling");
                 return shouldContinue;
             }
 

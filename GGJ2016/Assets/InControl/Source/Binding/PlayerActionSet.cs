@@ -9,7 +9,7 @@ namespace InControl
 {
 	/// <summary>
 	/// An action set represents a set of actions, usually for a single player. This class must be subclassed to be used.
-	/// An action set can contain both explicit, bindable single value actions (for example, "Jump", "Left" and "Right") and implicit, 
+	/// An action set can contain both explicit, bindable single value actions (for example, "IsJumping", "Left" and "Right") and implicit, 
 	/// aggregate actions which combine together other actions into one or two axes, for example "Move", which might consist
 	/// of "Left", "Right", "Up" and "Down" filtered into a single two-axis control with its own applied circular deadzone, 
 	/// queryable vector value, etc.
