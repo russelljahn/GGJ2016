@@ -1,0 +1,223 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4301016
+Mesh:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: foreground
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 96
+    topology: 0
+    firstVertex: 0
+    vertexCount: 36
+    localAABB:
+      m_Center: {x: 0, y: 0, z: -0}
+      m_Extent: {x: 18.505001, y: 0.57650006, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 00000100020001000000030004000500060004000700050004000800070004000900080004000a00090004000b000a0004000c000b0004000d000c0004000e000d0004000f000e00040010000f0011001000040012001000110013001000120014001000130015001000140016001000150017001000160017001800100019001800170019001a0018001b001a0019001b001c001a001d001c001b001d001e001c001f001e001d0020001e001f00200021001e00220021002000210022002300
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 29
+    m_VertexCount: 36
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 2
+      dimension: 4
+    - stream: 0
+      offset: 16
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 1152
+    _typelessdata: 3e0a94c1829513bf00000080483f31ff000000000000000000000000000000003e0a94418295133f00000080483f31ff000000000000000000000000000000003e0a9441829513bf00000080483f31ff000000000000000000000000000000003e0a94c18295133f00000080483f31ff000000000000000000000000000000003033974002186fbe00000080ad9306ff0000000000000000000000000000000030819a40e4f7b6bd00000080ad9306ff00000000000000000000000000000000b4e59740769254be00000080ad9306ff00000000000000000000000000000000804c9c4060edd33c00000080ad9306ff00000000000000000000000000000000bc319d40bc84fc3d00000080ad9306ff00000000000000000000000000000000246b9d40926b433e00000080ad9306ff00000000000000000000000000000000103f9d402080843e00000080ad9306ff00000000000000000000000000000000dc979c4066c7a63e00000080ad9306ff00000000000000000000000000000000ec5f9b4079d1c73e00000080ad9306ff00000000000000000000000000000000ac8199409de1e63e00000080ad9306ff0000000000000000000000000000000080e7964028a0013f00000080ad9306ff00000000000000000000000000000000c87b9340ba190e3f00000080ad9306ff00000000000000000000000000000000a07091408295133f00000080ad9306ff00000000000000000000000000000000dc2237c102186fbe00000080ad9306ff00000000000000000000000000000000c00e38c1c28667be00000080ad9306ff00000000000000000000000000000000048939c19a0c4ebe00000080ad9306ff00000000000000000000000000000000eb953ac12e992abe00000080ad9306ff00000000000000000000000000000000ee473bc166b801be00000080ad9306ff0000000000000000000000000000000086b13bc154ecafbd00000080ad9306ff0000000000000000000000000000000037e53bc1286f47bd00000080ad9306ff00000000000000000000000000000000de4d32c18295133f00000080ad9306ff000000000000000000000000000000000df63bc1c0b218bc00000080ad9306ff0000000000000000000000000000000009bd32c137e5123f00000080ad9306ff000000000000000000000000000000007cf73bc1e0fb463d00000080ad9306ff0000000000000000000000000000000070a334c1691d0d3f00000080ad9306ff0000000000000000000000000000000012d33bc1a8960d3e00000080ad9306ff00000000000000000000000000000000256236c10612043f00000080ad9306ff00000000000000000000000000000000ae7a3bc18c715e3e00000080ad9306ff0000000000000000000000000000000018f63ac14282923e00000080ad9306ff000000000000000000000000000000002b3a38c1ea82ea3e00000080ad9306ff00000000000000000000000000000000174d3ac198ffb03e00000080ad9306ff000000000000000000000000000000006b8739c19b08cb3e00000080ad9306ff00000000000000000000000000000000
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: -0}
+    m_Extent: {x: 18.505001, y: 0.57650006, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
+  m_Name: foreground
+  m_EditorClassIdentifier: 
+  _lastTimeModified: 635897391506962500
+  _documentAsset: {fileID: 11478338}
+  _sharedMesh: {fileID: 4301016}
+  _antialiasing: 0
+  _antialiasingWidth: 0.1
+  _generateCollider: 1
+  _keepSVGFile: 1
+  _ignoreSVGCanvas: 1
+  _colliderShape:
+  - points:
+    - {x: -18.505001, y: -0.57600003}
+    - {x: 18.505001, y: -0.57600003}
+    - {x: 18.505001, y: 0.57600003}
+    - {x: -18.505001, y: 0.57600003}
+    bounds:
+      serializedVersion: 2
+      x: -18.505001
+      y: 18.505001
+      width: 37.010002
+      height: 37.010002
+  _format: 1
+  _useGradients: 0
+  _meshCompression: 0
+  _optimizeMesh: 1
+  _generateNormals: 0
+  _generateTangents: 0
+  _scale: 0.01
+  _vpm: 1000
+  _depthOffset: 0.01
+  _compressDepth: 1
+  _pivotPoint: {x: 0.5, y: 0.5}
+  _customPivotPoint: 0
+  _border: {x: 0, y: 0, z: 0, w: 0}
+  _sliceMesh: 0
+  _sharedGradients:
+  - colorKeys:
+    - time: 1
+      color:
+        serializedVersion: 2
+        rgba: 4294967295
+    - time: 0
+      color:
+        serializedVersion: 2
+        rgba: 4294967295
+    alphaKeys:
+    - time: 1
+      alpha: 1
+    - time: 0
+      alpha: 1
+    _hash: GC999FFFFFFC000FFFFFFA999999A000999
+    index: 0
+    atlasIndex: 0
+    references: 0
+  _sharedShaders:
+  - SVG Importer/GradientColor/GradientColorAlphaBlended
+  _canvasRectangle:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 37.01
+    height: 1.06
+--- !u!114 &11478338
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363e9872ad27a4ca59c07d233fdf0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _errors: 
+  _svgFile: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!-- Generator: Adobe Illustrator
+    19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\n<svg version=\"1.1\"
+    xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"
+    x=\"0px\" y=\"0px\"\n\t viewBox=\"0 0 3701 106\" style=\"enable-background:new
+    0 0 3701 106;\" xml:space=\"preserve\">\n<style type=\"text/css\">\n\t.st0{fill:#483F31;}\n\t.st1{fill:#AD9306;}\n</style>\n<g
+    id=\"Layer_1\">\n\t<rect y=\"-9.3\" class=\"st0\" width=\"3701\" height=\"115.3\"/>\n</g>\n<g
+    id=\"Layer_2\">\n\t<path class=\"st1\" d=\"M736.1-9.3c0,0-63.3,3.8-60.3,57.7c0,0-2.8,20.4,30.1,23.3h1617.1c0,0,54-59.3-18-81H736.1z\"/>\n</g>\n</svg>\n"
+  _title: 
+  _description: 
