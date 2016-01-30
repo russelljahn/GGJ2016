@@ -1,0 +1,235 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4387112
+Mesh:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ob_kitchen_glass
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 45
+    topology: 0
+    firstVertex: 0
+    vertexCount: 17
+    localAABB:
+      m_Center: {x: 0, y: 0.111, z: -0}
+      m_Extent: {x: 0.038015, y: 0.111, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 00000100020001000000030004000200010004000500020004000600050007000600040007000800060009000800070009000a0008000b000a0009000c000a000b000c000d000a000c000e000d000f000e000c000e000f001000
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 29
+    m_VertexCount: 17
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 2
+      dimension: 4
+    - stream: 0
+      offset: 16
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 544
+    _typelessdata: 481b073d000000800000008023b1b7ff00000000000000000000000000000000854284bc408a483c0000008023b1b7ff000000000000000000000000000000006cfa333cb874933c0000008023b1b7ff00000000000000000000000000000000bd3a07bd000000800000008023b1b7ff00000000000000000000000000000000800445bca09bc43c0000008023b1b7ff0000000000000000000000000000000010d1e83bccf7533d0000008023b1b7ff0000000000000000000000000000000068e2e43b9a99993d0000008023b1b7ff00000000000000000000000000000000f831e6bb2cb29d3d0000008023b1b7ff0000000000000000000000000000000040d4fd3c8716d93d0000008023b1b7ff00000000000000000000000000000000064749bc28f2a43d0000008023b1b7ff0000000000000000000000000000000064ee1a3da8570a3e0000008023b1b7ff000000000000000000000000000000006adef1bcaa82d13d0000008023b1b7ff00000000000000000000000000000000c9c819bdd0ed053e0000008023b1b7ff000000000000000000000000000000009eb51b3d5e85543e0000008023b1b7ff00000000000000000000000000000000967d173df853633e0000008023b1b7ff000000000000000000000000000000009eb51bbd9a99193e0000008023b1b7ff00000000000000000000000000000000e46b0fbdf853633e0000008023b1b7ff00000000000000000000000000000000
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0.111, z: -0}
+    m_Extent: {x: 0.038015, y: 0.111, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
+  m_Name: ob_kitchen_glass
+  m_EditorClassIdentifier: 
+  _lastTimeModified: 635897935687888030
+  _documentAsset: {fileID: 11489120}
+  _sharedMesh: {fileID: 4387112}
+  _antialiasing: 0
+  _antialiasingWidth: 0.1
+  _generateCollider: 1
+  _keepSVGFile: 1
+  _ignoreSVGCanvas: 1
+  _colliderShape:
+  - points:
+    - {x: 0.038000003, y: 0.20700002}
+    - {x: 0.037, y: 0.135}
+    - {x: 0.030000001, y: 0.105000004}
+    - {x: 0.006, y: 0.074}
+    - {x: 0.007, y: 0.051000003}
+    - {x: 0.010000001, y: 0.017}
+    - {x: 0.032, y: 0}
+    - {x: -0.033, y: 0}
+    - {x: -0.016, y: 0.012}
+    - {x: -0.012, y: 0.023000002}
+    - {x: -0.007, y: 0.076000005}
+    - {x: -0.012, y: 0.080000006}
+    - {x: -0.029000001, y: 0.102000006}
+    - {x: -0.037, y: 0.13000001}
+    - {x: -0.038000003, y: 0.15}
+    - {x: -0.035, y: 0.22200002}
+    - {x: 0.036000002, y: 0.22200002}
+    bounds:
+      serializedVersion: 2
+      x: -0.038000003
+      y: 0.036000002
+      width: 0.076000005
+      height: 0.069000006
+  _format: 1
+  _useGradients: 0
+  _meshCompression: 0
+  _optimizeMesh: 1
+  _generateNormals: 0
+  _generateTangents: 0
+  _scale: 0.01
+  _vpm: 1000
+  _depthOffset: 0.01
+  _compressDepth: 1
+  _pivotPoint: {x: 0.5, y: 1}
+  _customPivotPoint: 0
+  _border: {x: 0, y: 0, z: 0, w: 0}
+  _sliceMesh: 0
+  _sharedGradients:
+  - colorKeys:
+    - time: 1
+      color:
+        serializedVersion: 2
+        rgba: 4294967295
+    - time: 0
+      color:
+        serializedVersion: 2
+        rgba: 4294967295
+    alphaKeys:
+    - time: 1
+      alpha: 1
+    - time: 0
+      alpha: 1
+    _hash: GC999FFFFFFC000FFFFFFA999999A000999
+    index: 0
+    atlasIndex: 0
+    references: 0
+  _sharedShaders:
+  - SVG Importer/GradientColor/GradientColorAlphaBlended
+  _canvasRectangle:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0.077
+    height: 0.222
+--- !u!114 &11489120
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363e9872ad27a4ca59c07d233fdf0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _errors: 
+  _svgFile: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!-- Generator: Adobe Illustrator
+    19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\n<svg version=\"1.1\"
+    id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"
+    x=\"0px\" y=\"0px\"\n\t viewBox=\"0 0 7.7 22.2\" style=\"enable-background:new
+    0 0 7.7 22.2;\" xml:space=\"preserve\">\n<style type=\"text/css\">\n\t.st0{fill:#23B1B7;enable-background:new
+    \   ;}\n</style>\n<path class=\"st0\" d=\"M0.3,0h7.2c0,0,0.8,9-0.6,11.6c0,0-1.7,2.4-2.4,3.1c0,0-0.1,4.3,0.4,5.7c0,0,0.8,0.9,2.2,1.8H0.5\n\tc0,0,1.9-0.5,2.1-2.4l0.5-5.3c0,0-3.4-1.7-3.1-7.3L0.3,0z\"/>\n</svg>\n"
+  _title: 
+  _description: 

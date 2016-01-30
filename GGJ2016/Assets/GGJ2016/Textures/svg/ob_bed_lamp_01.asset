@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!43 &4355628
+--- !u!43 &4354346
 Mesh:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -139,9 +139,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
   m_Name: ob_bed_lamp_01
   m_EditorClassIdentifier: 
-  _lastTimeModified: 635897775581444730
+  _lastTimeModified: 635897935694911660
   _documentAsset: {fileID: 11450290}
-  _sharedMesh: {fileID: 4355628}
+  _sharedMesh: {fileID: 4354346}
   _antialiasing: 0
   _antialiasingWidth: 0.1
   _generateCollider: 1
