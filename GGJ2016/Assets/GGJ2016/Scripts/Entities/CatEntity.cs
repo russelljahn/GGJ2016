@@ -189,9 +189,6 @@ namespace Assets.GGJ2016.Scripts.Entities
             }
 
             _speedX = Mathf.Clamp(_speedX, -MaxSpeedX, MaxSpeedX);
-
-            Debug.Log("_speedX: " + _speedX + ", speedMultiplier: " + speedMultiplier);
-
             var displacementX = new Vector3(_speedX * Time.deltaTime, 0f, 0f);
             _rigidbody2D.MovePosition(transform.position + displacementX);
 
@@ -199,6 +196,7 @@ namespace Assets.GGJ2016.Scripts.Entities
             {
                 State = StateType.Idle;
             }
+            Debug.Log("_speedX: " + _speedX + ", speedMultiplier: " + speedMultiplier);
         }
 
         private void InJumping()
