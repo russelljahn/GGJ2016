@@ -1,4 +1,5 @@
 ﻿using System;
+using Assets.GGJ2016.Scripts.Entities;
 using Assets.OutOfTheBox.Scripts.Audio;
 using Assets.OutOfTheBox.Scripts.Inputs;
 using Assets.OutOfTheBox.Scripts.Navigation;
@@ -25,8 +26,9 @@ namespace Assets.OutOfTheBox.Scripts.Injection
 
             Container.Bind<AudioManager>().ToSingleInstance(_instances.AudioManager);
             Container.Bind<AudioClips>().ToSingleInstance(_instances.AudioClips);
-            Container.Bind<EventSystem>().ToSingleInstance(_instances.EventSystem);
+            Container.Bind<CatStats>().ToSingleInstance(_instances.CatStats);
             Container.Bind<Controller>().ToSingleInstance(_instances.Controller);
+            Container.Bind<EventSystem>().ToSingleInstance(_instances.EventSystem);
             Container.Bind<InControlInputModule>().ToSingleInstance(_instances.InControlInputModule);
         }
 
@@ -35,8 +37,9 @@ namespace Assets.OutOfTheBox.Scripts.Injection
         {
             public AudioClips AudioClips;
             public AudioManager AudioManager;
-            public EventSystem EventSystem;
+            public CatStats CatStats;
             public Controller Controller;
+            public EventSystem EventSystem;
             public InControlInputModule InControlInputModule;
         }
 
