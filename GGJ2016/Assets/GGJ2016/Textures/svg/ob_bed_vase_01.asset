@@ -1,0 +1,272 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4329722
+Mesh:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ob_bed_vase_01
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 150
+    topology: 0
+    firstVertex: 0
+    vertexCount: 58
+    localAABB:
+      m_Center: {x: 0, y: 0.15949501, z: -0}
+      m_Extent: {x: 0.166495, y: 0.15949501, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 0000010002000000030001000400030000000400050003000400060005000400070006000800070004000800090007000a00090008000a000b0009000c000b000a000c000d000b000e000d000c000f000d000e0010000d000f00100011000d0012001100100012001300110014001300120013001400150016001700180019001700160019001a00170019001b001a001c001b0019001d001b001c001d001e001b001f001e001d001f0020001e0020001f00210022002300240025002300220025002600230025002700260028002700250029002700280029002a0027002b002a0029002b002c002a002c002b002d002e002f00300031002f002e00310032002f00310033003200340033003100350033003400350036003300370036003500370038003600380037003900
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 29
+    m_VertexCount: 58
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 2
+      dimension: 4
+    - stream: 0
+      offset: 16
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 1856
+    _typelessdata: aef5a53d00370e3b000000807e986fff000000000000000000000000000000000ec3173e485f413d000000807e986fff00000000000000000000000000000000b44bf43df0d4953c000000807e986fff00000000000000000000000000000000d044283eaa05af3d000000807e986fff0000000000000000000000000000000084bb733d00000080000000807e986fff00000000000000000000000000000000aa7d2a3e961ddb3d000000807e986fff00000000000000000000000000000000d044283e5f9d033e000000807e986fff000000000000000000000000000000000ec3173e62c82a3e000000807e986fff0000000000000000000000000000000082bb73bd00000080000000807e986fff00000000000000000000000000000000b44bf43d9665483e000000807e986fff00000000000000000000000000000000adf5a5bd00370e3b000000807e986fff00000000000000000000000000000000aef5a53d58e7583e000000807e986fff00000000000000000000000000000000b14bf4bdf0d4953c000000807e986fff0000000000000000000000000000000008b1733d33205b3e000000807e986fff000000000000000000000000000000000dc317be485f413d000000807e986fff00000000000000000000000000000000d04428beaa05af3d000000807e986fff00000000000000000000000000000000aa7d2abe961ddb3d000000807e986fff0000000000000000000000000000000082bb73bd33205b3e000000807e986fff00000000000000000000000000000000d04428be5f9d033e000000807e986fff00000000000000000000000000000000adf5a5bd58e7583e000000807e986fff000000000000000000000000000000000dc317be62c82a3e000000807e986fff00000000000000000000000000000000b14bf4bd9665483e000000807e986fff000000000000000000000000000000000f408abd54d04d3e0000008083746aff000000000000000000000000000000008a972ebd9eba723e0000008083746aff00000000000000000000000000000000947369bdad90523e0000008083746aff0000000000000000000000000000000016c19fbdad90523e0000008083746aff0000000000000000000000000000000014de25bd6a1d853e0000008083746aff000000000000000000000000000000008a972ebdd3de903e0000008083746aff000000000000000000000000000000001a2fbdbd9eba723e0000008083746aff00000000000000000000000000000000d58bc1bd6a1d853e0000008083746aff00000000000000000000000000000000947369bdccf3a03e0000008083746aff000000000000000000000000000000001a2fbdbdd3de903e0000008083746aff000000000000000000000000000000000f408abda952a33e0000008083746aff0000000000000000000000000000000016c19fbdccf3a03e0000008083746aff0000000000000000000000000000000000f4c3ba54d04d3e0000008083746aff00000000000000000000000000000000f87cbf3c9eba723e0000008083746aff00000000000000000000000000000000c089133cad90523e0000008083746aff00000000000000000000000000000000a0b044bcad90523e0000008083746aff00000000000000000000000000000000e0efd03c6a1d853e0000008083746aff00000000000000000000000000000000f87cbf3cd3de903e0000008083746aff000000000000000000000000000000005810d8bc9eba723e0000008083746aff00000000000000000000000000000000586ee9bc6a1d853e0000008083746aff00000000000000000000000000000000c089133cccf3a03e0000008083746aff000000000000000000000000000000005810d8bcd3de903e0000008083746aff0000000000000000000000000000000000f4c3baa952a33e0000008083746aff00000000000000000000000000000000a0b044bcccf3a03e0000008083746aff00000000000000000000000000000000d23a8a3d54d04d3e0000008083746aff000000000000000000000000000000001c2fbd3d9eba723e0000008083746aff0000000000000000000000000000000016c19f3dad90523e0000008083746aff000000000000000000000000000000009873693dad90523e0000008083746aff000000000000000000000000000000009886c13d6a1d853e0000008083746aff000000000000000000000000000000001c2fbd3dd3de903e0000008083746aff0000000000000000000000000000000090972e3d9eba723e0000008083746aff0000000000000000000000000000000018de253d6a1d853e0000008083746aff0000000000000000000000000000000016c19f3dccf3a03e0000008083746aff0000000000000000000000000000000090972e3dd3de903e0000008083746aff00000000000000000000000000000000d23a8a3da952a33e0000008083746aff000000000000000000000000000000009873693dccf3a03e0000008083746aff00000000000000000000000000000000
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0.15949501, z: -0}
+    m_Extent: {x: 0.166495, y: 0.15949501, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
+  m_Name: ob_bed_vase_01
+  m_EditorClassIdentifier: 
+  _lastTimeModified: 635897935694241860
+  _documentAsset: {fileID: 11459900}
+  _sharedMesh: {fileID: 4329722}
+  _antialiasing: 0
+  _antialiasingWidth: 0.1
+  _generateCollider: 1
+  _keepSVGFile: 1
+  _ignoreSVGCanvas: 1
+  _colliderShape:
+  - points:
+    - {x: 0.081, y: 0.002}
+    - {x: 0.119, y: 0.018000001}
+    - {x: 0.148, y: 0.047000002}
+    - {x: 0.164, y: 0.085}
+    - {x: 0.16600001, y: 0.106000006}
+    - {x: 0.164, y: 0.128}
+    - {x: 0.148, y: 0.16600001}
+    - {x: 0.119, y: 0.19500001}
+    - {x: 0.081, y: 0.21100001}
+    - {x: 0.09200001, y: 0.23700002}
+    - {x: 0.094000004, y: 0.259}
+    - {x: 0.09200001, y: 0.282}
+    - {x: 0.078, y: 0.314}
+    - {x: 0.067, y: 0.31800002}
+    - {x: 0.056, y: 0.314}
+    - {x: 0.042000003, y: 0.282}
+    - {x: 0.040000003, y: 0.259}
+    - {x: 0.042000003, y: 0.23700002}
+    - {x: 0.053000003, y: 0.21300001}
+    - {x: 0.012, y: 0.21300001}
+    - {x: 0.023000002, y: 0.23700002}
+    - {x: 0.025, y: 0.259}
+    - {x: 0.023000002, y: 0.282}
+    - {x: 0.009000001, y: 0.314}
+    - {x: -0.001, y: 0.31800002}
+    - {x: -0.012, y: 0.314}
+    - {x: -0.026, y: 0.282}
+    - {x: -0.028, y: 0.259}
+    - {x: -0.026, y: 0.23700002}
+    - {x: -0.015000001, y: 0.21300001}
+    - {x: -0.053000003, y: 0.21300001}
+    - {x: -0.042000003, y: 0.23700002}
+    - {x: -0.040000003, y: 0.259}
+    - {x: -0.042000003, y: 0.282}
+    - {x: -0.056, y: 0.314}
+    - {x: -0.067, y: 0.31800002}
+    - {x: -0.078, y: 0.314}
+    - {x: -0.09200001, y: 0.282}
+    - {x: -0.094000004, y: 0.259}
+    - {x: -0.09200001, y: 0.23700002}
+    - {x: -0.081, y: 0.21100001}
+    - {x: -0.119, y: 0.19500001}
+    - {x: -0.148, y: 0.16600001}
+    - {x: -0.164, y: 0.128}
+    - {x: -0.16600001, y: 0.106000006}
+    - {x: -0.164, y: 0.085}
+    - {x: -0.148, y: 0.047000002}
+    - {x: -0.119, y: 0.018000001}
+    - {x: -0.081, y: 0.002}
+    - {x: -0.059000004, y: 0}
+    - {x: 0.059000004, y: 0}
+    bounds:
+      serializedVersion: 2
+      x: -0.16600001
+      y: 0.059000004
+      width: 0.33200002
+      height: 0.223
+  _format: 1
+  _useGradients: 0
+  _meshCompression: 0
+  _optimizeMesh: 1
+  _generateNormals: 0
+  _generateTangents: 0
+  _scale: 0.01
+  _vpm: 1000
+  _depthOffset: 0.01
+  _compressDepth: 1
+  _pivotPoint: {x: 0.5, y: 1}
+  _customPivotPoint: 0
+  _border: {x: 0, y: 0, z: 0, w: 0}
+  _sliceMesh: 0
+  _sharedGradients:
+  - colorKeys:
+    - time: 1
+      color:
+        serializedVersion: 2
+        rgba: 4294967295
+    - time: 0
+      color:
+        serializedVersion: 2
+        rgba: 4294967295
+    alphaKeys:
+    - time: 1
+      alpha: 1
+    - time: 0
+      alpha: 1
+    _hash: GC999FFFFFFC000FFFFFFA999999A000999
+    index: 0
+    atlasIndex: 0
+    references: 0
+  _sharedShaders:
+  - SVG Importer/GradientColor/GradientColorAlphaBlended
+  _canvasRectangle:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0.33299997
+    height: 0.31899998
+--- !u!114 &11459900
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363e9872ad27a4ca59c07d233fdf0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _errors: 
+  _svgFile: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!-- Generator: Adobe Illustrator
+    19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\n<svg version=\"1.1\"
+    id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"
+    x=\"0px\" y=\"0px\"\n\t viewBox=\"0 0 33.3 31.9\" style=\"enable-background:new
+    0 0 33.3 31.9;\" xml:space=\"preserve\">\n<style type=\"text/css\">\n\t.st0{fill:#7E986F;}\n\t.st1{fill:#83746A;}\n</style>\n<g>\n\t<path
+    class=\"st0\" d=\"M22.6,31.9H10.7C4.8,31.9,0,27.1,0,21.2l0,0c0-5.9,4.8-10.7,10.7-10.7h11.9c5.9,0,10.7,4.8,10.7,10.7l0,0\n\t\tC33.3,27.1,28.5,31.9,22.6,31.9z\"/>\n\t<ellipse
+    class=\"st1\" cx=\"9.9\" cy=\"5.9\" rx=\"2.7\" ry=\"5.9\"/>\n\t<ellipse class=\"st1\"
+    cx=\"16.5\" cy=\"5.9\" rx=\"2.7\" ry=\"5.9\"/>\n\t<ellipse class=\"st1\" cx=\"23.4\"
+    cy=\"5.9\" rx=\"2.7\" ry=\"5.9\"/>\n</g>\n</svg>\n"
+  _title: 
+  _description: 

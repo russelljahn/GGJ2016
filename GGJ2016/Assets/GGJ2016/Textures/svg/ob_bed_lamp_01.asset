@@ -1,0 +1,264 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4354346
+Mesh:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ob_bed_lamp_01
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 93
+    topology: 0
+    firstVertex: 0
+    vertexCount: 37
+    localAABB:
+      m_Center: {x: 0, y: 0.59250003, z: -0}
+      m_Extent: {x: 0.19950001, y: 0.59250003, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 000001000200000003000100000004000300050004000000050006000400050007000600080007000500090007000800070009000a000b000c000d000e000f00100011000f000e00110012000f001300120011001300140012001300150014000b00150013000d0015000b000d001600150016000d001700180019001a001b00190018001b001c0019001d001c001b001d001e001c001f001e001d001f0020001e00210020001f00220020002100220023002000230022002400
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 29
+    m_VertexCount: 37
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 2
+      dimension: 4
+    - stream: 0
+      offset: 16
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 1184
+    _typelessdata: bb494cbee6d0423f00000080baa483ff0000000000000000000000000000000097a83e3ee81d473f00000080baa483ff00000000000000000000000000000000bb494c3ee6d0423f00000080baa483ff0000000000000000000000000000000005ca263e01c6533f00000080baa483ff00000000000000000000000000000000d7e70a3e9a5f6d3f00000080baa483ff0000000000000000000000000000000047b13cbe70814c3f00000080baa483ff00000000000000000000000000000000d62fd83dbb83903f00000080baa483ff00000000000000000000000000000000f2d2cd3d15ae973f00000080baa483ff0000000000000000000000000000000085f008bee14a763f00000080baa483ff000000000000000000000000000000001960dfbdd5ec8d3f00000080baa483ff00000000000000000000000000000000ad1cdabd15ae973f00000080baa483ff0000000000000000000000000000000068dafebc2038073e0000008000ac9eff0000000000000000000000000000000038c9c8bc9899193e0000008000ac9eff0000000000000000000000000000000060bb6dbc9899193e0000008000ac9eff0000000000000000000000000000000028fc52bd000000800000008000ac9eff0000000000000000000000000000000038cd3b3d006aaa3d0000008000ac9eff00000000000000000000000000000000ec305f3d000000800000008000ac9eff00000000000000000000000000000000dc3862bdc096903c0000008000ac9eff000000000000000000000000000000003c61093d8812063e0000008000ac9eff00000000000000000000000000000000b48f4ebd004d843d0000008000ac9eff00000000000000000000000000000000389fc83c9899193e0000008000ac9eff00000000000000000000000000000000e0a24c3c9899193e0000008000ac9eff00000000000000000000000000000000e0a24c3c5c8f423f0000008000ac9eff0000000000000000000000000000000060bb6dbc5c8f423f0000008000ac9eff00000000000000000000000000000000368e983d7012c33e00000080a9a288ff00000000000000000000000000000000fed4b83db862cf3e00000080a9a288ff0000000000000000000000000000000052a5a63d50afc43e00000080a9a288ff000000000000000000000000000000008e588b3da69bc43e00000080a9a288ff000000000000000000000000000000005a64bb3d400ad73e00000080a9a288ff00000000000000000000000000000000a436713dac2bcf3e00000080a9a288ff000000000000000000000000000000009ac9b73d3017e13e00000080a9a288ff00000000000000000000000000000000a47a6b3d400ad73e00000080a9a288ff00000000000000000000000000000000cefcaa3d0074e83e00000080a9a288ff000000000000000000000000000000006440763d3017e13e00000080a9a288ff00000000000000000000000000000000e62b883db072e83e00000080a9a288ff00000000000000000000000000000000cefcaa3de6d0423f00000080a9a288ff00000000000000000000000000000000e62b883de6d0423f00000080a9a288ff00000000000000000000000000000000
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0.59250003, z: -0}
+    m_Extent: {x: 0.19950001, y: 0.59250003, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
+  m_Name: ob_bed_lamp_01
+  m_EditorClassIdentifier: 
+  _lastTimeModified: 635897935694911660
+  _documentAsset: {fileID: 11450290}
+  _sharedMesh: {fileID: 4354346}
+  _antialiasing: 0
+  _antialiasingWidth: 0.1
+  _generateCollider: 1
+  _keepSVGFile: 1
+  _ignoreSVGCanvas: 1
+  _colliderShape:
+  - points:
+    - {x: 0.060000002, y: 0.439}
+    - {x: 0.057000004, y: 0.42000002}
+    - {x: 0.058000002, y: 0.404}
+    - {x: 0.068, y: 0.384}
+    - {x: 0.074, y: 0.381}
+    - {x: 0.081, y: 0.384}
+    - {x: 0.09, y: 0.40500003}
+    - {x: 0.091000006, y: 0.42000002}
+    - {x: 0.089, y: 0.439}
+    - {x: 0.083000004, y: 0.45400003}
+    - {x: 0.083000004, y: 0.76100004}
+    - {x: 0.19900002, y: 0.76100004}
+    - {x: 0.186, y: 0.777}
+    - {x: 0.162, y: 0.827}
+    - {x: 0.135, y: 0.92700005}
+    - {x: 0.105000004, y: 1.1290001}
+    - {x: 0.1, y: 1.1850001}
+    - {x: -0.106000006, y: 1.1850001}
+    - {x: -0.109000005, y: 1.108}
+    - {x: -0.133, y: 0.9620001}
+    - {x: -0.18400002, y: 0.79800004}
+    - {x: -0.19900002, y: 0.76100004}
+    - {x: 0.066, y: 0.76100004}
+    - {x: 0.066, y: 0.45400003}
+    bounds:
+      serializedVersion: 2
+      x: -0.19900002
+      y: 0.066
+      width: 0.39800003
+      height: 0.0059999973
+  - points:
+    - {x: 0.045, y: 0.083000004}
+    - {x: 0.033, y: 0.13000001}
+    - {x: 0.024, y: 0.15}
+    - {x: 0.012, y: 0.15}
+    - {x: 0.012, y: 0.76000005}
+    - {x: -0.014, y: 0.76000005}
+    - {x: -0.014, y: 0.15}
+    - {x: -0.024, y: 0.15}
+    - {x: -0.031000001, y: 0.132}
+    - {x: -0.05, y: 0.064}
+    - {x: -0.055000003, y: 0.017}
+    - {x: -0.051000003, y: 0}
+    - {x: 0.054, y: 0}
+    bounds:
+      serializedVersion: 2
+      x: -0.055000003
+      y: 0.054
+      width: 0.109000005
+      height: 0.109000005
+  _format: 1
+  _useGradients: 0
+  _meshCompression: 0
+  _optimizeMesh: 1
+  _generateNormals: 0
+  _generateTangents: 0
+  _scale: 0.01
+  _vpm: 1000
+  _depthOffset: 0.01
+  _compressDepth: 1
+  _pivotPoint: {x: 0.5, y: 1}
+  _customPivotPoint: 0
+  _border: {x: 0, y: 0, z: 0, w: 0}
+  _sliceMesh: 0
+  _sharedGradients:
+  - colorKeys:
+    - time: 1
+      color:
+        serializedVersion: 2
+        rgba: 4294967295
+    - time: 0
+      color:
+        serializedVersion: 2
+        rgba: 4294967295
+    alphaKeys:
+    - time: 1
+      alpha: 1
+    - time: 0
+      alpha: 1
+    _hash: GC999FFFFFFC000FFFFFFA999999A000999
+    index: 0
+    atlasIndex: 0
+    references: 0
+  _sharedShaders:
+  - SVG Importer/GradientColor/GradientColorAlphaBlended
+  _canvasRectangle:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0.39900002
+    height: 1.185
+--- !u!114 &11450290
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363e9872ad27a4ca59c07d233fdf0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _errors: 
+  _svgFile: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!-- Generator: Adobe Illustrator
+    19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\n<svg version=\"1.1\"
+    id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"
+    x=\"0px\" y=\"0px\"\n\t viewBox=\"0 0 39.9 118.5\" style=\"enable-background:new
+    0 0 39.9 118.5;\" xml:space=\"preserve\">\n<style type=\"text/css\">\n\t.st0{fill:#BAA483;}\n\t.st1{fill:#00AC9E;}\n\t.st2{fill:#A9A288;}\n</style>\n<g>\n\t<path
+    class=\"st0\" d=\"M9.3,0H30c0,0,2.5,35.1,9.9,42.4H0C0,42.4,9.8,20.2,9.3,0z\"/>\n\t<path
+    class=\"st1\" d=\"M22.4,103.5h-1.2v-61h-2.7v61h-1c0,0-4.4,11.1-2.7,15h10.6C25.4,118.5,25.1,107.9,22.4,103.5z\"/>\n\t<path
+    class=\"st2\" d=\"M28.3,73.1V42.4h-1.7v30.7c-0.5,0.7-0.9,2-0.9,3.4c0,2.2,0.8,3.9,1.7,3.9c1,0,1.7-1.8,1.7-3.9\n\t\tC29.2,75.1,28.8,73.8,28.3,73.1z\"/>\n</g>\n</svg>\n"
+  _title: 
+  _description: 

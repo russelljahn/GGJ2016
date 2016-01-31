@@ -1,0 +1,238 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4353012
+Mesh:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ob_livingroom_fruit_03
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 54
+    topology: 0
+    firstVertex: 0
+    vertexCount: 20
+    localAABB:
+      m_Center: {x: 0, y: 0.086995, z: -0}
+      m_Extent: {x: 0.086995, y: 0.086995, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 0000010002000000030001000400030000000400050003000600050004000600070005000800070006000800090007000a00090008000a000b0009000c000b000a000c000d000b000e000d000c000e000f000d0010000f000e00100011000f00120011001000110012001300
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 29
+    m_VertexCount: 20
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 2
+      dimension: 4
+    - stream: 0
+      offset: 16
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 640
+    _typelessdata: 98908f3c80afe63a00000080ef4132ff0000000000000000000000000000000085bb933ddc291d3d00000080ef4132ff00000000000000000000000000000000022b473d5077733c00000080ef4132ff00000000000000000000000000000000b18fae3d49468e3d00000080ef4132ff0000000000000000000000000000000000c0a7b60000008000000080ef4132ff000000000000000000000000000000006f2ab23d0e2db23d00000080ef4132ff0000000000000000000000000000000094908fbc80afe63a00000080ef4132ff00000000000000000000000000000000b18fae3d940ed63d00000080ef4132ff00000000000000000000000000000000012b47bd5077733c00000080ef4132ff0000000000000000000000000000000085bb933df8df0a3e00000080ef4132ff0000000000000000000000000000000084bb93bddc291d3d00000080ef4132ff00000000000000000000000000000000022b473df9f2223e00000080ef4132ff00000000000000000000000000000000b08faebd49468e3d00000080ef4132ff0000000000000000000000000000000098908f3c0f5d303e00000080ef4132ff000000000000000000000000000000006f2ab2bd0e2db23d00000080ef4132ff0000000000000000000000000000000000c0a7b66f2a323e00000080ef4132ff00000000000000000000000000000000b08faebd940ed63d00000080ef4132ff0000000000000000000000000000000094908fbc0f5d303e00000080ef4132ff0000000000000000000000000000000084bb93bdf8df0a3e00000080ef4132ff00000000000000000000000000000000012b47bdf9f2223e00000080ef4132ff00000000000000000000000000000000
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0.086995, z: -0}
+    m_Extent: {x: 0.086995, y: 0.086995, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
+  m_Name: ob_livingroom_fruit_03
+  m_EditorClassIdentifier: 
+  _lastTimeModified: 635897935693573860
+  _documentAsset: {fileID: 11424952}
+  _sharedMesh: {fileID: 4353012}
+  _antialiasing: 0
+  _antialiasingWidth: 0.1
+  _generateCollider: 1
+  _keepSVGFile: 1
+  _ignoreSVGCanvas: 1
+  _colliderShape:
+  - points:
+    - {x: 0.017, y: 0.172}
+    - {x: 0.048, y: 0.15900001}
+    - {x: 0.072000004, y: 0.135}
+    - {x: 0.085, y: 0.104}
+    - {x: 0.086, y: 0.086}
+    - {x: 0.085, y: 0.069000006}
+    - {x: 0.072000004, y: 0.038000003}
+    - {x: 0.048, y: 0.014}
+    - {x: 0.017, y: 0.001}
+    - {x: 0, y: 0}
+    - {x: -0.017, y: 0.001}
+    - {x: -0.048, y: 0.014}
+    - {x: -0.072000004, y: 0.038000003}
+    - {x: -0.085, y: 0.069000006}
+    - {x: -0.086, y: 0.086}
+    - {x: -0.085, y: 0.104}
+    - {x: -0.072000004, y: 0.135}
+    - {x: -0.048, y: 0.15900001}
+    - {x: -0.017, y: 0.172}
+    - {x: 0, y: 0.17300001}
+    bounds:
+      serializedVersion: 2
+      x: -0.086
+      y: 0
+      width: 0.172
+      height: 0
+  _format: 1
+  _useGradients: 0
+  _meshCompression: 0
+  _optimizeMesh: 1
+  _generateNormals: 0
+  _generateTangents: 0
+  _scale: 0.01
+  _vpm: 1000
+  _depthOffset: 0.01
+  _compressDepth: 1
+  _pivotPoint: {x: 0.5, y: 1}
+  _customPivotPoint: 0
+  _border: {x: 0, y: 0, z: 0, w: 0}
+  _sliceMesh: 0
+  _sharedGradients:
+  - colorKeys:
+    - time: 1
+      color:
+        serializedVersion: 2
+        rgba: 4294967295
+    - time: 0
+      color:
+        serializedVersion: 2
+        rgba: 4294967295
+    alphaKeys:
+    - time: 1
+      alpha: 1
+    - time: 0
+      alpha: 1
+    _hash: GC999FFFFFFC000FFFFFFA999999A000999
+    index: 0
+    atlasIndex: 0
+    references: 0
+  _sharedShaders:
+  - SVG Importer/GradientColor/GradientColorAlphaBlended
+  _canvasRectangle:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0.174
+    height: 0.174
+--- !u!114 &11424952
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363e9872ad27a4ca59c07d233fdf0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _errors: 
+  _svgFile: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!-- Generator: Adobe Illustrator
+    19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\n<svg version=\"1.1\"
+    id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"
+    x=\"0px\" y=\"0px\"\n\t viewBox=\"0 0 17.4 17.4\" style=\"enable-background:new
+    0 0 17.4 17.4;\" xml:space=\"preserve\">\n<style type=\"text/css\">\n\t.st0{fill:#EF4132;}\n</style>\n<circle
+    class=\"st0\" cx=\"8.7\" cy=\"8.7\" r=\"8.7\"/>\n</svg>\n"
+  _title: 
+  _description: 

@@ -1,0 +1,259 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4309594
+Mesh:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ob_livingroom_fire
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 120
+    topology: 0
+    firstVertex: 0
+    vertexCount: 46
+    localAABB:
+      m_Center: {x: 0, y: 0.21149501, z: -0}
+      m_Extent: {x: 0.191, y: 0.21149501, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 0000010002000100000003000200040005000100040002000400010006000700080009000a00080007000b0008000a000b000c0008000b000d000c000e000d000b000f000d000e0010000d000f0005000d00100004000d0005000d000400110012001300140015001300120015001600130017001600150017001800160017001900180017001a0019001b001a0017001c001a001b001a001c001d00180019001e0019001a001f002000210022002300210020002300240021002300250024002300260025002700260023002800260027002900260028002a00260029002a002b0026002c002b002a002b002c002d00
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 29
+    m_VertexCount: 46
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 2
+      dimension: 4
+    - stream: 0
+      offset: 16
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 1472
+    _typelessdata: c85eefbd6cecb23e00000080fdeb00ff000000000000000000000000000000001d558dbdea26b13e00000080fdeb00ff000000000000000000000000000000000fd108be1a56813e00000080fdeb00ff00000000000000000000000000000000a240dfbdee7cbf3e00000080fdeb00ff00000000000000000000000000000000601283bbb1febf3e00000080fdeb00ff000000000000000000000000000000004aea04be4a8a483e00000080fdeb00ff00000000000000000000000000000000bc7413bd2692d83e00000080fdeb00ff000000000000000000000000000000005c39343ddccef73d00000080fdeb00ff0000000000000000000000000000000066e4ac3d408c303e00000080fdeb00ff0000000000000000000000000000000024f85f3d9af5023e00000080fdeb00ff0000000000000000000000000000000040d12e3cb429d73d00000080fdeb00ff0000000000000000000000000000000058b13fbd3898c63d00000080fdeb00ff000000000000000000000000000000004ad2b53dac436e3e00000080fdeb00ff000000000000000000000000000000000ad7a33dbb498c3e00000080fdeb00ff000000000000000000000000000000001249b4bdb41bf63d00000080fdeb00ff00000000000000000000000000000000a240dfbde27a143e00000080fdeb00ff000000000000000000000000000000009222f2bda89b243e00000080fdeb00ff000000000000000000000000000000007012833c2692d83e00000080fdeb00ff0000000000000000000000000000000080e8023c92052c3e00000080ee2648ff0000000000000000000000000000000000d9eb3c9c03443e00000080ee2648ff00000000000000000000000000000000f8108d3c875a333e00000080ee2648ff0000000000000000000000000000000040cbf3bb9ac02d3e00000080ee2648ff000000000000000000000000000000009487053d0a8a5f3e00000080ee2648ff00000000000000000000000000000000b83b6bbd306e433e00000080ee2648ff00000000000000000000000000000000d001823c04b2873e00000080ee2648ff0000000000000000000000000000000080e8023c4517843e00000080ee2648ff00000000000000000000000000000000d44334bdf0946e3e00000080ee2648ff0000000000000000000000000000000025589cbde0375e3e00000080ee2648ff0000000000000000000000000000000016dea5bdaf4c783e00000080ee2648ff0000000000000000000000000000000047dca3bd4517843e00000080ee2648ff0000000000000000000000000000000080e8023ca3d18d3e00000080ee2648ff00000000000000000000000000000000504eb4bc140f983e00000080ee2648ff00000000000000000000000000000000593e2b3e004c433b0000008048170eff000000000000000000000000000000008195433e709b1b3d0000008048170eff00000000000000000000000000000000e5f23f3e000ebe3c0000008048170eff0000000000000000000000000000000009ac1c3e000000800000008048170eff00000000000000000000000000000000b185403e583a583d0000008048170eff0000000000000000000000000000000025d12b3e4886953d0000008048170eff0000000000000000000000000000000009ac1c3ea8a09b3d0000008048170eff00000000000000000000000000000000a7ae1cbe000000800000008048170eff00000000000000000000000000000000c3d32bbe004c433b0000008048170eff00000000000000000000000000000000518840be000ebe3c0000008048170eff00000000000000000000000000000000819543be709b1b3d0000008048170eff00000000000000000000000000000000a7ae1cbea8a09b3d0000008048170eff00000000000000000000000000000000518840be583a583d0000008048170eff00000000000000000000000000000000c3d32bbe4886953d0000008048170eff00000000000000000000000000000000
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0.21149501, z: -0}
+    m_Extent: {x: 0.191, y: 0.21149501, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
+  m_Name: ob_livingroom_fire
+  m_EditorClassIdentifier: 
+  _lastTimeModified: 635897935692740950
+  _documentAsset: {fileID: 11463712}
+  _sharedMesh: {fileID: 4309594}
+  _antialiasing: 0
+  _antialiasingWidth: 0.1
+  _generateCollider: 1
+  _keepSVGFile: 1
+  _ignoreSVGCanvas: 1
+  _colliderShape:
+  - points:
+    - {x: 0.010000001, y: 0.105000004}
+    - {x: 0.044000003, y: 0.12100001}
+    - {x: 0.054, y: 0.127}
+    - {x: 0.08400001, y: 0.172}
+    - {x: 0.08800001, y: 0.23200001}
+    - {x: 0.079, y: 0.27400002}
+    - {x: 0.016, y: 0.42200002}
+    - {x: -0.003, y: 0.374}
+    - {x: -0.035, y: 0.42200002}
+    - {x: -0.069000006, y: 0.34600002}
+    - {x: -0.109000005, y: 0.374}
+    - {x: -0.116000004, y: 0.349}
+    - {x: -0.133, y: 0.252}
+    - {x: -0.12900001, y: 0.19500001}
+    - {x: -0.11800001, y: 0.16000001}
+    - {x: -0.109000005, y: 0.14500001}
+    - {x: -0.08800001, y: 0.120000005}
+    - {x: -0.046000004, y: 0.096}
+    bounds:
+      serializedVersion: 2
+      x: -0.133
+      y: -0.046000004
+      width: 0.22100002
+      height: -0.056000005
+  - points:
+    - {x: 0.16700001, y: 0.002}
+    - {x: 0.187, y: 0.023000002}
+    - {x: 0.19000001, y: 0.037}
+    - {x: 0.18800001, y: 0.052}
+    - {x: 0.16700001, y: 0.07300001}
+    - {x: 0.15300001, y: 0.075}
+    - {x: -0.15300001, y: 0.075}
+    - {x: -0.16700001, y: 0.07300001}
+    - {x: -0.18800001, y: 0.052}
+    - {x: -0.19000001, y: 0.037}
+    - {x: -0.18800001, y: 0.023000002}
+    - {x: -0.16700001, y: 0.002}
+    - {x: -0.15300001, y: 0}
+    - {x: 0.15300001, y: 0}
+    bounds:
+      serializedVersion: 2
+      x: -0.19000001
+      y: 0.16700001
+      width: 0.38000003
+      height: 0.32000002
+  _format: 1
+  _useGradients: 0
+  _meshCompression: 0
+  _optimizeMesh: 1
+  _generateNormals: 0
+  _generateTangents: 0
+  _scale: 0.01
+  _vpm: 1000
+  _depthOffset: 0.01
+  _compressDepth: 1
+  _pivotPoint: {x: 0.5, y: 1}
+  _customPivotPoint: 0
+  _border: {x: 0, y: 0, z: 0, w: 0}
+  _sliceMesh: 0
+  _sharedGradients:
+  - colorKeys:
+    - time: 1
+      color:
+        serializedVersion: 2
+        rgba: 4294967295
+    - time: 0
+      color:
+        serializedVersion: 2
+        rgba: 4294967295
+    alphaKeys:
+    - time: 1
+      alpha: 1
+    - time: 0
+      alpha: 1
+    _hash: GC999FFFFFFC000FFFFFFA999999A000999
+    index: 0
+    atlasIndex: 0
+    references: 0
+  _sharedShaders:
+  - SVG Importer/GradientColor/GradientColorAlphaBlended
+  _canvasRectangle:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0.382
+    height: 0.42299998
+--- !u!114 &11463712
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363e9872ad27a4ca59c07d233fdf0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _errors: 
+  _svgFile: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!-- Generator: Adobe Illustrator
+    19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\n<svg version=\"1.1\"
+    id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"
+    x=\"0px\" y=\"0px\"\n\t viewBox=\"0 0 38.2 42.3\" style=\"enable-background:new
+    0 0 38.2 42.3;\" xml:space=\"preserve\">\n<style type=\"text/css\">\n\t.st0{fill:#FDEB00;}\n\t.st1{fill:#EE2648;}\n\t.st2{fill:#48170E;}\n</style>\n<path
+    class=\"st0\" d=\"M12.2,7.7l-4-2.8c0,0-5.6,14.9,0,22.9s11.2,4.4,15.3,2.4c0,0,7.2-3.2,3.6-15.3L20.7,0l-2,4.8L15.5,0L12.2,7.7z\"\n\t/>\n<path
+    class=\"st1\" d=\"M16.9,12.6l3,3.9v-1.9c0,0,5.6,7.3,0,10.9c0,0-10-0.2-8.8-9l3.6,2.5L16.9,12.6z\"/>\n<path
+    class=\"st2\" d=\"M34.4,42.3H3.8c-2.1,0-3.8-1.7-3.8-3.8l0,0c0-2.1,1.7-3.8,3.8-3.8h30.6c2.1,0,3.8,1.7,3.8,3.8l0,0\n\tC38.1,40.6,36.4,42.3,34.4,42.3z\"/>\n</svg>\n"
+  _title: 
+  _description: 
