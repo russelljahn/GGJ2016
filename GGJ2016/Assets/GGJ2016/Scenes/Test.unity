@@ -4511,7 +4511,11 @@ MonoBehaviour:
   ScratchDamage: 10
   MaxCatLevel: 5
   InitialPoints: 50
-  PointsToEachLevel: 000000006400000064000000640000006400000064000000
+  PointsToLevel1: 100
+  PointsToLevel2: 200
+  PointsToLevel3: 300
+  PointsToLevel4: 400
+  PointsToLevel5: 500
   PointLossSpeed: 1
 --- !u!1 &929431724
 GameObject:
@@ -7494,6 +7498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _points: 0
+  _level: 0
 --- !u!114 &1393872669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7506,6 +7511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spriteRenderer: {fileID: 1619128090}
+  _groundDetector: {fileID: 0}
   _runMultiplier: 0.4
   _jumpMultiplierX: 6
   _jumpMultiplierY: 100

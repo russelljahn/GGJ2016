@@ -220,10 +220,7 @@ namespace Assets.GGJ2016.Scripts.Entities
                 _rigidbody2D.drag = 1f;
                 _rigidbody2D.AddForce(Vector2.right * moveX * _jumpMultiplierX);
                 _timeInJump += Time.deltaTime;
-                //continue jumping in air
-                if (_timeInJump < _timeUntilMaxJump && canJump)
-                    _rigidbody2D.AddForce(Vector2.up * _jumpMultiplierY * .2f);
-                //get stuck fix
+            	//get stuck fix
                 if (_rigidbody2D.velocity.magnitude < 2)
                     _rigidbody2D.AddForce(Vector2.right * moveX * _runMultiplier);
             }
