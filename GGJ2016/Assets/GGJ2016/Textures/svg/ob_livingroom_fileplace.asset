@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!43 &4398746
+--- !u!43 &4316974
 Mesh:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -139,34 +139,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
   m_Name: ob_livingroom_fileplace
   m_EditorClassIdentifier: 
-  _lastTimeModified: 635897935689917340
+  _lastTimeModified: 635897968799377149
   _documentAsset: {fileID: 11430422}
-  _sharedMesh: {fileID: 4398746}
+  _sharedMesh: {fileID: 4316974}
   _antialiasing: 0
   _antialiasingWidth: 0.1
-  _generateCollider: 1
+  _generateCollider: 0
   _keepSVGFile: 1
   _ignoreSVGCanvas: 1
-  _colliderShape:
-  - points:
-    - {x: 0.328, y: 0.010000001}
-    - {x: 0.48600003, y: 0.010000001}
-    - {x: 0.48600003, y: 0.77500004}
-    - {x: 0.574, y: 0.77500004}
-    - {x: 0.574, y: 0.87100005}
-    - {x: -0.57500005, y: 0.87100005}
-    - {x: -0.57500005, y: 0.77500004}
-    - {x: -0.47700003, y: 0.77500004}
-    - {x: -0.47700003, y: 0.010000001}
-    - {x: -0.298, y: 0.010000001}
-    - {x: -0.298, y: 0}
-    - {x: 0.328, y: 0}
-    bounds:
-      serializedVersion: 2
-      x: -0.57500005
-      y: 0.328
-      width: 1.149
-      height: 0.80500007
+  _colliderShape: []
   _format: 1
   _useGradients: 0
   _meshCompression: 0
