@@ -348,6 +348,14 @@ namespace Assets.GGJ2016.Scripts.Entities
 					break;
 			}
 
+			if (stateChange.Previous < stateChange.Next) {
+				_audioManager.PlayTrackOneShot(AudioClips.SfxLevelUp);
+			}
+
+			if (stateChange.Previous > stateChange.Next) {
+				_audioManager.PlayTrackOneShot(AudioClips.SfxLevelDown);
+			}
+
 			_level1SpriteRenderer.gameObject.SetActive(false);
 			_level2SpriteRenderer.gameObject.SetActive(false);
 			_level3SpriteRenderer.gameObject.SetActive(false);

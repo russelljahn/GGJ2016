@@ -22,6 +22,8 @@ namespace Assets.OutOfTheBox.Scripts.Audio
 		public const string BgLevel4 = "BgLevel4";
 
         public const string SfxClick = "SfxClick";
+		public const string SfxLevelUp = "SfxLevelUp";
+		public const string SfxLevelDown = "SfxLevelDown";
 
         private const int Bg1TrackId = 0;
         private const int Bg2TrackId = 1;
@@ -50,16 +52,18 @@ namespace Assets.OutOfTheBox.Scripts.Audio
         {
             switch (clipName)
             {
-			case BgLevel0:
-			case BgLevel2:
-			case BgLevel4:
-				return Bg1TrackId;
-                    
-			case BgLevel1:
-			case BgLevel3:
+				case BgLevel0:
+				case BgLevel2:
+				case BgLevel4:
+					return Bg1TrackId;
+	                    
+				case BgLevel1:
+				case BgLevel3:
                     return Bg2TrackId;
 
-                case SfxClick:
+	            case SfxClick:
+				case SfxLevelUp:
+				case SfxLevelDown:
                     return Sfx1TrackId;
 
                 default:
