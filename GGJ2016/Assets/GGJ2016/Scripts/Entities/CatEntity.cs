@@ -13,32 +13,22 @@ namespace Assets.GGJ2016.Scripts.Entities
     [RequireComponent(typeof(Rigidbody2D))]
     public class CatEntity : InjectableBehaviour
     {
-        [Inject]
-        private Controller _controller;
+        [Inject] private Controller _controller;
+		[Inject] private CatStats _stats;
 
-        [SerializeField]
-        private SpriteRenderer _spriteRenderer;
-		[SerializeField]
-		private CollisionDetector _groundDetector;
+        [SerializeField] private SpriteRenderer _spriteRenderer;
+		[SerializeField] private CollisionDetector _groundDetector;
 
-        [SerializeField]
-        private float _runMultiplier = 1.75f;
-        [SerializeField]
-        private float _jumpMultiplierX = 1.25f;
-        [SerializeField]
-        private float _jumpMultiplierY = 2.0f;
+        [SerializeField] private float _runMultiplier = 1.75f;
+        [SerializeField] private float _jumpMultiplierX = 1.25f;
+        [SerializeField] private float _jumpMultiplierY = 2.0f;
 
-        [SerializeField]
-        private float _timeUntilMaxJump = 1.0f;
-        [SerializeField]
-        private float _gravity = -0.0075f;
+        [SerializeField] private float _timeUntilMaxJump = 1.0f;
+        [SerializeField]  private float _gravity = -0.0075f;
 
-        [SerializeField, Readonly]
-        private float _timeInMotion;
-        [SerializeField, Readonly]
-        private float _timeInJump;
-        [SerializeField, Readonly]
-        private float _speedX;
+        [SerializeField, Readonly] private float _timeInMotion;
+        [SerializeField, Readonly] private float _timeInJump;
+        [SerializeField, Readonly] private float _speedX;
 
 
         private const float WalkMultiplier = 1.0f;
@@ -78,6 +68,7 @@ namespace Assets.GGJ2016.Scripts.Entities
         protected override void OnPostInject()
         {
             _rigidbody2D = GetComponent<Rigidbody2D>();
+			_stats.LevelChanged += StatsOnLevelChanged;
 
             State = StateType.Idle;
         }
@@ -238,5 +229,24 @@ namespace Assets.GGJ2016.Scripts.Entities
             }
 
         }
+
+		private void StatsOnLevelChanged(StateChange<int> stateChange) {
+			switch (stateChange.Next) {
+			case 0;
+				break;
+			case 1;
+				break;
+			case 2;
+				break;
+			case 3;
+				break;
+			case 4;
+				break;
+			case 5:
+				break;
+			default;
+				break;
+			}
+		}
     }
 }

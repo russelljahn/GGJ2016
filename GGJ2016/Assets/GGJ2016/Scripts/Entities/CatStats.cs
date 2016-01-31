@@ -31,6 +31,7 @@ namespace Assets.GGJ2016.Scripts.Entities
                     return;
                 }
                 _points = Mathf.Max(0f, value);
+				UpdateLevel();
                 if (_points.IsApproximatelyZero())
                 {
                     Destroyed.SafelyInvoke(this);
@@ -38,30 +39,21 @@ namespace Assets.GGJ2016.Scripts.Entities
             }
         }
 
+		[SerializeField] private int _level;
         public int Level
         {
             get
             {
-                var health = Points;
-                if (health.IsApproximatelyZero())
-                {
-                    return 0;
-                }
-                var level = 1;
-                for (; level < _appSettings.MaxCatLevel; ++level)
-                {
-                    health -= _appSettings.PointsToEachLevel[level];
-                    if (health < 0)
-                    {
-                        return level;
-                    }
-                }
-                return level;
+				return _level;
             }
+			private set 
+			{
+				_level = value;
+			}
         }
 
         public event Action<CatStats> Destroyed;
-
+		public event Action<StateChange<int>> LevelChanged;
 
         protected override void OnPostInject()
         {
@@ -96,5 +88,28 @@ namespace Assets.GGJ2016.Scripts.Entities
             }
 
         }
+
+		private void UpdateLevel() {
+			var previousLevel = Level;
+			if (_points <= _appSettings.PointsToLevel1) {
+				Level = 0;
+			} 
+			else if (_points <= _appSettings.PointsToLevel2) {
+				Level = 0;
+			}
+			else if (_points <= _appSettings.PointsToLevel3) {
+				Level = 0;
+			}
+			else if (_points <= _appSettings.PointsToLevel4) {
+				Level = 0;
+			}
+			else {
+				Level = 5;
+			}
+
+			if (previousLevel != Level) {
+				LevelChanged.SafelyInvoke(new StateChange<int>(previousLevel, Level));
+			}
+		}
     }
 }
