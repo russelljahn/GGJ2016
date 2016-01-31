@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Linq;
 using Assets.OutOfTheBox.Scripts.Extensions;
+using Assets.OutOfTheBox.Scripts.Utils;
+using FlexiTweening;
+using FlexiTweening.Extensions;
 using Sense.Extensions;
 using Sense.Injection;
 using Sense.PropertyAttributes;
+using SVGImporter;
 using UnityEngine;
 
 namespace Assets.GGJ2016.Scripts.Entities
@@ -17,6 +21,10 @@ namespace Assets.GGJ2016.Scripts.Entities
         [SerializeField] private float _impactVelocityToBreak = 4.5f;
 
         [SerializeField] private Rigidbody2D _rigidbody2D;
+        [SerializeField] private SVGRenderer _renderer;
+
+        [SerializeField] private TweenSettings _fadeSettings;
+        private ITween _fadeTween;
 
         public float MaxHealth
         {
@@ -52,6 +60,7 @@ namespace Assets.GGJ2016.Scripts.Entities
         private void Awake()
         {
             _rigidbody2D = GetComponent<Rigidbody2D>();
+            _renderer = GetComponent<SVGRenderer>();
         }
 
         protected override void OnPostInject()
@@ -67,10 +76,15 @@ namespace Assets.GGJ2016.Scripts.Entities
 
         private void OnDestroyed(Destructable destructable)
         {
-            this.InvokeAtEndOfFrame(() =>
-            {
-                Destroy(gameObject);
-            });
+            _fadeTween.SafelyAbort();
+            _fadeTween = _renderer.TweenColor()
+                .To(ColorUtils.Colors.Translucent, _fadeSettings)
+                .OnComplete(
+                    () => {
+                        Destroy(gameObject);
+                    }
+                )
+                .Start();
         }
 
         private void OnCollisionEnter2D(Collision2D collision)

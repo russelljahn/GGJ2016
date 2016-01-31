@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using JetBrains.Annotations;
+using SVGImporter;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -135,6 +136,18 @@ namespace FlexiTweening.Extensions
                 });
         }
 
+        public static ITween<Color> TweenColor([NotNull] this SVGRenderer svgRenderer)
+        {
+            if (svgRenderer == null) throw new ArgumentNullException("svgRenderer");
+
+            return FlexiTween.From(svgRenderer.color)
+                .OnUpdate(color =>
+                {
+                    svgRenderer.color = color;
+                }
+            );
+        }
+
         public static ITween<float> TweenAlpha([NotNull] this Graphic graphic)
         {
             if (graphic == null) throw new ArgumentNullException("graphic");
@@ -154,6 +167,19 @@ namespace FlexiTweening.Extensions
 
             return FlexiTween.From(canvasGroup.alpha)
                 .OnUpdate(alpha => canvasGroup.alpha = alpha);
+        }
+
+        public static ITween<float> TweenAlpha([NotNull] this SVGRenderer svgRenderer)
+        {
+            if (svgRenderer == null) throw new ArgumentNullException("svgRenderer");
+
+            return FlexiTween.From(svgRenderer.color.a)
+                .OnUpdate(alpha =>
+                {
+                    var color = svgRenderer.color;
+                    svgRenderer.color = new Color(color.r, color.g, color.b, alpha);
+                }
+            );
         }
 
         public static ITween<float> TweenFill([NotNull] this Image image)
