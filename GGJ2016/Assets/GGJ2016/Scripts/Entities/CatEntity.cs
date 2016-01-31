@@ -43,6 +43,8 @@ namespace Assets.GGJ2016.Scripts.Entities
 		private Animator _currentAnimator;
 		private string _currentBgClipName;
 
+		[SerializeField] private SpriteRenderer _level0SpriteRenderer;
+		[SerializeField] private Animator _level0Animator;
 		[SerializeField] private SpriteRenderer _level1SpriteRenderer;
 		[SerializeField] private Animator _level1Animator;
 		[SerializeField] private SpriteRenderer _level2SpriteRenderer;
@@ -86,12 +88,12 @@ namespace Assets.GGJ2016.Scripts.Entities
 			_stats.LevelChanged += StatsOnLevelChanged;
 			_navigator.AppStateChanged += NavigatorOnAppStateChanged;
 
-			_currentBgClipName = AudioClips.BgLevel0;
+			_currentBgClipName = AudioClips.BgLevel1;
 			StatsOnLevelChanged(new StateChange<int>(_stats.Level, _stats.Level));
             State = StateType.Idle;
 
-			_audioManager.LoadClip(AudioClips.BgLevel0, 1.0f, 1.0f, true);
-			_audioManager.PlayTrack(AudioClips.BgLevel0);
+			_audioManager.LoadClip(_currentBgClipName, 1.0f, 1.0f, true);
+			_audioManager.PlayTrack(_currentBgClipName);
         }
 
         private void Update()
@@ -308,8 +310,8 @@ namespace Assets.GGJ2016.Scripts.Entities
 
 			switch (stateChange.Next) {
 				case 0:
-					_currentAnimator = _level1Animator;
-					_currentSpriteRenderer = _level1SpriteRenderer;
+					_currentAnimator = _level0Animator;
+					_currentSpriteRenderer = _level0SpriteRenderer;
 					_currentBgClipName = AudioClips.BgLevel0;
 					break;
 
@@ -356,6 +358,7 @@ namespace Assets.GGJ2016.Scripts.Entities
 				_audioManager.PlayTrackOneShot(AudioClips.SfxLevelDown);
 			}
 
+			_level0SpriteRenderer.gameObject.SetActive(false);
 			_level1SpriteRenderer.gameObject.SetActive(false);
 			_level2SpriteRenderer.gameObject.SetActive(false);
 			_level3SpriteRenderer.gameObject.SetActive(false);

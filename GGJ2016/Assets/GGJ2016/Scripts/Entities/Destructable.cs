@@ -110,7 +110,11 @@ namespace Assets.GGJ2016.Scripts.Entities
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
+			if (_rigidbody2D.IsNull()) {
+				return;
+			}
 			_rigidbody2D.isKinematic = false;
+
             var impactVelocity = _rigidbody2D.GetPointVelocity(collision.contacts.First().point);
             Debug.Log(impactVelocity);
             if (_breakByForce && impactVelocity.magnitude >= _impactVelocityToBreak)
