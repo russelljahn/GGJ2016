@@ -8,17 +8,17 @@ using UnityEngine;
 using Zenject;
 using AssemblyCSharp;
 using Assets.OutOfTheBox.Scripts.Navigation;
+using Assets.OutOfTheBox.Scripts.Audio;
 
 namespace Assets.GGJ2016.Scripts.Entities
 {
     [RequireComponent(typeof(Rigidbody2D))]
     public class CatEntity : InjectableBehaviour
     {
+		[Inject] private AudioManager _audioManager;
         [Inject] private Controller _controller;
 		[Inject] private CatStats _stats;
 		[Inject] private Navigator _navigator;
-
-		[SerializeField] private CollisionDetector _groundDetector;
 
         [SerializeField] private float _runMultiplier = 1.75f;
         [SerializeField] private float _jumpMultiplierX = 1.25f;
@@ -41,6 +41,7 @@ namespace Assets.GGJ2016.Scripts.Entities
         private Rigidbody2D _rigidbody2D;
 		private SpriteRenderer _currentSpriteRenderer;
 		private Animator _currentAnimator;
+		private string _currentBgClipName;
 
 		[SerializeField] private SpriteRenderer _level1SpriteRenderer;
 		[SerializeField] private Animator _level1Animator;
@@ -85,8 +86,12 @@ namespace Assets.GGJ2016.Scripts.Entities
 			_stats.LevelChanged += StatsOnLevelChanged;
 			_navigator.AppStateChanged += NavigatorOnAppStateChanged;
 
+			_currentBgClipName = AudioClips.BgLevel0;
 			StatsOnLevelChanged(new StateChange<int>(_stats.Level, _stats.Level));
             State = StateType.Idle;
+
+			_audioManager.LoadClip(AudioClips.BgLevel0, 1.0f, 1.0f, true);
+			_audioManager.PlayTrack(AudioClips.BgLevel0);
         }
 
         private void Update()
@@ -125,6 +130,8 @@ namespace Assets.GGJ2016.Scripts.Entities
 			{
 				case AppStates.Gameplay:
 					_rigidbody2D.isKinematic = false;
+					_audioManager.LoadClip(_currentBgClipName, 1.0f, 1.0f, true);
+					_audioManager.PlayTrack(_currentBgClipName);
 					break;
 
 				default:
@@ -213,7 +220,6 @@ namespace Assets.GGJ2016.Scripts.Entities
 
         void FixedUpdate()
         {
-			//_isGrounded = Physics2D.Raycast(transform.position, -Vector2.up, .15f, _mask.value) || _groundDetector.InContact;
 			_isGrounded = Physics2D.Raycast(transform.position, -Vector2.up, .15f, _mask.value);
             
 			var moveX = _controller.MoveX;
@@ -227,7 +233,6 @@ namespace Assets.GGJ2016.Scripts.Entities
                     _rigidbody2D.drag = 4;
                 else
                     _rigidbody2D.drag = 1;
-
             }
 
 			if (_controller.MoveX.IsApproximatelyZero()) {
@@ -237,7 +242,6 @@ namespace Assets.GGJ2016.Scripts.Entities
 			else {
 				_currentAnimator.speed = 1.0f;
 			}
-
 
 
             if (_controller.MoveX > 0)
@@ -269,35 +273,75 @@ namespace Assets.GGJ2016.Scripts.Entities
         }
 
 		private void StatsOnLevelChanged(StateChange<int> stateChange) {
+
+			var clipToFadeOut = "";
+
+			switch (stateChange.Previous) {
+				case 0:
+					clipToFadeOut = AudioClips.BgLevel0;
+					break;
+
+				case 1:
+					clipToFadeOut = AudioClips.BgLevel1;
+					break;
+
+				case 2:
+					clipToFadeOut = AudioClips.BgLevel2;
+					break;
+
+				case 3:
+					clipToFadeOut = AudioClips.BgLevel3;
+					break;
+
+				case 4:
+					clipToFadeOut = AudioClips.BgLevel4;
+					break;
+
+//				case 5:
+//					clipToFadeOut = AudioClips.BgLevel4;
+//					
+//					break;
+
+				default:
+					break;
+			}
+
 			switch (stateChange.Next) {
 				case 0:
 					_currentAnimator = _level1Animator;
 					_currentSpriteRenderer = _level1SpriteRenderer;
+					_currentBgClipName = AudioClips.BgLevel0;
 					break;
 
 				case 1:
 					_currentAnimator = _level1Animator;
 					_currentSpriteRenderer = _level1SpriteRenderer;
+					_currentBgClipName = AudioClips.BgLevel1;
+
 					break;
 
 				case 2:
-					_currentAnimator = _level1Animator;
-					_currentSpriteRenderer = _level1SpriteRenderer;
+					_currentAnimator = _level2Animator;
+					_currentSpriteRenderer = _level2SpriteRenderer;
+					_currentBgClipName = AudioClips.BgLevel2;
+
 					break;
 
 				case 3:
-					_currentAnimator = _level1Animator;
-					_currentSpriteRenderer = _level1SpriteRenderer;
+					_currentAnimator = _level3Animator;
+					_currentSpriteRenderer = _level3SpriteRenderer;
+					_currentBgClipName = AudioClips.BgLevel3;
 					break;
 
 				case 4:
-					_currentAnimator = _level1Animator;
-					_currentSpriteRenderer = _level1SpriteRenderer;
+					_currentAnimator = _level4Animator;
+					_currentSpriteRenderer = _level4SpriteRenderer;
+					_currentBgClipName = AudioClips.BgLevel4;
 					break;
 
 				case 5:
-					_currentAnimator = _level1Animator;
-					_currentSpriteRenderer = _level1SpriteRenderer;
+					_currentAnimator = _level5Animator;
+					_currentSpriteRenderer = _level5SpriteRenderer;
 					break;
 
 				default:
@@ -311,6 +355,12 @@ namespace Assets.GGJ2016.Scripts.Entities
 			_level5SpriteRenderer.gameObject.SetActive(false);
 			_currentSpriteRenderer.gameObject.SetActive(true);
 
+			_audioManager.LoadClip(_currentBgClipName, 0.0f, 1.0f, true);
+			_audioManager.PlayTrack(_currentBgClipName);
+
+			if (clipToFadeOut != _currentBgClipName) {
+				_audioManager.Crossfade(clipToFadeOut, _currentBgClipName, 0f, 1f);
+			}
 		}
     }
 }

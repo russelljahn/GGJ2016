@@ -87,6 +87,16 @@ namespace Assets.GGJ2016.Scripts.Entities
                 }
             }
 
+			if (Application.isEditor) {
+				if (Input.GetKeyDown(KeyCode.Minus)) {
+					Points -= 25f;
+					Debug.Log("Removing points");
+				}
+				if (Input.GetKeyDown(KeyCode.Equals)) {
+					Points += 25f;
+					Debug.Log("Adding points");
+				}
+			}
         }
 
 		private void UpdateLevel() {
@@ -95,13 +105,16 @@ namespace Assets.GGJ2016.Scripts.Entities
 				Level = 0;
 			} 
 			else if (_points <= _appSettings.PointsToLevel2) {
-				Level = 0;
+				Level = 1;
 			}
 			else if (_points <= _appSettings.PointsToLevel3) {
-				Level = 0;
+				Level = 2;
 			}
 			else if (_points <= _appSettings.PointsToLevel4) {
-				Level = 0;
+				Level = 3;
+			}
+			else if (_points <= _appSettings.PointsToLevel5) {
+				Level = 4;
 			}
 			else {
 				Level = 5;

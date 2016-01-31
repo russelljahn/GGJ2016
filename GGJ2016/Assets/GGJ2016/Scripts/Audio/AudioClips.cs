@@ -13,9 +13,13 @@ namespace Assets.OutOfTheBox.Scripts.Audio
     {
         [SerializeField] protected List<AudioClip> Clips = new List<AudioClip>();
 
-        public const string BgMusic1 = "BgMusic1";
-        public const string BgSeaWaves1 = "BgSeaWaves1";
-        public const string BgSeaWaves2 = "BgSeaWaves2";
+		public const string BgBabyRoom = "BgBabyRoom";
+		public const string BgGameOver = "BgGameOver";
+		public const string BgLevel0 = "BgLevel0";
+		public const string BgLevel1 = "BgLevel1";
+		public const string BgLevel2 = "BgLevel2";
+		public const string BgLevel3 = "BgLevel3";
+		public const string BgLevel4 = "BgLevel4";
 
         public const string SfxClick = "SfxClick";
 
@@ -46,11 +50,13 @@ namespace Assets.OutOfTheBox.Scripts.Audio
         {
             switch (clipName)
             {
-                case BgMusic1:
-                    return Bg1TrackId;
+			case BgLevel0:
+			case BgLevel2:
+			case BgLevel4:
+				return Bg1TrackId;
                     
-                case BgSeaWaves1:
-                case BgSeaWaves2:
+			case BgLevel1:
+			case BgLevel3:
                     return Bg2TrackId;
 
                 case SfxClick:
@@ -93,7 +99,7 @@ namespace Assets.OutOfTheBox.Scripts.Audio
         private static bool IsAudioFile(string filename)
         {
             filename = filename.ToLower();
-            return filename.EndsWith(".mp3") || filename.EndsWith(".wav");
+			return filename.EndsWith(".mp3") || filename.EndsWith(".wav") || filename.EndsWith(".ogg");
         }
 #endif
     }
