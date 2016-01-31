@@ -125,12 +125,8 @@ namespace Assets.OutOfTheBox.Scripts.Inputs
 
             _actionSet.Jump.AddDefaultBinding(InputControlType.Action1);
             _actionSet.Jump.AddDefaultBinding(Key.J);
-            // To avoid Unity switching to Display menu when pressing space during play mode in OSX Editor
-            if (Application.platform != RuntimePlatform.OSXEditor)
-            {
-                _actionSet.Jump.AddDefaultBinding(Key.Space);
-            }
-
+            _actionSet.Jump.AddDefaultBinding(Key.Space);
+            
             _actionSet.Run.AddDefaultBinding(InputControlType.Action3);
             _actionSet.Run.AddDefaultBinding(Key.Shift);
 
