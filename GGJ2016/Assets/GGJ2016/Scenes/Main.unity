@@ -96,6 +96,7 @@ GameObject:
   - 60: {fileID: 13290164}
   - 50: {fileID: 13290162}
   - 212: {fileID: 13290163}
+  - 114: {fileID: 13290165}
   m_Layer: 0
   m_Name: ob_livingroom_cushion_03
   m_TagString: Untagged
@@ -117,7 +118,7 @@ Rigidbody2D:
   m_GravityScale: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 2
   m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!212 &13290163
@@ -184,6 +185,44 @@ PolygonCollider2D:
       - {x: -0.216, y: 0.201}
       - {x: -0.19600001, y: 0.20300001}
       - {x: 0.19600001, y: 0.20300001}
+--- !u!114 &13290165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 13290161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 1
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 13290162}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 13290163}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &13290168
 Transform:
   m_ObjectHideFlags: 0
@@ -402,7 +441,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 30
+  m_RootOrder: 28
 --- !u!1 &82859061
 GameObject:
   m_ObjectHideFlags: 0
@@ -412,8 +451,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 82859063}
   - 212: {fileID: 82859062}
-  - 60: {fileID: 82859064}
   - 50: {fileID: 82859065}
+  - 58: {fileID: 82859064}
+  - 114: {fileID: 82859066}
   m_Layer: 0
   m_Name: ob_studyroom_clock
   m_TagString: Untagged
@@ -463,8 +503,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
---- !u!60 &82859064
-PolygonCollider2D:
+--- !u!58 &82859064
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -474,206 +514,9 @@ PolygonCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  m_Points:
-    m_Paths:
-    - - {x: 0.16900001, y: 0.024}
-      - {x: 0.18900001, y: 0.030000001}
-      - {x: 0.25300002, y: 0.066}
-      - {x: 0.28500003, y: 0.08800001}
-      - {x: 0.307, y: 0.106000006}
-      - {x: 0.34100002, y: 0.14}
-      - {x: 0.36100003, y: 0.162}
-      - {x: 0.38300002, y: 0.19000001}
-      - {x: 0.40300003, y: 0.21800001}
-      - {x: 0.44500002, y: 0.30200002}
-      - {x: 0.46100003, y: 0.36600003}
-      - {x: 0.46300003, y: 0.37600002}
-      - {x: 0.46500003, y: 0.388}
-      - {x: 0.46500003, y: 0.54200006}
-      - {x: 0.45900002, y: 0.572}
-      - {x: 0.453, y: 0.59400004}
-      - {x: 0.44500002, y: 0.62}
-      - {x: 0.43500003, y: 0.646}
-      - {x: 0.42100003, y: 0.67800003}
-      - {x: 0.39900002, y: 0.716}
-      - {x: 0.39100003, y: 0.72800004}
-      - {x: 0.36100003, y: 0.768}
-      - {x: 0.323, y: 0.808}
-      - {x: 0.277, y: 0.84800005}
-      - {x: 0.215, y: 0.88600004}
-      - {x: 0.185, y: 0.90000004}
-      - {x: 0.13900001, y: 0.91400003}
-      - {x: 0.091000006, y: 0.92600006}
-      - {x: 0.071, y: 0.93000007}
-      - {x: -0.065000005, y: 0.93000007}
-      - {x: -0.091000006, y: 0.92600006}
-      - {x: -0.123, y: 0.91800004}
-      - {x: -0.16100001, y: 0.906}
-      - {x: -0.18100001, y: 0.89800006}
-      - {x: -0.21700001, y: 0.882}
-      - {x: -0.261, y: 0.85600007}
-      - {x: -0.291, y: 0.83400005}
-      - {x: -0.31500003, y: 0.81200004}
-      - {x: -0.347, y: 0.78200006}
-      - {x: -0.37500003, y: 0.748}
-      - {x: -0.395, y: 0.71800005}
-      - {x: -0.40500003, y: 0.70400006}
-      - {x: -0.42700002, y: 0.66}
-      - {x: -0.441, y: 0.62600005}
-      - {x: -0.455, y: 0.588}
-      - {x: -0.46500003, y: 0.544}
-      - {x: -0.46500003, y: 0.4}
-      - {x: -0.46100003, y: 0.372}
-      - {x: -0.45700002, y: 0.354}
-      - {x: -0.441, y: 0.3}
-      - {x: -0.41700003, y: 0.246}
-      - {x: -0.40100002, y: 0.21800001}
-      - {x: -0.39100003, y: 0.202}
-      - {x: -0.36900002, y: 0.172}
-      - {x: -0.34300002, y: 0.142}
-      - {x: -0.303, y: 0.102000006}
-      - {x: -0.24300002, y: 0.062000003}
-      - {x: -0.23500001, y: 0.056}
-      - {x: -0.185, y: 0.032}
-      - {x: -0.165, y: 0.024}
-      - {x: -0.149, y: 0.018000001}
-      - {x: -0.115, y: 0.008}
-      - {x: -0.07700001, y: 0}
-      - {x: 0.07700001, y: 0}
-      - {x: 0.089, y: 0.002}
-      - {x: 0.117000006, y: 0.008}
-      - {x: 0.133, y: 0.012}
-    - - {x: -0.093, y: 0.058000002}
-      - {x: -0.15100001, y: 0.074}
-      - {x: -0.171, y: 0.08400001}
-      - {x: -0.19700001, y: 0.096}
-      - {x: -0.22500001, y: 0.116000004}
-      - {x: -0.26500002, y: 0.142}
-      - {x: -0.279, y: 0.15400001}
-      - {x: -0.30900002, y: 0.18200001}
-      - {x: -0.30900002, y: 0.18400002}
-      - {x: -0.32900003, y: 0.208}
-      - {x: -0.351, y: 0.24200001}
-      - {x: -0.379, y: 0.28800002}
-      - {x: -0.379, y: 0.29200003}
-      - {x: -0.395, y: 0.33200002}
-      - {x: -0.40300003, y: 0.37}
-      - {x: -0.409, y: 0.39000002}
-      - {x: -0.41300002, y: 0.41400003}
-      - {x: -0.41500002, y: 0.43600002}
-      - {x: -0.41700003, y: 0.49}
-      - {x: -0.41500002, y: 0.492}
-      - {x: -0.41300002, y: 0.514}
-      - {x: -0.40300003, y: 0.574}
-      - {x: -0.39900002, y: 0.582}
-      - {x: -0.38900003, y: 0.61200005}
-      - {x: -0.377, y: 0.63600004}
-      - {x: -0.379, y: 0.64000005}
-      - {x: -0.349, y: 0.69000006}
-      - {x: -0.323, y: 0.72800004}
-      - {x: -0.31100002, y: 0.74200004}
-      - {x: -0.279, y: 0.776}
-      - {x: -0.277, y: 0.776}
-      - {x: -0.25500003, y: 0.794}
-      - {x: -0.22100002, y: 0.818}
-      - {x: -0.20500001, y: 0.82600003}
-      - {x: -0.171, y: 0.846}
-      - {x: -0.16700001, y: 0.846}
-      - {x: -0.117000006, y: 0.864}
-      - {x: -0.063, y: 0.87600005}
-      - {x: -0.049000002, y: 0.878}
-      - {x: -0.027, y: 0.88000005}
-      - {x: 0.027, y: 0.882}
-      - {x: 0.029000001, y: 0.88000005}
-      - {x: 0.087000005, y: 0.87200004}
-      - {x: 0.119, y: 0.864}
-      - {x: 0.149, y: 0.85400003}
-      - {x: 0.17300001, y: 0.84200007}
-      - {x: 0.177, y: 0.84400004}
-      - {x: 0.24100001, y: 0.80600005}
-      - {x: 0.279, y: 0.776}
-      - {x: 0.31100002, y: 0.74600005}
-      - {x: 0.31100002, y: 0.744}
-      - {x: 0.34100002, y: 0.70400006}
-      - {x: 0.367, y: 0.66200006}
-      - {x: 0.38700002, y: 0.62200004}
-      - {x: 0.40300003, y: 0.574}
-      - {x: 0.41300002, y: 0.528}
-      - {x: 0.41500002, y: 0.512}
-      - {x: 0.41700003, y: 0.48800004}
-      - {x: 0.41900003, y: 0.44200003}
-      - {x: 0.41700003, y: 0.44000003}
-      - {x: 0.41500002, y: 0.416}
-      - {x: 0.409, y: 0.37800002}
-      - {x: 0.40500003, y: 0.36400002}
-      - {x: 0.39100003, y: 0.312}
-      - {x: 0.35700002, y: 0.246}
-      - {x: 0.35300002, y: 0.24200001}
-      - {x: 0.323, y: 0.19800001}
-      - {x: 0.30900002, y: 0.18200001}
-      - {x: 0.28300002, y: 0.15400001}
-      - {x: 0.28100002, y: 0.15400001}
-      - {x: 0.24100001, y: 0.124000005}
-      - {x: 0.19900002, y: 0.098000005}
-      - {x: 0.177, y: 0.086}
-      - {x: 0.125, y: 0.066}
-      - {x: 0.087000005, y: 0.056}
-      - {x: 0.049000002, y: 0.05}
-      - {x: 0.025, y: 0.048}
-      - {x: -0.021000002, y: 0.046000004}
-      - {x: -0.023000002, y: 0.048}
-    - - {x: -0.0050000004, y: 0.18}
-      - {x: -0.009000001, y: 0.17600001}
-      - {x: -0.009000001, y: 0.116000004}
-      - {x: -0.0050000004, y: 0.112}
-      - {x: 0.021000002, y: 0.112}
-      - {x: 0.025, y: 0.116000004}
-      - {x: 0.025, y: 0.17600001}
-      - {x: 0.021000002, y: 0.18}
-    - - {x: 0.231, y: 0.684}
-      - {x: 0.21900001, y: 0.688}
-      - {x: 0.18100001, y: 0.688}
-      - {x: 0.023000002, y: 0.522}
-      - {x: -0.007, y: 0.522}
-      - {x: -0.043, y: 0.52000004}
-      - {x: -0.21700001, y: 0.67600006}
-      - {x: -0.231, y: 0.65400004}
-      - {x: -0.231, y: 0.628}
-      - {x: -0.22900002, y: 0.62200004}
-      - {x: -0.069000006, y: 0.45600003}
-      - {x: -0.065000005, y: 0.416}
-      - {x: -0.055000003, y: 0.39600003}
-      - {x: -0.019000001, y: 0.374}
-      - {x: 0.041, y: 0.374}
-      - {x: 0.053000003, y: 0.37600002}
-      - {x: 0.09900001, y: 0.43800002}
-      - {x: 0.07300001, y: 0.48800004}
-      - {x: 0.231, y: 0.656}
-    - - {x: -0.34100002, y: 0.48200002}
-      - {x: -0.34500003, y: 0.47800002}
-      - {x: -0.34500003, y: 0.45200002}
-      - {x: -0.34100002, y: 0.448}
-      - {x: -0.28300002, y: 0.448}
-      - {x: -0.279, y: 0.45200002}
-      - {x: -0.279, y: 0.47800002}
-      - {x: -0.28300002, y: 0.48200002}
-    - - {x: 0.29900002, y: 0.49400002}
-      - {x: 0.29500002, y: 0.49}
-      - {x: 0.29500002, y: 0.46400002}
-      - {x: 0.29900002, y: 0.46}
-      - {x: 0.35700002, y: 0.46}
-      - {x: 0.36100003, y: 0.46400002}
-      - {x: 0.36100003, y: 0.49}
-      - {x: 0.35700002, y: 0.49400002}
-    - - {x: -0.019000001, y: 0.82000005}
-      - {x: -0.023000002, y: 0.81600004}
-      - {x: -0.023000002, y: 0.758}
-      - {x: -0.019000001, y: 0.754}
-      - {x: 0.007, y: 0.754}
-      - {x: 0.011000001, y: 0.758}
-      - {x: 0.011000001, y: 0.81600004}
-      - {x: 0.007, y: 0.82000005}
+  m_Offset: {x: 0, y: 0.465}
+  serializedVersion: 2
+  m_Radius: 0.465
 --- !u!50 &82859065
 Rigidbody2D:
   serializedVersion: 2
@@ -684,13 +527,51 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 0.3
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 2
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &82859066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 82859061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 1
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 82859065}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 82859062}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!1 &120510872
 GameObject:
   m_ObjectHideFlags: 0
@@ -702,6 +583,7 @@ GameObject:
   - 60: {fileID: 120510875}
   - 50: {fileID: 120510873}
   - 212: {fileID: 120510874}
+  - 114: {fileID: 120510876}
   m_Layer: 0
   m_Name: ob_livingroom_cushion_03
   m_TagString: Untagged
@@ -723,7 +605,7 @@ Rigidbody2D:
   m_GravityScale: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 2
   m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!212 &120510874
@@ -790,6 +672,44 @@ PolygonCollider2D:
       - {x: -0.216, y: 0.201}
       - {x: -0.19600001, y: 0.20300001}
       - {x: 0.19600001, y: 0.20300001}
+--- !u!114 &120510876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 120510872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 1
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 120510873}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 120510874}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &120510879
 Transform:
   m_ObjectHideFlags: 0
@@ -859,7 +779,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 23
+  m_RootOrder: 22
 --- !u!1 &123333952
 GameObject:
   m_ObjectHideFlags: 0
@@ -979,6 +899,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 146663454}
   - 212: {fileID: 146663453}
+  - 61: {fileID: 146663456}
+  - 50: {fileID: 146663455}
+  - 114: {fileID: 146663457}
   m_Layer: 0
   m_Name: ob_studyroom_CDcase
   m_TagString: Untagged
@@ -1028,6 +951,75 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 15
+--- !u!50 &146663455
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 146663452}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 2
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &146663456
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 146663452}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0.5149999}
+  serializedVersion: 2
+  m_Size: {x: 0.21, y: 1.0299999}
+--- !u!114 &146663457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 146663452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 1
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 146663455}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 146663453}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!1 &154702383
 GameObject:
   m_ObjectHideFlags: 0
@@ -1181,6 +1173,7 @@ GameObject:
   - 60: {fileID: 205885082}
   - 212: {fileID: 205885081}
   - 50: {fileID: 205885083}
+  - 114: {fileID: 205885084}
   m_Layer: 0
   m_Name: ob_livingroom_shoe_01 (1)
   m_TagString: Untagged
@@ -1266,6 +1259,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &205885084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 205885080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 205885083}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 205885081}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &205885086
 Transform:
   m_ObjectHideFlags: 0
@@ -1277,7 +1308,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 55
+  m_RootOrder: 51
 --- !u!1 &222616944
 GameObject:
   m_ObjectHideFlags: 0
@@ -1362,6 +1393,7 @@ GameObject:
   - 60: {fileID: 225570786}
   - 212: {fileID: 225570785}
   - 50: {fileID: 225570787}
+  - 114: {fileID: 225570788}
   m_Layer: 0
   m_Name: ob_bed_vase_02
   m_TagString: Untagged
@@ -1482,6 +1514,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &225570788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 225570784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 1
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 225570787}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 225570785}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &225570790
 Transform:
   m_ObjectHideFlags: 0
@@ -1493,7 +1563,7 @@ Transform:
   m_LocalScale: {x: 1.5696911, y: 1.5696911, z: 1.5696911}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 52
+  m_RootOrder: 48
 --- !u!1 &236681939
 GameObject:
   m_ObjectHideFlags: 0
@@ -1570,7 +1640,7 @@ Transform:
   m_LocalScale: {x: 2.3471835, y: 4.2081146, z: 2.1098278}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 66
+  m_RootOrder: 62
 --- !u!1 &239054458
 GameObject:
   m_ObjectHideFlags: 0
@@ -1647,7 +1717,7 @@ Transform:
   m_LocalScale: {x: 1.7375008, y: 19.905577, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 53
+  m_RootOrder: 49
 --- !u!1 &248067603
 GameObject:
   m_ObjectHideFlags: 0
@@ -1658,6 +1728,8 @@ GameObject:
   - 4: {fileID: 248067609}
   - 60: {fileID: 248067605}
   - 212: {fileID: 248067604}
+  - 50: {fileID: 248067606}
+  - 114: {fileID: 248067607}
   m_Layer: 0
   m_Name: ob_kitchen_table
   m_TagString: Untagged
@@ -1709,14 +1781,16 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
-    - - {x: -0.46900177, y: 0.40630615}
+    - - {x: -0.485878, y: -0.015606523}
       - {x: -0.45955276, y: 0.37273443}
       - {x: 0.42710114, y: 0.37273455}
       - {x: 0.44599533, y: 0.40630603}
       - {x: 0.66799927, y: 0.38740814}
-      - {x: 0.66800004, y: 0.416}
+      - {x: 0.65956116, y: 0.019401908}
+      - {x: 0.4471283, y: -0.001979351}
       - {x: 0.446, y: 0.416}
-      - {x: 0.44599915, y: 0.3984897}
+      - {x: 0.44599915, y: 0.010329962}
+      - {x: 0.46680832, y: 0.38304973}
       - {x: -0.45010376, y: 0.37959194}
       - {x: -0.469, y: 0.416}
       - {x: 0.82400006, y: 0.416}
@@ -1728,7 +1802,62 @@ PolygonCollider2D:
       - {x: -0.851, y: 0.43400002}
       - {x: -0.83500004, y: 0.41900003}
       - {x: -0.69100004, y: 0.416}
-      - {x: -0.6910019, y: 0.37795925}
+      - {x: -0.6825638, y: -0.0017622709}
+--- !u!50 &248067606
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 248067603}
+  m_UseAutoMass: 0
+  m_Mass: 3
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &248067607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 248067603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 248067606}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 248067604}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &248067609
 Transform:
   m_ObjectHideFlags: 0
@@ -1736,11 +1865,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 248067603}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -41.12, y: 1.23, z: 0}
+  m_LocalPosition: {x: -41.128, y: 1.222, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 50
+  m_RootOrder: 46
 --- !u!1 &285283379
 GameObject:
   m_ObjectHideFlags: 0
@@ -1817,7 +1946,7 @@ Transform:
   m_LocalScale: {x: 1.7375008, y: 19.905577, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 46
+  m_RootOrder: 42
 --- !u!1 &310247811
 GameObject:
   m_ObjectHideFlags: 0
@@ -1901,6 +2030,7 @@ GameObject:
   - 212: {fileID: 315415292}
   - 50: {fileID: 315415291}
   - 60: {fileID: 315415290}
+  - 114: {fileID: 315415294}
   m_Layer: 0
   m_Name: ob_studyroom_book (3)
   m_TagString: Untagged
@@ -1941,7 +2071,7 @@ Rigidbody2D:
   m_GravityScale: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 2
   m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!212 &315415292
@@ -1981,11 +2111,49 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 315415289}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.98, y: 2.07, z: 0}
+  m_LocalPosition: {x: 25.001, y: 2.096, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 19
+--- !u!114 &315415294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 315415289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 1
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 315415291}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 315415292}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!1 &316727322
 GameObject:
   m_ObjectHideFlags: 0
@@ -2081,6 +2249,186 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1287044646}
   m_RootOrder: 6
+--- !u!1 &319250534
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 319250535}
+  - 60: {fileID: 319250538}
+  - 212: {fileID: 319250537}
+  - 50: {fileID: 319250536}
+  - 114: {fileID: 319250539}
+  m_Layer: 0
+  m_Name: ob_bed_vase_01 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &319250535
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 319250534}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.66, y: 3.44, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1287044646}
+  m_RootOrder: 93
+--- !u!50 &319250536
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 319250534}
+  m_UseAutoMass: 0
+  m_Mass: 0.2
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!212 &319250537
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 319250534}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 28f0f515a72ca04479651dddc60ad2ee, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+--- !u!60 &319250538
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 319250534}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: 0.081, y: 0.002}
+      - {x: 0.119, y: 0.018000001}
+      - {x: 0.148, y: 0.047000002}
+      - {x: 0.164, y: 0.085}
+      - {x: 0.16600001, y: 0.106000006}
+      - {x: 0.164, y: 0.128}
+      - {x: 0.148, y: 0.16600001}
+      - {x: 0.119, y: 0.19500001}
+      - {x: 0.081, y: 0.21100001}
+      - {x: 0.09200001, y: 0.23700002}
+      - {x: 0.094000004, y: 0.259}
+      - {x: 0.09200001, y: 0.282}
+      - {x: 0.078, y: 0.314}
+      - {x: 0.067, y: 0.31800002}
+      - {x: 0.056, y: 0.314}
+      - {x: 0.042000003, y: 0.282}
+      - {x: 0.040000003, y: 0.259}
+      - {x: 0.042000003, y: 0.23700002}
+      - {x: 0.053000003, y: 0.21300001}
+      - {x: 0.012, y: 0.21300001}
+      - {x: 0.023000002, y: 0.23700002}
+      - {x: 0.025, y: 0.259}
+      - {x: 0.023000002, y: 0.282}
+      - {x: 0.009000001, y: 0.314}
+      - {x: -0.001, y: 0.31800002}
+      - {x: -0.012, y: 0.314}
+      - {x: -0.026, y: 0.282}
+      - {x: -0.028, y: 0.259}
+      - {x: -0.026, y: 0.23700002}
+      - {x: -0.015000001, y: 0.21300001}
+      - {x: -0.053000003, y: 0.21300001}
+      - {x: -0.042000003, y: 0.23700002}
+      - {x: -0.040000003, y: 0.259}
+      - {x: -0.042000003, y: 0.282}
+      - {x: -0.056, y: 0.314}
+      - {x: -0.067, y: 0.31800002}
+      - {x: -0.078, y: 0.314}
+      - {x: -0.09200001, y: 0.282}
+      - {x: -0.094000004, y: 0.259}
+      - {x: -0.09200001, y: 0.23700002}
+      - {x: -0.081, y: 0.21100001}
+      - {x: -0.119, y: 0.19500001}
+      - {x: -0.148, y: 0.16600001}
+      - {x: -0.164, y: 0.128}
+      - {x: -0.16600001, y: 0.106000006}
+      - {x: -0.164, y: 0.085}
+      - {x: -0.148, y: 0.047000002}
+      - {x: -0.119, y: 0.018000001}
+      - {x: -0.081, y: 0.002}
+      - {x: 0.059000004, y: 0}
+--- !u!114 &319250539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 319250534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 319250536}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 319250537}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!1 &354395383
 GameObject:
   m_ObjectHideFlags: 0
@@ -2138,7 +2486,7 @@ Transform:
   m_LocalScale: {x: 7.2183914, y: 1.9056599, z: 7.2183843}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 20
+  m_RootOrder: 19
 --- !u!1 &402567180
 GameObject:
   m_ObjectHideFlags: 0
@@ -2244,6 +2592,8 @@ GameObject:
   - 4: {fileID: 403966343}
   - 60: {fileID: 403966339}
   - 212: {fileID: 403966338}
+  - 50: {fileID: 403966340}
+  - 114: {fileID: 403966341}
   m_Layer: 0
   m_Name: ob_kitchen_chair
   m_TagString: Untagged
@@ -2276,7 +2626,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 5015f871efd72a14ca27f66196575111, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2318,6 +2668,61 @@ PolygonCollider2D:
       - {x: -0.14, y: 0.513}
       - {x: 0.11800001, y: 0.513}
       - {x: 0.11800001, y: 0}
+--- !u!50 &403966340
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 403966337}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &403966341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 403966337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 403966340}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 403966338}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &403966343
 Transform:
   m_ObjectHideFlags: 0
@@ -2329,7 +2734,7 @@ Transform:
   m_LocalScale: {x: 0.79585785, y: 0.79585785, z: 0.79585785}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 74
+  m_RootOrder: 70
 --- !u!4 &431969804 stripped
 Transform:
   m_PrefabParentObject: {fileID: 419526, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34, type: 2}
@@ -2410,7 +2815,7 @@ Transform:
   m_LocalScale: {x: 1.7375008, y: 19.905577, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 58
+  m_RootOrder: 54
 --- !u!1 &464241335
 GameObject:
   m_ObjectHideFlags: 0
@@ -2422,6 +2827,7 @@ GameObject:
   - 60: {fileID: 464241337}
   - 212: {fileID: 464241336}
   - 50: {fileID: 464241338}
+  - 114: {fileID: 464241339}
   m_Layer: 0
   m_Name: ob_kitchen_wine
   m_TagString: Untagged
@@ -2508,6 +2914,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &464241339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 464241335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 464241338}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 464241336}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &464241341
 Transform:
   m_ObjectHideFlags: 0
@@ -2519,7 +2963,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 87
+  m_RootOrder: 82
 --- !u!1 &465576072
 GameObject:
   m_ObjectHideFlags: 0
@@ -2554,83 +2998,6 @@ Transform:
   - {fileID: 2068326683}
   m_Father: {fileID: 735390767}
   m_RootOrder: 0
---- !u!1 &474891350
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 474891356}
-  - 60: {fileID: 474891352}
-  - 212: {fileID: 474891351}
-  m_Layer: 0
-  m_Name: ob_bed_book_03 (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &474891351
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 474891350}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_ReflectionProbeUsage: 0
-  m_ProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3dfd6eefc16c97c429fe1a39b62739e8, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
---- !u!60 &474891352
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 474891350}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  m_Points:
-    m_Paths:
-    - - {x: 0.032, y: 0}
-      - {x: -0.032, y: 0}
-      - {x: -0.032, y: 0.23}
-      - {x: 0.032, y: 0.23}
---- !u!4 &474891356
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 474891350}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -40.78, y: 1.23, z: 0}
-  m_LocalScale: {x: 1.7375008, y: 19.905577, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1287044646}
-  m_RootOrder: 24
 --- !u!1 &480449933
 GameObject:
   m_ObjectHideFlags: 0
@@ -2640,6 +3007,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 480449935}
   - 212: {fileID: 480449934}
+  - 61: {fileID: 480449937}
+  - 50: {fileID: 480449936}
+  - 114: {fileID: 480449938}
   m_Layer: 0
   m_Name: ob_kitchen_microwave
   m_TagString: Untagged
@@ -2689,6 +3059,75 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14
+--- !u!50 &480449936
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 480449933}
+  m_UseAutoMass: 0
+  m_Mass: 2
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &480449937
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 480449933}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0.22}
+  serializedVersion: 2
+  m_Size: {x: 0.83, y: 0.44}
+--- !u!114 &480449938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 480449933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 480449936}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 480449934}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!1 &494601662
 GameObject:
   m_ObjectHideFlags: 0
@@ -2770,7 +3209,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 19
+  m_RootOrder: 18
 --- !u!1 &501625310
 GameObject:
   m_ObjectHideFlags: 0
@@ -2892,6 +3331,7 @@ GameObject:
   - 60: {fileID: 505986683}
   - 212: {fileID: 505986682}
   - 50: {fileID: 505986684}
+  - 114: {fileID: 505986685}
   m_Layer: 0
   m_Name: ob_bathroom_bottle_02 (2)
   m_TagString: Untagged
@@ -2985,6 +3425,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &505986685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 505986681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 505986684}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 505986682}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &505986687
 Transform:
   m_ObjectHideFlags: 0
@@ -2996,7 +3474,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 69
+  m_RootOrder: 65
 --- !u!1 &522427840
 GameObject:
   m_ObjectHideFlags: 0
@@ -3078,7 +3556,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 56
+  m_RootOrder: 52
 --- !u!1 &551978514
 GameObject:
   m_ObjectHideFlags: 0
@@ -3088,6 +3566,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 551978520}
   - 212: {fileID: 551978515}
+  - 50: {fileID: 551978517}
+  - 60: {fileID: 551978516}
   m_Layer: 0
   m_Name: ob_livingroom_tv table
   m_TagString: Untagged
@@ -3125,6 +3605,41 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!60 &551978516
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 551978514}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: 0.96000004, y: 0}
+      - {x: 0.96000004, y: 0.42000002}
+      - {x: -0.96000004, y: 0.42000002}
+      - {x: -0.96000004, y: 0}
+--- !u!50 &551978517
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 551978514}
+  m_UseAutoMass: 0
+  m_Mass: 5
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!4 &551978520
 Transform:
   m_ObjectHideFlags: 0
@@ -3136,7 +3651,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 37
+  m_RootOrder: 35
 --- !u!1 &564651124
 GameObject:
   m_ObjectHideFlags: 0
@@ -3148,6 +3663,7 @@ GameObject:
   - 60: {fileID: 564651126}
   - 212: {fileID: 564651125}
   - 50: {fileID: 564651127}
+  - 114: {fileID: 564651128}
   m_Layer: 0
   m_Name: ob_kitchen_glass (1)
   m_TagString: Untagged
@@ -3231,6 +3747,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &564651128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 564651124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 564651127}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 564651125}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &564651130
 Transform:
   m_ObjectHideFlags: 0
@@ -3242,7 +3796,7 @@ Transform:
   m_LocalScale: {x: 1.1424264, y: 1.1424264, z: 1.1424264}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 85
+  m_RootOrder: 81
 --- !u!1 &581200303
 GameObject:
   m_ObjectHideFlags: 0
@@ -3253,6 +3807,7 @@ GameObject:
   - 4: {fileID: 581200309}
   - 60: {fileID: 581200305}
   - 212: {fileID: 581200304}
+  - 114: {fileID: 581200306}
   m_Layer: 0
   m_Name: ob_kitchen_table
   m_TagString: Untagged
@@ -3324,6 +3879,44 @@ PolygonCollider2D:
       - {x: -0.83500004, y: 0.41900003}
       - {x: -0.69100004, y: 0.416}
       - {x: -0.69100004, y: 0}
+--- !u!114 &581200306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 581200303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 0}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 581200304}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &581200309
 Transform:
   m_ObjectHideFlags: 0
@@ -3335,7 +3928,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 83
+  m_RootOrder: 79
 --- !u!1 &598627203
 GameObject:
   m_ObjectHideFlags: 0
@@ -3345,6 +3938,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 598627209}
   - 212: {fileID: 598627204}
+  - 60: {fileID: 598627206}
+  - 50: {fileID: 598627205}
+  - 114: {fileID: 598627207}
   m_Layer: 0
   m_Name: ob_bathroom_bathtub
   m_TagString: Untagged
@@ -3382,6 +3978,176 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!50 &598627205
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 598627203}
+  m_UseAutoMass: 0
+  m_Mass: 5
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!60 &598627206
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 598627203}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: -0.507, y: 0.080000006}
+      - {x: 0.42900002, y: 0.068}
+      - {x: 0.46500003, y: 0.068}
+      - {x: 0.46500003, y: 0.026}
+      - {x: 0.467, y: 0.020000001}
+      - {x: 0.521, y: 0.022000002}
+      - {x: 0.565, y: 0.028}
+      - {x: 0.565, y: 0}
+      - {x: 0.703, y: 0}
+      - {x: 0.70100003, y: 0.006}
+      - {x: 0.68700004, y: 0.016}
+      - {x: 0.65500003, y: 0.048}
+      - {x: 0.62700003, y: 0.086}
+      - {x: 0.61700004, y: 0.11800001}
+      - {x: 0.657, y: 0.13000001}
+      - {x: 0.71900004, y: 0.16600001}
+      - {x: 0.74300003, y: 0.18200001}
+      - {x: 0.77500004, y: 0.208}
+      - {x: 0.81900007, y: 0.254}
+      - {x: 0.84900004, y: 0.294}
+      - {x: 0.88100004, y: 0.356}
+      - {x: 0.89500004, y: 0.416}
+      - {x: 0.901, y: 0.49}
+      - {x: 0.9250001, y: 0.508}
+      - {x: 0.9250001, y: 0.572}
+      - {x: 0.9110001, y: 0.59000003}
+      - {x: 0.887, y: 0.6}
+      - {x: -0.703, y: 0.59800005}
+      - {x: -0.703, y: 1.118}
+      - {x: -0.70100003, y: 1.12}
+      - {x: -0.70100003, y: 1.348}
+      - {x: -0.68500006, y: 1.4100001}
+      - {x: -0.66300005, y: 1.4460001}
+      - {x: -0.61700004, y: 1.4840001}
+      - {x: -0.58100003, y: 1.5000001}
+      - {x: -0.517, y: 1.5100001}
+      - {x: -0.46100003, y: 1.498}
+      - {x: -0.40300003, y: 1.4560001}
+      - {x: -0.37100002, y: 1.394}
+      - {x: -0.363, y: 1.3460001}
+      - {x: -0.41900003, y: 1.2900001}
+      - {x: -0.41300002, y: 1.2800001}
+      - {x: -0.27100003, y: 1.276}
+      - {x: -0.26900002, y: 1.2820001}
+      - {x: -0.29700002, y: 1.3180001}
+      - {x: -0.305, y: 1.3280001}
+      - {x: -0.317, y: 1.366}
+      - {x: -0.321, y: 1.3900001}
+      - {x: -0.335, y: 1.4380001}
+      - {x: -0.347, y: 1.46}
+      - {x: -0.381, y: 1.498}
+      - {x: -0.42100003, y: 1.5280001}
+      - {x: -0.44500002, y: 1.5380001}
+      - {x: -0.47500002, y: 1.5460001}
+      - {x: -0.49300003, y: 1.5500001}
+      - {x: -0.595, y: 1.5500001}
+      - {x: -0.63900006, y: 1.536}
+      - {x: -0.683, y: 1.5100001}
+      - {x: -0.70100003, y: 1.498}
+      - {x: -0.74700004, y: 1.4480001}
+      - {x: -0.781, y: 1.3840001}
+      - {x: -0.78900003, y: 1.35}
+      - {x: -0.79300004, y: 1.3340001}
+      - {x: -0.795, y: 1.3240001}
+      - {x: -0.795, y: 0.59800005}
+      - {x: -0.83900005, y: 0.59800005}
+      - {x: -0.869, y: 0.574}
+      - {x: -0.87500006, y: 0.558}
+      - {x: -0.87500006, y: 0.52400005}
+      - {x: -0.869, y: 0.51000005}
+      - {x: -0.83900005, y: 0.48600003}
+      - {x: -0.827, y: 0.4}
+      - {x: -0.809, y: 0.326}
+      - {x: -0.78900003, y: 0.27800003}
+      - {x: -0.771, y: 0.23400001}
+      - {x: -0.72900003, y: 0.17600001}
+      - {x: -0.70500004, y: 0.156}
+      - {x: -0.68700004, y: 0.142}
+      - {x: -0.735, y: 0.032}
+      - {x: -0.75500005, y: 0.002}
+      - {x: -0.75500005, y: 0}
+      - {x: -0.63500005, y: 0}
+      - {x: -0.63500005, y: 0.042000003}
+      - {x: -0.545, y: 0.042000003}
+    - - {x: -0.7838354, y: 1.1131649}
+      - {x: -0.75961876, y: 1.0700562}
+      - {x: -0.74250984, y: 0.9544337}
+      - {x: -0.78894424, y: 0.76534915}
+      - {x: -0.7907829, y: 0.873703}
+      - {x: -0.7921896, y: 0.9681368}
+      - {x: -0.81500006, y: 0.96000004}
+      - {x: -0.7882681, y: 1.0561368}
+    - - {x: -0.70543385, y: 1.0390284}
+      - {x: -0.69751453, y: 0.95970273}
+      - {x: -0.7089195, y: 0.91710854}
+      - {x: -0.6980276, y: 0.8166747}
+      - {x: -0.7010555, y: 0.82237744}
+      - {x: -0.72897625, y: 0.77134943}
+      - {x: -0.70897675, y: 0.8492689}
+      - {x: -0.7032738, y: 1.0241365}
+      - {x: -0.71416473, y: 1.1188676}
+--- !u!114 &598627207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 598627203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 598627205}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 598627204}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &598627209
 Transform:
   m_ObjectHideFlags: 0
@@ -3393,7 +4159,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 62
+  m_RootOrder: 58
 --- !u!1 &606148584
 GameObject:
   m_ObjectHideFlags: 0
@@ -3405,6 +4171,7 @@ GameObject:
   - 60: {fileID: 606148586}
   - 212: {fileID: 606148585}
   - 50: {fileID: 606148587}
+  - 114: {fileID: 606148588}
   m_Layer: 0
   m_Name: ob_livingroom_fruit (1)
   m_TagString: Untagged
@@ -3450,7 +4217,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 606148584}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 101a8b6c30def4199b64ae9bfe5f655c, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
@@ -3486,13 +4253,51 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 0.5
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &606148588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 606148584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 1
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 606148587}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 606148585}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &606148590
 Transform:
   m_ObjectHideFlags: 0
@@ -3504,7 +4309,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 93
+  m_RootOrder: 88
 --- !u!1 &618549179
 GameObject:
   m_ObjectHideFlags: 0
@@ -3562,7 +4367,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 41
+  m_RootOrder: 39
 --- !u!1 &633820010
 GameObject:
   m_ObjectHideFlags: 0
@@ -3605,7 +4410,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 1ae9d0448a99974489106c6a96180f12, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3643,7 +4448,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 94
+  m_RootOrder: 89
 --- !u!1 &643902086
 GameObject:
   m_ObjectHideFlags: 0
@@ -3655,6 +4460,7 @@ GameObject:
   - 212: {fileID: 643902087}
   - 50: {fileID: 643902090}
   - 60: {fileID: 643902089}
+  - 114: {fileID: 643902091}
   m_Layer: 0
   m_Name: ob_studyroom_lamp
   m_TagString: Untagged
@@ -3784,9 +4590,47 @@ Rigidbody2D:
   m_GravityScale: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 2
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &643902091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 643902086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 1
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 643902090}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 643902087}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!1 &649452781
 GameObject:
   m_ObjectHideFlags: 0
@@ -3868,7 +4712,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 36
+  m_RootOrder: 34
 --- !u!1 &661033998
 GameObject:
   m_ObjectHideFlags: 0
@@ -3959,9 +4803,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 665714216}
-  - 60: {fileID: 665714212}
   - 212: {fileID: 665714211}
   - 50: {fileID: 665714213}
+  - 61: {fileID: 665714212}
+  - 114: {fileID: 665714214}
   m_Layer: 0
   m_Name: ob_kitchen_spoon_01
   m_TagString: Untagged
@@ -3999,8 +4844,8 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!60 &665714212
-PolygonCollider2D:
+--- !u!61 &665714212
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -4010,23 +4855,9 @@ PolygonCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  m_Points:
-    m_Paths:
-    - - {x: 0.040000003, y: 0.061000004}
-      - {x: 0.014, y: 0.093}
-      - {x: 0.004, y: 0.27800003}
-      - {x: 0.012, y: 0.27800003}
-      - {x: 0.012, y: 0.34300002}
-      - {x: -0.012, y: 0.34300002}
-      - {x: -0.014, y: 0.27800003}
-      - {x: -0.008, y: 0.27800003}
-      - {x: -0.004, y: 0.091000006}
-      - {x: -0.037, y: 0.068}
-      - {x: -0.040000003, y: 0.063}
-      - {x: -0.043, y: 0.049000002}
-      - {x: -0.043, y: 0}
-      - {x: 0.043, y: 0}
+  m_Offset: {x: 0, y: 0.17499995}
+  serializedVersion: 2
+  m_Size: {x: 0.038762912, y: 0.35000002}
 --- !u!50 &665714213
 Rigidbody2D:
   serializedVersion: 2
@@ -4044,6 +4875,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &665714214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 665714210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 1
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 665714213}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 665714211}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &665714216
 Transform:
   m_ObjectHideFlags: 0
@@ -4055,7 +4924,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 81
+  m_RootOrder: 77
 --- !u!1 &693556355
 GameObject:
   m_ObjectHideFlags: 0
@@ -4066,6 +4935,8 @@ GameObject:
   - 4: {fileID: 693556357}
   - 212: {fileID: 693556356}
   - 60: {fileID: 693556358}
+  - 114: {fileID: 693556360}
+  - 50: {fileID: 693556359}
   m_Layer: 0
   m_Name: ob_studyroom_bed
   m_TagString: Untagged
@@ -4110,7 +4981,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 693556355}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.57, y: 1.23, z: 0}
+  m_LocalPosition: {x: 15.513, y: 1.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4129,11 +5000,12 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
-    - - {x: 1.0753899, y: 0.79300165}
+    - - {x: -1.1548481, y: 0.73630047}
       - {x: 1.0820007, y: 0.82645845}
       - {x: 1.1967754, y: 0.83307004}
-      - {x: 1.2140001, y: 0.83800006}
-      - {x: 1.2160001, y: 0.84000003}
+      - {x: 1.2045507, y: 0.006385684}
+      - {x: 1.0931482, y: 0.0083857775}
+      - {x: -1.1431923, y: 0.024767518}
       - {x: 1.218, y: 0.91600007}
       - {x: 1.284, y: 0.95000005}
       - {x: 1.3100001, y: 0.984}
@@ -4170,13 +5042,69 @@ PolygonCollider2D:
       - {x: -1.2340001, y: 1.25}
       - {x: -1.2340001, y: 1.222}
       - {x: -1.2320001, y: 0.84800005}
-      - {x: -1.23, y: 0.47200003}
+      - {x: -1.2503033, y: 0.79686904}
       - {x: -1.2279997, y: 0.87156487}
       - {x: -1.2259998, y: 0.81984663}
-      - {x: -1.1066122, y: 0.81323504}
+      - {x: -1.2105646, y: 0.019421339}
+      - {x: -1.107214, y: 0.009817243}
       - {x: -1.1066122, y: 0.8182051}
       - {x: -0.5561657, y: 0.7837784}
       - {x: -0.5653887, y: 0.79300165}
+--- !u!50 &693556359
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 693556355}
+  m_UseAutoMass: 0
+  m_Mass: 8
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &693556360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 693556355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 0}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 693556356}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!1 &711217468
 GameObject:
   m_ObjectHideFlags: 0
@@ -4258,7 +5186,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 25
+  m_RootOrder: 23
 --- !u!1 &718620174
 GameObject:
   m_ObjectHideFlags: 0
@@ -4515,6 +5443,7 @@ GameObject:
   - 60: {fileID: 769692058}
   - 212: {fileID: 769692057}
   - 50: {fileID: 769692059}
+  - 114: {fileID: 769692060}
   m_Layer: 0
   m_Name: ob_bed_lamp_01 (1)
   m_TagString: Untagged
@@ -4609,6 +5538,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &769692060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 769692056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 769692059}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 769692057}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &769692062
 Transform:
   m_ObjectHideFlags: 0
@@ -4620,7 +5587,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 51
+  m_RootOrder: 47
 --- !u!1 &797015136
 GameObject:
   m_ObjectHideFlags: 0
@@ -4632,6 +5599,7 @@ GameObject:
   - 212: {fileID: 797015137}
   - 50: {fileID: 797015140}
   - 60: {fileID: 797015139}
+  - 114: {fileID: 797015141}
   m_Layer: 0
   m_Name: ob_studyroom_cafe
   m_TagString: Untagged
@@ -4753,6 +5721,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &797015141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 797015136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 797015140}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 797015137}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!1 &810007709
 GameObject:
   m_ObjectHideFlags: 0
@@ -4847,7 +5853,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 31
+  m_RootOrder: 29
 --- !u!1 &842012377
 GameObject:
   m_ObjectHideFlags: 0
@@ -4856,9 +5862,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 842012383}
-  - 60: {fileID: 842012379}
   - 212: {fileID: 842012378}
   - 50: {fileID: 842012380}
+  - 61: {fileID: 842012379}
+  - 114: {fileID: 842012381}
   m_Layer: 0
   m_Name: ob_kitchen_cooker
   m_TagString: Untagged
@@ -4896,8 +5903,8 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!60 &842012379
-PolygonCollider2D:
+--- !u!61 &842012379
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -4907,57 +5914,9 @@ PolygonCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  m_Points:
-    m_Paths:
-    - - {x: 0.079, y: 0.009000001}
-      - {x: 0.09900001, y: 0.030000001}
-      - {x: 0.102000006, y: 0.046000004}
-      - {x: 0.102000006, y: 0.142}
-      - {x: 0.09900001, y: 0.157}
-      - {x: 0.078, y: 0.178}
-      - {x: 0.066, y: 0.18100001}
-      - {x: 0.108, y: 0.18100001}
-      - {x: 0.098000005, y: 0.201}
-      - {x: 0.066, y: 0.23300001}
-      - {x: 0.006, y: 0.261}
-      - {x: -0.030000001, y: 0.27}
-      - {x: -0.040000003, y: 0.29000002}
-      - {x: -0.063, y: 0.29900002}
-      - {x: -0.081, y: 0.294}
-      - {x: -0.09900001, y: 0.273}
-      - {x: -0.081, y: 0.273}
-      - {x: -0.079, y: 0.28}
-      - {x: -0.066, y: 0.284}
-      - {x: -0.045, y: 0.272}
-      - {x: -0.136, y: 0.264}
-      - {x: -0.186, y: 0.24300002}
-      - {x: -0.23, y: 0.19500001}
-      - {x: -0.23500001, y: 0.18100001}
-      - {x: -0.20500001, y: 0.18100001}
-      - {x: -0.216, y: 0.178}
-      - {x: -0.238, y: 0.157}
-      - {x: -0.24100001, y: 0.142}
-      - {x: -0.24100001, y: 0.15}
-      - {x: -0.282, y: 0.15}
-      - {x: -0.24100001, y: 0.115}
-      - {x: -0.238, y: 0.030000001}
-      - {x: -0.216, y: 0.009000001}
-      - {x: -0.201, y: 0.006}
-      - {x: 0.063, y: 0.006}
-    - - {x: 0.14400001, y: 0.15}
-      - {x: 0.10300001, y: 0.15}
-      - {x: 0.10300001, y: 0.124000005}
-    - - {x: 0.26500002, y: 0.095000006}
-      - {x: 0.27600002, y: 0.106000006}
-      - {x: 0.27800003, y: 0.115}
-      - {x: 0.26500002, y: 0.134}
-      - {x: 0.257, y: 0.136}
-      - {x: 0.238, y: 0.123}
-      - {x: 0.23600002, y: 0.115}
-      - {x: 0.238, y: 0.106000006}
-      - {x: 0.24900001, y: 0.095000006}
-      - {x: 0.257, y: 0.094000004}
+  m_Offset: {x: -0.07147482, y: 0.12725806}
+  serializedVersion: 2
+  m_Size: {x: 0.3100917, y: 0.21293083}
 --- !u!50 &842012380
 Rigidbody2D:
   serializedVersion: 2
@@ -4975,6 +5934,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &842012381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 842012377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 842012380}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 842012378}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &842012383
 Transform:
   m_ObjectHideFlags: 0
@@ -4982,11 +5979,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 842012377}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.334, y: 2.231, z: 0}
+  m_LocalPosition: {x: 0.34, y: 2.223, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 75
+  m_RootOrder: 71
 --- !u!1 &853467781
 GameObject:
   m_ObjectHideFlags: 0
@@ -5081,7 +6078,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 29
+  m_RootOrder: 27
 --- !u!1 &868983133
 GameObject:
   m_ObjectHideFlags: 0
@@ -5093,6 +6090,7 @@ GameObject:
   - 60: {fileID: 868983135}
   - 212: {fileID: 868983134}
   - 50: {fileID: 868983136}
+  - 114: {fileID: 868983137}
   m_Layer: 0
   m_Name: ob_bathroom_bottle_02 (1)
   m_TagString: Untagged
@@ -5186,6 +6184,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &868983137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 868983133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 868983136}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 868983134}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &868983139
 Transform:
   m_ObjectHideFlags: 0
@@ -5197,7 +6233,7 @@ Transform:
   m_LocalScale: {x: 1.4482841, y: 1.4482841, z: 1.4482841}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 68
+  m_RootOrder: 64
 --- !u!1001 &880608629
 Prefab:
   m_ObjectHideFlags: 0
@@ -5293,6 +6329,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 888767302}
   - 212: {fileID: 888767301}
+  - 50: {fileID: 888767304}
+  - 60: {fileID: 888767303}
+  - 114: {fileID: 888767305}
   m_Layer: 0
   m_Name: ob_studyroom_desk
   m_TagString: Untagged
@@ -5342,6 +6381,83 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!60 &888767303
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 888767300}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: -1.12, y: 1.07}
+      - {x: -1.109518, y: 0.04192531}
+      - {x: -0.44056702, y: 0.04591453}
+      - {x: -0.4084015, y: 0.96235967}
+      - {x: 1.0043392, y: 0.93283844}
+      - {x: 1.0157623, y: 0.019741058}
+      - {x: 1.1304836, y: 0.020962596}
+      - {x: 1.12, y: 1.07}
+--- !u!50 &888767304
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 888767300}
+  m_UseAutoMass: 0
+  m_Mass: 2
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &888767305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 888767300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 888767304}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 888767301}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!1 &896695652
 GameObject:
   m_ObjectHideFlags: 0
@@ -5352,6 +6468,8 @@ GameObject:
   - 4: {fileID: 896695658}
   - 60: {fileID: 896695654}
   - 212: {fileID: 896695653}
+  - 50: {fileID: 896695655}
+  - 114: {fileID: 896695656}
   m_Layer: 0
   m_Name: ob_bathroom_toilet
   m_TagString: Untagged
@@ -5440,6 +6558,61 @@ PolygonCollider2D:
       - {x: -0.24800001, y: 0.010000001}
       - {x: -0.264, y: 0}
       - {x: 0.238, y: 0}
+--- !u!50 &896695655
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 896695652}
+  m_UseAutoMass: 0
+  m_Mass: 8
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &896695656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 896695652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 896695655}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 896695653}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &896695658
 Transform:
   m_ObjectHideFlags: 0
@@ -5451,7 +6624,7 @@ Transform:
   m_LocalScale: {x: 0.82, y: 0.82, z: 0.82}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 60
+  m_RootOrder: 56
 --- !u!1 &914126206
 GameObject:
   m_ObjectHideFlags: 0
@@ -5501,83 +6674,6 @@ MonoBehaviour:
   PointsToLevel4: 400
   PointsToLevel5: 500
   PointLossSpeed: 1
---- !u!1 &929431724
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 929431730}
-  - 60: {fileID: 929431726}
-  - 212: {fileID: 929431725}
-  m_Layer: 0
-  m_Name: ob_bed_book_03
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &929431725
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 929431724}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_ReflectionProbeUsage: 0
-  m_ProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3dfd6eefc16c97c429fe1a39b62739e8, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
---- !u!60 &929431726
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 929431724}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  m_Points:
-    m_Paths:
-    - - {x: 0.032, y: 0}
-      - {x: -0.032, y: 0}
-      - {x: -0.032, y: 0.23}
-      - {x: 0.032, y: 0.23}
---- !u!4 &929431730
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 929431724}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.51, y: 1.23, z: 0}
-  m_LocalScale: {x: 1.7375008, y: 19.905577, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1287044646}
-  m_RootOrder: 18
 --- !u!1 &935683455
 GameObject:
   m_ObjectHideFlags: 0
@@ -5589,6 +6685,7 @@ GameObject:
   - 60: {fileID: 935683458}
   - 50: {fileID: 935683462}
   - 212: {fileID: 935683457}
+  - 114: {fileID: 935683459}
   m_Layer: 0
   m_Name: ob_bed_closet_01
   m_TagString: Untagged
@@ -5697,6 +6794,44 @@ PolygonCollider2D:
       - {x: -0.10700001, y: 0.003}
       - {x: -0.10300001, y: 0.011000001}
       - {x: -0.104, y: 0.068}
+--- !u!114 &935683459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 935683455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 935683462}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 935683457}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!50 &935683462
 Rigidbody2D:
   serializedVersion: 2
@@ -5723,6 +6858,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 942886567}
   - 212: {fileID: 942886562}
+  - 50: {fileID: 942886564}
+  - 60: {fileID: 942886563}
   m_Layer: 0
   m_Name: ob_bathroom_sink
   m_TagString: Untagged
@@ -5760,6 +6897,108 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!60 &942886563
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 942886561}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: 0.039, y: 0.142}
+      - {x: 0.031000001, y: 0.15200001}
+      - {x: 0.031000001, y: 0.53400004}
+      - {x: 0.033, y: 0.536}
+      - {x: 0.045, y: 0.582}
+      - {x: 0.07700001, y: 0.67800003}
+      - {x: 0.21100001, y: 0.67800003}
+      - {x: 0.21900001, y: 0.68}
+      - {x: 0.24100001, y: 0.688}
+      - {x: 0.25300002, y: 0.69600004}
+      - {x: 0.275, y: 0.72}
+      - {x: 0.287, y: 0.73600006}
+      - {x: 0.29900002, y: 0.758}
+      - {x: 0.303, y: 0.78400004}
+      - {x: 0.317, y: 0.794}
+      - {x: 0.323, y: 0.82400006}
+      - {x: 0.323, y: 0.86600006}
+      - {x: 0.31300002, y: 0.874}
+      - {x: 0.303, y: 0.878}
+      - {x: -0.31100002, y: 0.878}
+      - {x: -0.32500002, y: 0.86800003}
+      - {x: -0.32500002, y: 0.79600006}
+      - {x: -0.307, y: 0.78000003}
+      - {x: -0.27100003, y: 0.71400005}
+      - {x: -0.25300002, y: 0.69600004}
+      - {x: -0.22900002, y: 0.68200004}
+      - {x: -0.20700002, y: 0.674}
+      - {x: -0.127, y: 0.67800003}
+      - {x: -0.091000006, y: 0.684}
+      - {x: -0.053000003, y: 0.536}
+      - {x: -0.051000003, y: 0.43600002}
+      - {x: -0.049000002, y: 0.43400002}
+      - {x: -0.049000002, y: 0.158}
+      - {x: -0.057000004, y: 0.148}
+      - {x: -0.10300001, y: 0.066}
+      - {x: -0.117000006, y: 0.038000003}
+      - {x: -0.117000006, y: 0.024}
+      - {x: -0.113000005, y: 0}
+      - {x: 0.10300001, y: 0}
+      - {x: 0.10300001, y: 0.038000003}
+      - {x: 0.095000006, y: 0.054}
+      - {x: 0.075, y: 0.086}
+    - - {x: -0.019000001, y: 1.0020001}
+      - {x: -0.019000001, y: 1.014}
+      - {x: -0.021000002, y: 1.026}
+      - {x: -0.037, y: 1.0400001}
+      - {x: -0.177, y: 1.0400001}
+      - {x: -0.3041025, y: 0.8905805}
+      - {x: -0.179, y: 1}
+      - {x: -0.15900001, y: 0.98200005}
+      - {x: -0.13100001, y: 0.98}
+      - {x: -0.13100001, y: 0.8880001}
+      - {x: -0.12100001, y: 0.88000005}
+      - {x: -0.07700001, y: 0.88000005}
+      - {x: -0.067, y: 0.892}
+      - {x: -0.055000003, y: 0.98}
+      - {x: -0.031000001, y: 0.98600006}
+    - - {x: 0.16900001, y: 0.994}
+      - {x: 0.16900001, y: 1.024}
+      - {x: 0.1432434, y: 1.0291219}
+      - {x: -0.06658842, y: 1.034561}
+      - {x: 0.009000001, y: 1.028}
+      - {x: -0.094344884, y: 0.8857765}
+      - {x: 0.029000001, y: 0.984}
+      - {x: 0.053000003, y: 0.9760001}
+      - {x: 0.057000004, y: 0.89000005}
+      - {x: 0.071, y: 0.88000005}
+      - {x: 0.11100001, y: 0.88000005}
+      - {x: 0.125, y: 0.896}
+      - {x: 0.127, y: 0.9760001}
+      - {x: 0.3078582, y: 0.88065505}
+--- !u!50 &942886564
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 942886561}
+  m_UseAutoMass: 0
+  m_Mass: 8
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!4 &942886567
 Transform:
   m_ObjectHideFlags: 0
@@ -5767,11 +7006,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 942886561}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.65, y: 1.24, z: 0}
+  m_LocalPosition: {x: -15.636, y: 1.233, z: 0}
   m_LocalScale: {x: 1.26, y: 1.26, z: 1.26}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 61
+  m_RootOrder: 57
 --- !u!1 &953017686
 GameObject:
   m_ObjectHideFlags: 0
@@ -5783,6 +7022,7 @@ GameObject:
   - 60: {fileID: 953017689}
   - 50: {fileID: 953017687}
   - 212: {fileID: 953017688}
+  - 114: {fileID: 953017690}
   m_Layer: 0
   m_Name: ob_livingroom_sound
   m_TagString: Untagged
@@ -5881,6 +7121,44 @@ PolygonCollider2D:
       - {x: -0.080000006, y: 0.014}
       - {x: -0.067, y: 0.001}
       - {x: 0.047000002, y: 0}
+--- !u!114 &953017690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 953017686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 953017687}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 953017688}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &953017693
 Transform:
   m_ObjectHideFlags: 0
@@ -5892,7 +7170,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 42
+  m_RootOrder: 40
 --- !u!1 &958160602
 GameObject:
   m_ObjectHideFlags: 0
@@ -5904,6 +7182,7 @@ GameObject:
   - 60: {fileID: 958160605}
   - 50: {fileID: 958160603}
   - 212: {fileID: 958160604}
+  - 114: {fileID: 958160606}
   m_Layer: 0
   m_Name: ob_bed_clock_01
   m_TagString: Untagged
@@ -5985,6 +7264,44 @@ PolygonCollider2D:
       - {x: -0.171, y: 0.012}
       - {x: -0.155, y: 0.001}
       - {x: 0.162, y: 0}
+--- !u!114 &958160606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 958160602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 958160603}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 958160604}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &958160609
 Transform:
   m_ObjectHideFlags: 0
@@ -5996,7 +7313,7 @@ Transform:
   m_LocalScale: {x: 1.1895925, y: 1.1895925, z: 1.1895925}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 57
+  m_RootOrder: 53
 --- !u!1 &959916340
 GameObject:
   m_ObjectHideFlags: 0
@@ -6058,19 +7375,19 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
-    - - {x: 0.26500002, y: 0.91}
-      - {x: 0.24878758, y: 1.0029361}
+    - - {x: 0.42702737, y: 0.87863994}
+      - {x: 0.35059887, y: 1.0070498}
       - {x: 0.1268082, y: 1.0190852}
       - {x: -0.0651916, y: 1.0190852}
-      - {x: -0.21040404, y: 1.0087445}
+      - {x: -0.37929744, y: 0.8743191}
       - {x: -0.21400002, y: 0.91}
       - {x: -0.21400002, y: 0.88000005}
       - {x: 0.26500002, y: 0.88000005}
-    - - {x: 0.82800007, y: 0.91}
-      - {x: 0.8244044, y: 1.0029364}
+    - - {x: 0.8624681, y: 0.866915}
+      - {x: 0.955383, y: 0.8736813}
       - {x: 0.69661695, y: 1.007468}
       - {x: 0.5036173, y: 1.007468}
-      - {x: 0.3467874, y: 1.0029364}
+      - {x: 0.28668046, y: 1.008163}
       - {x: 0.34800002, y: 0.91}
       - {x: 0.34800002, y: 0.88000005}
       - {x: 0.82800007, y: 0.88000005}
@@ -6093,7 +7410,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 82
+  m_RootOrder: 78
 --- !u!1 &1007431605
 GameObject:
   m_ObjectHideFlags: 0
@@ -6102,9 +7419,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1007431611}
-  - 60: {fileID: 1007431607}
   - 212: {fileID: 1007431606}
   - 50: {fileID: 1007431608}
+  - 61: {fileID: 1007431607}
+  - 114: {fileID: 1007431609}
   m_Layer: 0
   m_Name: ob_kitchen_spoon_05
   m_TagString: Untagged
@@ -6142,8 +7460,8 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!60 &1007431607
-PolygonCollider2D:
+--- !u!61 &1007431607
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -6153,28 +7471,9 @@ PolygonCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  m_Points:
-    m_Paths:
-    - - {x: 0.009000001, y: 0.001}
-      - {x: 0.030000001, y: 0.013}
-      - {x: 0.040000003, y: 0.030000001}
-      - {x: 0.040000003, y: 0.046000004}
-      - {x: 0.026, y: 0.07}
-      - {x: 0.0050000004, y: 0.09}
-      - {x: 0.0050000004, y: 0.272}
-      - {x: 0.011000001, y: 0.272}
-      - {x: 0.011000001, y: 0.33600003}
-      - {x: -0.012, y: 0.33600003}
-      - {x: -0.012, y: 0.272}
-      - {x: -0.004, y: 0.272}
-      - {x: -0.007, y: 0.09}
-      - {x: -0.031000001, y: 0.067}
-      - {x: -0.040000003, y: 0.048}
-      - {x: -0.040000003, y: 0.039}
-      - {x: -0.028, y: 0.010000001}
-      - {x: -0.010000001, y: 0}
-      - {x: 0.002, y: 0}
+  m_Offset: {x: 0, y: 0.17499995}
+  serializedVersion: 2
+  m_Size: {x: 0.038762912, y: 0.35000002}
 --- !u!50 &1007431608
 Rigidbody2D:
   serializedVersion: 2
@@ -6192,6 +7491,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1007431609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1007431605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 1
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1007431608}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1007431606}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &1007431611
 Transform:
   m_ObjectHideFlags: 0
@@ -6203,7 +7540,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 78
+  m_RootOrder: 74
 --- !u!1 &1008188484
 GameObject:
   m_ObjectHideFlags: 0
@@ -6270,9 +7607,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1014161295}
-  - 60: {fileID: 1014161291}
   - 212: {fileID: 1014161290}
   - 50: {fileID: 1014161292}
+  - 61: {fileID: 1014161291}
+  - 114: {fileID: 1014161293}
   m_Layer: 0
   m_Name: ob_kitchen_spoon_04
   m_TagString: Untagged
@@ -6310,8 +7648,8 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!60 &1014161291
-PolygonCollider2D:
+--- !u!61 &1014161291
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -6321,27 +7659,9 @@ PolygonCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  m_Points:
-    m_Paths:
-    - - {x: 0.014, y: 0.337}
-      - {x: -0.009000001, y: 0.337}
-      - {x: -0.009000001, y: 0.273}
-      - {x: 0.014, y: 0.273}
-    - - {x: 0.016, y: 0.004}
-      - {x: 0.039, y: 0.028}
-      - {x: 0.037, y: 0.057000004}
-      - {x: 0.025, y: 0.076000005}
-      - {x: 0.007, y: 0.09}
-      - {x: 0.0050000004, y: 0.272}
-      - {x: -0.004, y: 0.272}
-      - {x: -0.004, y: 0.091000006}
-      - {x: -0.030000001, y: 0.069000006}
-      - {x: -0.039, y: 0.052}
-      - {x: -0.039, y: 0.035}
-      - {x: -0.029000001, y: 0.012}
-      - {x: -0.009000001, y: 0}
-      - {x: 0.006, y: 0}
+  m_Offset: {x: 0, y: 0.17499995}
+  serializedVersion: 2
+  m_Size: {x: 0.038762912, y: 0.35000002}
 --- !u!50 &1014161292
 Rigidbody2D:
   serializedVersion: 2
@@ -6359,6 +7679,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1014161293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1014161289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 1
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1014161292}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1014161290}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &1014161295
 Transform:
   m_ObjectHideFlags: 0
@@ -6370,7 +7728,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 77
+  m_RootOrder: 73
 --- !u!1 &1030013095
 GameObject:
   m_ObjectHideFlags: 0
@@ -6379,9 +7737,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1030013101}
-  - 60: {fileID: 1030013097}
   - 212: {fileID: 1030013096}
   - 50: {fileID: 1030013098}
+  - 61: {fileID: 1030013097}
+  - 114: {fileID: 1030013099}
   m_Layer: 0
   m_Name: ob_kitchen_spoon_02
   m_TagString: Untagged
@@ -6419,8 +7778,8 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
---- !u!60 &1030013097
-PolygonCollider2D:
+--- !u!61 &1030013097
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -6430,22 +7789,9 @@ PolygonCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  m_Points:
-    m_Paths:
-    - - {x: -0.037, y: 0.066}
-      - {x: -0.043, y: 0.047000002}
-      - {x: -0.043, y: 0}
-      - {x: 0.043, y: 0}
-      - {x: 0.040000003, y: 0.059000004}
-      - {x: 0.014, y: 0.09}
-      - {x: 0.004, y: 0.272}
-      - {x: 0.012, y: 0.272}
-      - {x: 0.012, y: 0.337}
-      - {x: -0.012, y: 0.337}
-      - {x: -0.014, y: 0.272}
-      - {x: -0.008, y: 0.272}
-      - {x: -0.004, y: 0.089}
+  m_Offset: {x: 0, y: 0.17499995}
+  serializedVersion: 2
+  m_Size: {x: 0.038762912, y: 0.35000002}
 --- !u!50 &1030013098
 Rigidbody2D:
   serializedVersion: 2
@@ -6463,6 +7809,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1030013099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1030013095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 1
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1030013098}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1030013096}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &1030013101
 Transform:
   m_ObjectHideFlags: 0
@@ -6474,7 +7858,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 80
+  m_RootOrder: 76
 --- !u!1 &1090420057
 GameObject:
   m_ObjectHideFlags: 0
@@ -6486,6 +7870,7 @@ GameObject:
   - 60: {fileID: 1090420060}
   - 50: {fileID: 1090420058}
   - 212: {fileID: 1090420059}
+  - 114: {fileID: 1090420061}
   m_Layer: 0
   m_Name: ob_livingroom_cushion_03
   m_TagString: Untagged
@@ -6507,7 +7892,7 @@ Rigidbody2D:
   m_GravityScale: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 2
   m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!212 &1090420059
@@ -6574,6 +7959,44 @@ PolygonCollider2D:
       - {x: -0.216, y: 0.201}
       - {x: -0.19600001, y: 0.20300001}
       - {x: 0.19600001, y: 0.20300001}
+--- !u!114 &1090420061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1090420057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 1
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1090420058}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1090420059}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &1090420064
 Transform:
   m_ObjectHideFlags: 0
@@ -6758,7 +8181,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 32
+  m_RootOrder: 30
 --- !u!1 &1165582250
 GameObject:
   m_ObjectHideFlags: 0
@@ -6770,6 +8193,7 @@ GameObject:
   - 60: {fileID: 1165582253}
   - 50: {fileID: 1165582251}
   - 212: {fileID: 1165582252}
+  - 114: {fileID: 1165582254}
   m_Layer: 0
   m_Name: ob_livingroom_sound (1)
   m_TagString: Untagged
@@ -6868,6 +8292,44 @@ PolygonCollider2D:
       - {x: -0.080000006, y: 0.014}
       - {x: -0.067, y: 0.001}
       - {x: 0.047000002, y: 0}
+--- !u!114 &1165582254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1165582250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1165582251}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1165582252}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &1165582257
 Transform:
   m_ObjectHideFlags: 0
@@ -6879,7 +8341,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 43
+  m_RootOrder: 41
 --- !u!1 &1170443071
 GameObject:
   m_ObjectHideFlags: 0
@@ -7059,6 +8521,7 @@ GameObject:
   - 60: {fileID: 1226927127}
   - 212: {fileID: 1226927126}
   - 50: {fileID: 1226927128}
+  - 114: {fileID: 1226927129}
   m_Layer: 0
   m_Name: ob_livingroom_fruit_02
   m_TagString: Untagged
@@ -7104,7 +8567,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 1226927125}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 101a8b6c30def4199b64ae9bfe5f655c, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
@@ -7147,6 +8610,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1226927129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1226927125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 1
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1226927128}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1226927126}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &1226927131
 Transform:
   m_ObjectHideFlags: 0
@@ -7158,7 +8659,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 90
+  m_RootOrder: 85
 --- !u!1 &1247599085
 GameObject:
   m_ObjectHideFlags: 0
@@ -7168,7 +8669,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1247599088}
   - 212: {fileID: 1247599087}
-  - 60: {fileID: 1247599086}
   m_Layer: 0
   m_Name: ob_studyroom_shelf
   m_TagString: Untagged
@@ -7176,32 +8676,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!60 &1247599086
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1247599085}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  m_Points:
-    m_Paths:
-    - - {x: 0.93500006, y: 0.65000004}
-      - {x: -0.93500006, y: 0.65000004}
-      - {x: -0.93500006, y: 0}
-      - {x: 0.93500006, y: 0}
-    - - {x: -0.901, y: 0.568}
-      - {x: 0.89900005, y: 0.568}
-      - {x: 0.89900005, y: 0.036000002}
-      - {x: -0.901, y: 0.036000002}
-    - - {x: -0.901, y: 0.61600006}
-      - {x: 0.89900005, y: 0.61600006}
-      - {x: 0.89900005, y: 0.606}
-      - {x: -0.901, y: 0.606}
 --- !u!212 &1247599087
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7229,7 +8703,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: da6ae119e66fd2143894819ada7aed3a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.397}
   m_FlipX: 0
   m_FlipY: 0
 --- !u!4 &1247599088
@@ -7255,6 +8729,7 @@ GameObject:
   - 60: {fileID: 1251687883}
   - 212: {fileID: 1251687882}
   - 50: {fileID: 1251687884}
+  - 114: {fileID: 1251687885}
   m_Layer: 0
   m_Name: ob_bed_vase_01
   m_TagString: Untagged
@@ -7373,6 +8848,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1251687885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1251687881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1251687884}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1251687882}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &1251687887
 Transform:
   m_ObjectHideFlags: 0
@@ -7384,7 +8897,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 59
+  m_RootOrder: 55
 --- !u!1 &1254779224
 GameObject:
   m_ObjectHideFlags: 0
@@ -7553,13 +9066,11 @@ Transform:
   - {fileID: 120510879}
   - {fileID: 1119711881}
   - {fileID: 720196406}
-  - {fileID: 929431730}
   - {fileID: 494601668}
   - {fileID: 354395389}
   - {fileID: 1741642533}
   - {fileID: 1413468432}
   - {fileID: 122812347}
-  - {fileID: 474891356}
   - {fileID: 711217474}
   - {fileID: 1877695637}
   - {fileID: 1364439171}
@@ -7579,8 +9090,6 @@ Transform:
   - {fileID: 618549185}
   - {fileID: 953017693}
   - {fileID: 1165582257}
-  - {fileID: 1556113555}
-  - {fileID: 1956450908}
   - {fileID: 285283385}
   - {fileID: 1455413600}
   - {fileID: 2138762118}
@@ -7621,7 +9130,6 @@ Transform:
   - {fileID: 581200309}
   - {fileID: 1734324623}
   - {fileID: 564651130}
-  - {fileID: 1504199705}
   - {fileID: 464241341}
   - {fileID: 1556307884}
   - {fileID: 1695788180}
@@ -7633,6 +9141,8 @@ Transform:
   - {fileID: 1493935647}
   - {fileID: 1647482645}
   - {fileID: 1755630587}
+  - {fileID: 319250535}
+  - {fileID: 1420456594}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!1 &1308594935
@@ -7729,7 +9239,7 @@ Transform:
   m_LocalScale: {x: 1.5241419, y: 1.5241425, z: 1.5241425}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 33
+  m_RootOrder: 31
 --- !u!1 &1310857627
 GameObject:
   m_ObjectHideFlags: 0
@@ -8032,6 +9542,7 @@ GameObject:
   - 212: {fileID: 1349375535}
   - 50: {fileID: 1349375534}
   - 60: {fileID: 1349375533}
+  - 114: {fileID: 1349375537}
   m_Layer: 0
   m_Name: ob_studyroom_book (1)
   m_TagString: Untagged
@@ -8072,7 +9583,7 @@ Rigidbody2D:
   m_GravityScale: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 2
   m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!212 &1349375535
@@ -8117,6 +9628,44 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 17
+--- !u!114 &1349375537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1349375532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 1
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1349375534}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1349375535}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!1 &1364439164
 GameObject:
   m_ObjectHideFlags: 0
@@ -8211,7 +9760,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 27
+  m_RootOrder: 25
 --- !u!1 &1387806215
 GameObject:
   m_ObjectHideFlags: 0
@@ -8281,6 +9830,7 @@ GameObject:
   - 60: {fileID: 1390241422}
   - 212: {fileID: 1390241421}
   - 50: {fileID: 1390241423}
+  - 114: {fileID: 1390241424}
   m_Layer: 0
   m_Name: ob_livingroom_fruit_03
   m_TagString: Untagged
@@ -8326,7 +9876,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 1390241420}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 101a8b6c30def4199b64ae9bfe5f655c, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
@@ -8362,13 +9912,51 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 0.5
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1390241424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1390241420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 1
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1390241423}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1390241421}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &1390241426
 Transform:
   m_ObjectHideFlags: 0
@@ -8380,7 +9968,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 92
+  m_RootOrder: 87
 --- !u!1 &1390898385
 GameObject:
   m_ObjectHideFlags: 0
@@ -8550,7 +10138,84 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 22
+  m_RootOrder: 21
+--- !u!1 &1420456593
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1420456594}
+  - 60: {fileID: 1420456596}
+  - 212: {fileID: 1420456595}
+  m_Layer: 0
+  m_Name: ob_bed_book_03 (17)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1420456594
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1420456593}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -46.83, y: 1.23, z: 0}
+  m_LocalScale: {x: 123.646355, y: 19.905577, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1287044646}
+  m_RootOrder: 94
+--- !u!212 &1420456595
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1420456593}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 3dfd6eefc16c97c429fe1a39b62739e8, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+--- !u!60 &1420456596
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1420456593}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: 0.032, y: 0}
+      - {x: -0.032, y: 0}
+      - {x: -0.032, y: 0.23}
+      - {x: 0.032, y: 0.23}
 --- !u!1 &1427030159
 GameObject:
   m_ObjectHideFlags: 0
@@ -8562,6 +10227,7 @@ GameObject:
   - 60: {fileID: 1427030161}
   - 212: {fileID: 1427030160}
   - 50: {fileID: 1427030162}
+  - 114: {fileID: 1427030163}
   m_Layer: 0
   m_Name: ob_livingroom_shoe_01
   m_TagString: Untagged
@@ -8647,6 +10313,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1427030163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1427030159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1427030162}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1427030160}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &1427030165
 Transform:
   m_ObjectHideFlags: 0
@@ -8658,7 +10362,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 54
+  m_RootOrder: 50
 --- !u!1 &1455413593
 GameObject:
   m_ObjectHideFlags: 0
@@ -8779,7 +10483,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 47
+  m_RootOrder: 43
 --- !u!1 &1457662368
 GameObject:
   m_ObjectHideFlags: 0
@@ -8791,6 +10495,7 @@ GameObject:
   - 60: {fileID: 1457662370}
   - 212: {fileID: 1457662369}
   - 50: {fileID: 1457662371}
+  - 114: {fileID: 1457662372}
   m_Layer: 0
   m_Name: ob_livingroom_fruit
   m_TagString: Untagged
@@ -8836,7 +10541,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 1457662368}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 101a8b6c30def4199b64ae9bfe5f655c, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
@@ -8872,13 +10577,51 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 0.5
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1457662372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1457662368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 1
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1457662371}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1457662369}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &1457662374
 Transform:
   m_ObjectHideFlags: 0
@@ -8890,7 +10633,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 91
+  m_RootOrder: 86
 --- !u!1 &1470057011
 GameObject:
   m_ObjectHideFlags: 0
@@ -8967,7 +10710,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 72
+  m_RootOrder: 68
 --- !u!1 &1493935641
 GameObject:
   m_ObjectHideFlags: 0
@@ -8979,6 +10722,7 @@ GameObject:
   - 60: {fileID: 1493935643}
   - 212: {fileID: 1493935642}
   - 50: {fileID: 1493935644}
+  - 114: {fileID: 1493935645}
   m_Layer: 0
   m_Name: ob_livingroom_picture
   m_TagString: Untagged
@@ -9051,6 +10795,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1493935645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1493935641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1493935644}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1493935642}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &1493935647
 Transform:
   m_ObjectHideFlags: 0
@@ -9062,7 +10844,7 @@ Transform:
   m_LocalScale: {x: 3.5188026, y: 3.5188034, z: 3.5188034}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 95
+  m_RootOrder: 90
 --- !u!1 &1498728531
 GameObject:
   m_ObjectHideFlags: 0
@@ -9139,65 +10921,7 @@ Transform:
   m_LocalScale: {x: 3.0829682, y: 3.0829656, z: 3.0829656}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 63
---- !u!1 &1504199699
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1504199705}
-  - 212: {fileID: 1504199700}
-  m_Layer: 0
-  m_Name: ob_kitchen_door
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1504199700
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1504199699}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_ReflectionProbeUsage: 0
-  m_ProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: ee0bc412ac92e2543b87fe27cbf284b2, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
---- !u!4 &1504199705
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1504199699}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.11, y: 1.22, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1287044646}
-  m_RootOrder: 86
+  m_RootOrder: 59
 --- !u!1 &1505581508
 GameObject:
   m_ObjectHideFlags: 0
@@ -9292,7 +11016,7 @@ Transform:
   m_LocalScale: {x: 1.5241419, y: 1.5241425, z: 1.5241425}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 34
+  m_RootOrder: 32
 --- !u!114 &1505938325 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11418648, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34,
@@ -9310,6 +11034,7 @@ GameObject:
   - 60: {fileID: 1509445594}
   - 212: {fileID: 1509445593}
   - 50: {fileID: 1509445595}
+  - 114: {fileID: 1509445596}
   m_Layer: 0
   m_Name: ob_bathroom_mirror
   m_TagString: Untagged
@@ -9342,7 +11067,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: dba5ba6cddf23fd44abffa51c3678ff7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9406,9 +11131,47 @@ Rigidbody2D:
   m_GravityScale: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 2
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1509445596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1509445592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 1
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1509445595}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1509445593}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &1509445598
 Transform:
   m_ObjectHideFlags: 0
@@ -9420,7 +11183,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 65
+  m_RootOrder: 61
 --- !u!1 &1527327057
 GameObject:
   m_ObjectHideFlags: 0
@@ -9431,6 +11194,8 @@ GameObject:
   - 4: {fileID: 1527327060}
   - 212: {fileID: 1527327059}
   - 60: {fileID: 1527327058}
+  - 50: {fileID: 1527327061}
+  - 114: {fileID: 1527327062}
   m_Layer: 0
   m_Name: ob_storageroom_weight_02
   m_TagString: Untagged
@@ -9513,6 +11278,61 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
+--- !u!50 &1527327061
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1527327057}
+  m_UseAutoMass: 0
+  m_Mass: 5
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &1527327062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1527327057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1527327061}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1527327059}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!1 &1535993473
 GameObject:
   m_ObjectHideFlags: 0
@@ -9523,6 +11343,8 @@ GameObject:
   - 4: {fileID: 1535993475}
   - 212: {fileID: 1535993474}
   - 60: {fileID: 1535993476}
+  - 50: {fileID: 1535993477}
+  - 114: {fileID: 1535993478}
   m_Layer: 0
   m_Name: ob_studyroom_desk_02
   m_TagString: Untagged
@@ -9589,11 +11411,12 @@ PolygonCollider2D:
     - - {x: -1.1730001, y: 0.804}
       - {x: -1.1608429, y: 0.793808}
       - {x: -1.1773148, y: 0.7842035}
-      - {x: -0.5950794, y: 0.7598872}
-      - {x: -0.5869999, y: 0.7653334}
+      - {x: -1.1683121, y: 0.024972796}
+      - {x: -0.6016979, y: 0.03041923}
+      - {x: -0.6072216, y: 0.73377013}
       - {x: -0.587, y: 0.804}
     - - {x: 0.57500005, y: 0.804}
-      - {x: 0.5810795, y: 0.7510171}
+      - {x: 0.8750458, y: 0.79511166}
       - {x: 0.5706825, y: 0.7598872}
       - {x: 1.1711578, y: 0.78420365}
       - {x: 1.167078, y: 0.7916498}
@@ -9602,88 +11425,68 @@ PolygonCollider2D:
       - {x: -1.225, y: 0.85600007}
       - {x: -1.225, y: 0.80200005}
       - {x: -1.003, y: 0.76000005}
-      - {x: 0.767, y: 0.76000005}
+      - {x: 0.5882225, y: 0.74122953}
+      - {x: 0.6011791, y: 0.028234601}
+      - {x: 1.1344585, y: 0.039784193}
       - {x: 1.225, y: 0.80600005}
       - {x: 1.225, y: 0.86}
     - - {x: 0.45900002, y: 0.808}
       - {x: -0.453, y: 0.808}
---- !u!1 &1556113549
-GameObject:
+--- !u!50 &1535993477
+Rigidbody2D:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1556113555}
-  - 60: {fileID: 1556113551}
-  - 212: {fileID: 1556113550}
-  m_Layer: 0
-  m_Name: ob_bed_book_03 (5)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1556113550
-SpriteRenderer:
+  m_GameObject: {fileID: 1535993473}
+  m_UseAutoMass: 0
+  m_Mass: 2
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &1535993478
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1556113549}
+  m_GameObject: {fileID: 1535993473}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_ReflectionProbeUsage: 0
-  m_ProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3dfd6eefc16c97c429fe1a39b62739e8, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
---- !u!60 &1556113551
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1556113549}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  m_Points:
-    m_Paths:
-    - - {x: 0.032, y: 0}
-      - {x: -0.032, y: 0}
-      - {x: -0.032, y: 0.23}
-      - {x: 0.032, y: 0.23}
---- !u!4 &1556113555
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1556113549}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.43, y: 1.23, z: 0}
-  m_LocalScale: {x: 1.7375008, y: 19.905577, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1287044646}
-  m_RootOrder: 44
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 1
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1535993477}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1535993474}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!1 &1556307878
 GameObject:
   m_ObjectHideFlags: 0
@@ -9695,6 +11498,7 @@ GameObject:
   - 60: {fileID: 1556307880}
   - 212: {fileID: 1556307879}
   - 50: {fileID: 1556307881}
+  - 114: {fileID: 1556307882}
   m_Layer: 0
   m_Name: ob_livingroom_bowl
   m_TagString: Untagged
@@ -9740,7 +11544,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 1556307878}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 101a8b6c30def4199b64ae9bfe5f655c, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
@@ -9780,6 +11584,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1556307882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1556307878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 1
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1556307881}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1556307879}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &1556307884
 Transform:
   m_ObjectHideFlags: 0
@@ -9791,7 +11633,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 88
+  m_RootOrder: 83
 --- !u!1 &1560108074
 GameObject:
   m_ObjectHideFlags: 0
@@ -9886,7 +11728,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 28
+  m_RootOrder: 26
 --- !u!1 &1573608946
 GameObject:
   m_ObjectHideFlags: 0
@@ -9898,6 +11740,7 @@ GameObject:
   - 60: {fileID: 1573608948}
   - 212: {fileID: 1573608947}
   - 50: {fileID: 1573608949}
+  - 114: {fileID: 1573608950}
   m_Layer: 0
   m_Name: ob_bathroom_bottle_02 (3)
   m_TagString: Untagged
@@ -9991,6 +11834,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1573608950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1573608946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1573608949}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1573608947}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &1573608952
 Transform:
   m_ObjectHideFlags: 0
@@ -10002,7 +11883,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 70
+  m_RootOrder: 66
 --- !u!1 &1600362618
 GameObject:
   m_ObjectHideFlags: 0
@@ -10014,6 +11895,7 @@ GameObject:
   - 60: {fileID: 1600362620}
   - 212: {fileID: 1600362619}
   - 50: {fileID: 1600362621}
+  - 114: {fileID: 1600362622}
   m_Layer: 0
   m_Name: ob_kitchen_refregirator
   m_TagString: Untagged
@@ -10103,6 +11985,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1600362622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1600362618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1600362621}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1600362619}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &1600362624
 Transform:
   m_ObjectHideFlags: 0
@@ -10114,7 +12034,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 73
+  m_RootOrder: 69
 --- !u!1 &1615704107
 GameObject:
   m_ObjectHideFlags: 0
@@ -10172,7 +12092,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 64
+  m_RootOrder: 60
 --- !u!1 &1642872529
 GameObject:
   m_ObjectHideFlags: 0
@@ -10350,7 +12270,7 @@ Transform:
   m_LocalScale: {x: 2.0114455, y: 2.011446, z: 2.011446}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 96
+  m_RootOrder: 91
 --- !u!1 &1676278081
 GameObject:
   m_ObjectHideFlags: 0
@@ -10362,6 +12282,7 @@ GameObject:
   - 212: {fileID: 1676278082}
   - 60: {fileID: 1676278085}
   - 50: {fileID: 1676278084}
+  - 114: {fileID: 1676278086}
   m_Layer: 0
   m_Name: ob_studyroom_mac_01
   m_TagString: Untagged
@@ -10425,7 +12346,7 @@ Rigidbody2D:
   m_GravityScale: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 2
   m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!60 &1676278085
@@ -10460,6 +12381,44 @@ PolygonCollider2D:
       - {x: -0.36, y: 0.186}
       - {x: 0.374, y: 0.186}
       - {x: 0.374, y: 0.61}
+--- !u!114 &1676278086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1676278081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 1
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1676278084}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1676278082}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!1 &1695788174
 GameObject:
   m_ObjectHideFlags: 0
@@ -10471,6 +12430,7 @@ GameObject:
   - 60: {fileID: 1695788176}
   - 212: {fileID: 1695788175}
   - 50: {fileID: 1695788177}
+  - 114: {fileID: 1695788178}
   m_Layer: 0
   m_Name: ob_livingroom_fruit_03
   m_TagString: Untagged
@@ -10516,7 +12476,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 1695788174}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 101a8b6c30def4199b64ae9bfe5f655c, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
@@ -10552,13 +12512,51 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 0.5
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1695788178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1695788174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 1
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1695788177}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1695788175}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &1695788180
 Transform:
   m_ObjectHideFlags: 0
@@ -10570,7 +12568,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 89
+  m_RootOrder: 84
 --- !u!1 &1705707719
 GameObject:
   m_ObjectHideFlags: 0
@@ -10582,6 +12580,7 @@ GameObject:
   - 60: {fileID: 1705707721}
   - 212: {fileID: 1705707720}
   - 50: {fileID: 1705707722}
+  - 114: {fileID: 1705707723}
   m_Layer: 0
   m_Name: ob_bathroom_bottle_02 (4)
   m_TagString: Untagged
@@ -10675,6 +12674,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1705707723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1705707719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1705707722}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1705707720}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &1705707725
 Transform:
   m_ObjectHideFlags: 0
@@ -10686,7 +12723,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 71
+  m_RootOrder: 67
 --- !u!1 &1715912222
 GameObject:
   m_ObjectHideFlags: 0
@@ -10698,6 +12735,7 @@ GameObject:
   - 212: {fileID: 1715912223}
   - 60: {fileID: 1715912226}
   - 50: {fileID: 1715912225}
+  - 114: {fileID: 1715912227}
   m_Layer: 0
   m_Name: ob_studyroom_trophy
   m_TagString: Untagged
@@ -10887,6 +12925,44 @@ PolygonCollider2D:
       - {x: -0.23200001, y: 0.634}
       - {x: -0.194, y: 0.53400004}
       - {x: -0.18400002, y: 0.512}
+--- !u!114 &1715912227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1715912222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1715912225}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1715912223}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!1 &1734324617
 GameObject:
   m_ObjectHideFlags: 0
@@ -10897,6 +12973,8 @@ GameObject:
   - 4: {fileID: 1734324623}
   - 60: {fileID: 1734324619}
   - 212: {fileID: 1734324618}
+  - 50: {fileID: 1734324620}
+  - 114: {fileID: 1734324621}
   m_Layer: 0
   m_Name: ob_kitchen_chair (1)
   m_TagString: Untagged
@@ -10929,7 +13007,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 5015f871efd72a14ca27f66196575111, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10971,6 +13049,61 @@ PolygonCollider2D:
       - {x: -0.14, y: 0.513}
       - {x: 0.11800001, y: 0.513}
       - {x: 0.11800001, y: 0}
+--- !u!50 &1734324620
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1734324617}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &1734324621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1734324617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1734324620}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1734324618}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &1734324623
 Transform:
   m_ObjectHideFlags: 0
@@ -10982,7 +13115,7 @@ Transform:
   m_LocalScale: {x: 0.79585785, y: 0.79585785, z: 0.79585785}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 84
+  m_RootOrder: 80
 --- !u!1 &1741642529
 GameObject:
   m_ObjectHideFlags: 0
@@ -11040,7 +13173,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 21
+  m_RootOrder: 20
 --- !u!1 &1755630586
 GameObject:
   m_ObjectHideFlags: 0
@@ -11065,11 +13198,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1755630586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.55, y: 1.23, z: 0}
-  m_LocalScale: {x: 1.7375008, y: 19.905577, z: 1}
+  m_LocalPosition: {x: 33.02, y: 1.23, z: 0}
+  m_LocalScale: {x: 123.646355, y: 19.905577, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 97
+  m_RootOrder: 92
 --- !u!212 &1755630588
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11177,6 +13310,7 @@ GameObject:
   - 60: {fileID: 1762628857}
   - 212: {fileID: 1762628856}
   - 50: {fileID: 1762628858}
+  - 114: {fileID: 1762628859}
   m_Layer: 0
   m_Name: ob_bathroom_bottle_02
   m_TagString: Untagged
@@ -11270,6 +13404,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1762628859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1762628855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1762628858}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1762628856}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &1762628861
 Transform:
   m_ObjectHideFlags: 0
@@ -11281,7 +13453,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 67
+  m_RootOrder: 63
 --- !u!1 &1769868944
 GameObject:
   m_ObjectHideFlags: 0
@@ -11410,6 +13582,7 @@ GameObject:
   - 60: {fileID: 1864166666}
   - 212: {fileID: 1864166665}
   - 50: {fileID: 1864166667}
+  - 114: {fileID: 1864166668}
   m_Layer: 0
   m_Name: ob_kitchen_glass
   m_TagString: Untagged
@@ -11493,6 +13666,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1864166668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1864166664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1864166667}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1864166665}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &1864166670
 Transform:
   m_ObjectHideFlags: 0
@@ -11504,7 +13715,7 @@ Transform:
   m_LocalScale: {x: 1.1424264, y: 1.1424264, z: 1.1424264}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 76
+  m_RootOrder: 72
 --- !u!1 &1877695630
 GameObject:
   m_ObjectHideFlags: 0
@@ -11599,7 +13810,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 26
+  m_RootOrder: 24
 --- !u!1 &1895579865
 GameObject:
   m_ObjectHideFlags: 0
@@ -11789,7 +14000,7 @@ Transform:
   m_LocalScale: {x: 1.5424194, y: 1.5424196, z: 1.5424196}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 35
+  m_RootOrder: 33
 --- !u!1 &1947097976
 GameObject:
   m_ObjectHideFlags: 0
@@ -11874,7 +14085,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 39
+  m_RootOrder: 37
 --- !u!1 &1947685484
 GameObject:
   m_ObjectHideFlags: 0
@@ -11886,6 +14097,7 @@ GameObject:
   - 212: {fileID: 1947685485}
   - 60: {fileID: 1947685488}
   - 50: {fileID: 1947685487}
+  - 114: {fileID: 1947685489}
   m_Layer: 0
   m_Name: ob_studyroom_trashcan
   m_TagString: Untagged
@@ -11990,83 +14202,44 @@ PolygonCollider2D:
       - {x: 0.14500001, y: 0.002}
       - {x: 0.16700001, y: 0.23600002}
       - {x: 0.17500001, y: 0.32200003}
---- !u!1 &1956450902
-GameObject:
+--- !u!114 &1947685489
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1956450908}
-  - 60: {fileID: 1956450904}
-  - 212: {fileID: 1956450903}
-  m_Layer: 0
-  m_Name: ob_bed_book_03 (6)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1956450903
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1956450902}
+  m_GameObject: {fileID: 1947685484}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_ReflectionProbeUsage: 0
-  m_ProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3dfd6eefc16c97c429fe1a39b62739e8, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
---- !u!60 &1956450904
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1956450902}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  m_Points:
-    m_Paths:
-    - - {x: 0.032, y: 0}
-      - {x: -0.032, y: 0}
-      - {x: -0.032, y: 0.23}
-      - {x: 0.032, y: 0.23}
---- !u!4 &1956450908
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1956450902}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.26, y: 1.23, z: 0}
-  m_LocalScale: {x: 1.7375008, y: 19.905577, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1287044646}
-  m_RootOrder: 45
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1947685487}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1947685485}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!1 &1961257675
 GameObject:
   m_ObjectHideFlags: 0
@@ -12075,9 +14248,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1961257681}
-  - 60: {fileID: 1961257677}
   - 212: {fileID: 1961257676}
   - 50: {fileID: 1961257678}
+  - 61: {fileID: 1961257677}
+  - 114: {fileID: 1961257679}
   m_Layer: 0
   m_Name: ob_kitchen_spoon_03
   m_TagString: Untagged
@@ -12115,8 +14289,8 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!60 &1961257677
-PolygonCollider2D:
+--- !u!61 &1961257677
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -12126,21 +14300,9 @@ PolygonCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  m_Points:
-    m_Paths:
-    - - {x: 0.046000004, y: 0.058000002}
-      - {x: 0.003, y: 0.091000006}
-      - {x: 0.002, y: 0.273}
-      - {x: 0.010000001, y: 0.273}
-      - {x: 0.010000001, y: 0.337}
-      - {x: -0.012, y: 0.337}
-      - {x: -0.012, y: 0.273}
-      - {x: -0.008, y: 0.273}
-      - {x: -0.008, y: 0.091000006}
-      - {x: -0.041, y: 0.063}
-      - {x: -0.047000002, y: 0}
-      - {x: 0.046000004, y: 0}
+  m_Offset: {x: 0, y: 0.17499995}
+  serializedVersion: 2
+  m_Size: {x: 0.038762912, y: 0.35000002}
 --- !u!50 &1961257678
 Rigidbody2D:
   serializedVersion: 2
@@ -12158,6 +14320,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1961257679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1961257675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 1
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1961257678}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1961257676}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &1961257681
 Transform:
   m_ObjectHideFlags: 0
@@ -12169,7 +14369,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 79
+  m_RootOrder: 75
 --- !u!1 &1976293281
 GameObject:
   m_ObjectHideFlags: 0
@@ -12181,6 +14381,7 @@ GameObject:
   - 60: {fileID: 1976293284}
   - 50: {fileID: 1976293282}
   - 212: {fileID: 1976293283}
+  - 114: {fileID: 1976293285}
   m_Layer: 0
   m_Name: ob_livingroom_tv
   m_TagString: Untagged
@@ -12257,6 +14458,44 @@ PolygonCollider2D:
       - {x: -0.24000001, y: 0.032}
       - {x: -0.24000001, y: 0}
       - {x: 0.23500001, y: 0}
+--- !u!114 &1976293285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1976293281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1976293282}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1976293283}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &1976293288
 Transform:
   m_ObjectHideFlags: 0
@@ -12268,7 +14507,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 38
+  m_RootOrder: 36
 --- !u!1 &1983697023
 GameObject:
   m_ObjectHideFlags: 0
@@ -12349,6 +14588,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 1996667603}
   - 212: {fileID: 1996667602}
+  - 50: {fileID: 1996667605}
+  - 60: {fileID: 1996667604}
+  - 114: {fileID: 1996667606}
   m_Layer: 0
   m_Name: ob_studyroom_chair (1)
   m_TagString: Untagged
@@ -12398,6 +14640,149 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
+--- !u!60 &1996667604
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1996667601}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: -0.023000002, y: 0.068}
+      - {x: -0.039, y: 0.05}
+      - {x: -0.037, y: 0.024}
+      - {x: -0.031000001, y: 0}
+      - {x: 0.033, y: 0}
+      - {x: 0.031000001, y: 0.006}
+      - {x: 0.023000002, y: 0.006}
+      - {x: 0.027, y: 0.006}
+      - {x: 0.035, y: 0.014}
+      - {x: 0.045, y: 0.028}
+      - {x: 0.037, y: 0.062000003}
+      - {x: 0.025, y: 0.07}
+      - {x: 0.15300001, y: 0.07}
+      - {x: 0.141, y: 0.062000003}
+      - {x: 0.133, y: 0.030000001}
+      - {x: 0.14500001, y: 0}
+      - {x: 0.20700002, y: 0}
+      - {x: 0.20500001, y: 0.006}
+      - {x: 0.21300001, y: 0.026}
+      - {x: 0.21300001, y: 0.11000001}
+      - {x: 0.20500001, y: 0.11800001}
+      - {x: 0.029000001, y: 0.11800001}
+      - {x: 0.029000001, y: 0.49800003}
+      - {x: 0.141, y: 0.49800003}
+      - {x: 0.15100001, y: 0.504}
+      - {x: 0.149, y: 0.528}
+      - {x: 0.261, y: 0.528}
+      - {x: 0.273, y: 0.544}
+      - {x: 0.27100003, y: 0.58000004}
+      - {x: 0.25300002, y: 0.592}
+      - {x: 0.029000001, y: 0.74200004}
+      - {x: 0.165, y: 0.74200004}
+      - {x: 0.193, y: 0.748}
+      - {x: 0.22100002, y: 0.762}
+      - {x: 0.24900001, y: 0.79}
+      - {x: 0.263, y: 0.85800004}
+      - {x: 0.275, y: 0.9480001}
+      - {x: 0.29500002, y: 1.062}
+      - {x: 0.29500002, y: 1.1420001}
+      - {x: 0.26900002, y: 1.174}
+      - {x: 0.25100002, y: 1.182}
+      - {x: 0.041, y: 1.21}
+      - {x: -0.055000003, y: 1.21}
+      - {x: -0.101, y: 1.2040001}
+      - {x: -0.257, y: 1.1800001}
+      - {x: -0.273, y: 1.174}
+      - {x: -0.29500002, y: 1.148}
+      - {x: -0.29500002, y: 1.056}
+      - {x: -0.25100002, y: 0.81600004}
+      - {x: -0.24300002, y: 0.79}
+      - {x: -0.21900001, y: 0.76400006}
+      - {x: -0.193, y: 0.748}
+      - {x: -0.17500001, y: 0.74200004}
+      - {x: -0.029000001, y: 0.74}
+      - {x: -0.029000001, y: 0.59000003}
+      - {x: -0.25100002, y: 0.59000003}
+      - {x: -0.263, y: 0.586}
+      - {x: -0.26900002, y: 0.57600003}
+      - {x: -0.27100003, y: 0.53800005}
+      - {x: -0.25500003, y: 0.526}
+      - {x: -0.149, y: 0.522}
+      - {x: -0.14500001, y: 0.49600002}
+      - {x: -0.031000001, y: 0.49600002}
+      - {x: -0.029000001, y: 0.11800001}
+      - {x: -0.19900002, y: 0.11800001}
+      - {x: -0.209, y: 0.108}
+      - {x: -0.21100001, y: 0.080000006}
+      - {x: -0.19700001, y: 0.068}
+      - {x: -0.19700001, y: 0.022000002}
+      - {x: -0.18900001, y: 0}
+      - {x: -0.127, y: 0}
+      - {x: -0.127, y: 0.010000001}
+      - {x: -0.113000005, y: 0.044000003}
+      - {x: -0.123, y: 0.060000002}
+--- !u!50 &1996667605
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1996667601}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 2
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &1996667606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1996667601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 1
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1996667605}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1996667602}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!1 &2015462805
 GameObject:
   m_ObjectHideFlags: 0
@@ -12519,6 +14904,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 2058560391}
   - 212: {fileID: 2058560390}
+  - 60: {fileID: 2058560393}
+  - 50: {fileID: 2058560392}
+  - 114: {fileID: 2058560394}
   m_Layer: 0
   m_Name: ob_studyroom_chair
   m_TagString: Untagged
@@ -12568,6 +14956,149 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!50 &2058560392
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2058560389}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 2
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!60 &2058560393
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2058560389}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: -0.023000002, y: 0.068}
+      - {x: -0.039, y: 0.05}
+      - {x: -0.037, y: 0.024}
+      - {x: -0.031000001, y: 0}
+      - {x: 0.033, y: 0}
+      - {x: 0.031000001, y: 0.006}
+      - {x: 0.023000002, y: 0.006}
+      - {x: 0.027, y: 0.006}
+      - {x: 0.035, y: 0.014}
+      - {x: 0.045, y: 0.028}
+      - {x: 0.037, y: 0.062000003}
+      - {x: 0.025, y: 0.07}
+      - {x: 0.15300001, y: 0.07}
+      - {x: 0.141, y: 0.062000003}
+      - {x: 0.133, y: 0.030000001}
+      - {x: 0.14500001, y: 0}
+      - {x: 0.20700002, y: 0}
+      - {x: 0.20500001, y: 0.006}
+      - {x: 0.21300001, y: 0.026}
+      - {x: 0.21300001, y: 0.11000001}
+      - {x: 0.20500001, y: 0.11800001}
+      - {x: 0.029000001, y: 0.11800001}
+      - {x: 0.029000001, y: 0.49800003}
+      - {x: 0.141, y: 0.49800003}
+      - {x: 0.15100001, y: 0.504}
+      - {x: 0.149, y: 0.528}
+      - {x: 0.261, y: 0.528}
+      - {x: 0.273, y: 0.544}
+      - {x: 0.27100003, y: 0.58000004}
+      - {x: 0.25300002, y: 0.592}
+      - {x: 0.029000001, y: 0.74200004}
+      - {x: 0.165, y: 0.74200004}
+      - {x: 0.193, y: 0.748}
+      - {x: 0.22100002, y: 0.762}
+      - {x: 0.24900001, y: 0.79}
+      - {x: 0.263, y: 0.85800004}
+      - {x: 0.275, y: 0.9480001}
+      - {x: 0.29500002, y: 1.062}
+      - {x: 0.29500002, y: 1.1420001}
+      - {x: 0.26900002, y: 1.174}
+      - {x: 0.25100002, y: 1.182}
+      - {x: 0.041, y: 1.21}
+      - {x: -0.055000003, y: 1.21}
+      - {x: -0.101, y: 1.2040001}
+      - {x: -0.257, y: 1.1800001}
+      - {x: -0.273, y: 1.174}
+      - {x: -0.29500002, y: 1.148}
+      - {x: -0.29500002, y: 1.056}
+      - {x: -0.25100002, y: 0.81600004}
+      - {x: -0.24300002, y: 0.79}
+      - {x: -0.21900001, y: 0.76400006}
+      - {x: -0.193, y: 0.748}
+      - {x: -0.17500001, y: 0.74200004}
+      - {x: -0.029000001, y: 0.74}
+      - {x: -0.029000001, y: 0.59000003}
+      - {x: -0.25100002, y: 0.59000003}
+      - {x: -0.263, y: 0.586}
+      - {x: -0.26900002, y: 0.57600003}
+      - {x: -0.27100003, y: 0.53800005}
+      - {x: -0.25500003, y: 0.526}
+      - {x: -0.149, y: 0.522}
+      - {x: -0.14500001, y: 0.49600002}
+      - {x: -0.031000001, y: 0.49600002}
+      - {x: -0.029000001, y: 0.11800001}
+      - {x: -0.19900002, y: 0.11800001}
+      - {x: -0.209, y: 0.108}
+      - {x: -0.21100001, y: 0.080000006}
+      - {x: -0.19700001, y: 0.068}
+      - {x: -0.19700001, y: 0.022000002}
+      - {x: -0.18900001, y: 0}
+      - {x: -0.127, y: 0}
+      - {x: -0.127, y: 0.010000001}
+      - {x: -0.113000005, y: 0.044000003}
+      - {x: -0.123, y: 0.060000002}
+--- !u!114 &2058560394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2058560389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 1
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 2058560392}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 2058560390}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!1 &2068326682
 GameObject:
   m_ObjectHideFlags: 0
@@ -12679,7 +15210,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 40
+  m_RootOrder: 38
 --- !u!1 &2085809789
 GameObject:
   m_ObjectHideFlags: 0
@@ -12691,6 +15222,7 @@ GameObject:
   - 212: {fileID: 2085809792}
   - 50: {fileID: 2085809791}
   - 60: {fileID: 2085809790}
+  - 114: {fileID: 2085809794}
   m_Layer: 0
   m_Name: ob_studyroom_book
   m_TagString: Untagged
@@ -12731,7 +15263,7 @@ Rigidbody2D:
   m_GravityScale: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 2
   m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!212 &2085809792
@@ -12776,6 +15308,44 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
+--- !u!114 &2085809794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2085809789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 1
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 2085809791}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 2085809792}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!1 &2113279438
 GameObject:
   m_ObjectHideFlags: 0
@@ -12787,6 +15357,7 @@ GameObject:
   - 60: {fileID: 2113279441}
   - 50: {fileID: 2113279439}
   - 212: {fileID: 2113279440}
+  - 114: {fileID: 2113279442}
   m_Layer: 0
   m_Name: ob_livingroom_picture_01
   m_TagString: Untagged
@@ -12808,7 +15379,7 @@ Rigidbody2D:
   m_GravityScale: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 2
   m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!212 &2113279440
@@ -12859,6 +15430,44 @@ PolygonCollider2D:
       - {x: -0.46100003, y: 0.50200003}
       - {x: -0.46100003, y: 0.020000001}
       - {x: 0.46100003, y: 0.020000001}
+--- !u!114 &2113279442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2113279438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 2113279439}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 2113279440}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &2113279445
 Transform:
   m_ObjectHideFlags: 0
@@ -12870,7 +15479,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 49
+  m_RootOrder: 45
 --- !u!1 &2138762111
 GameObject:
   m_ObjectHideFlags: 0
@@ -12882,6 +15491,7 @@ GameObject:
   - 60: {fileID: 2138762114}
   - 50: {fileID: 2138762112}
   - 212: {fileID: 2138762113}
+  - 114: {fileID: 2138762115}
   m_Layer: 0
   m_Name: ob_livingroom_picture
   m_TagString: Untagged
@@ -12903,7 +15513,7 @@ Rigidbody2D:
   m_GravityScale: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 2
   m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!212 &2138762113
@@ -12954,6 +15564,44 @@ PolygonCollider2D:
       - {x: -0.13800001, y: 0.019000001}
       - {x: -0.13800001, y: 0.296}
       - {x: 0.13800001, y: 0.296}
+--- !u!114 &2138762115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2138762111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 1
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 2138762112}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 2138762113}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
 --- !u!4 &2138762118
 Transform:
   m_ObjectHideFlags: 0
@@ -12965,7 +15613,7 @@ Transform:
   m_LocalScale: {x: 2.0856414, y: 2.0856419, z: 2.0856419}
   m_Children: []
   m_Father: {fileID: 1287044646}
-  m_RootOrder: 48
+  m_RootOrder: 44
 --- !u!1 &2143119072
 GameObject:
   m_ObjectHideFlags: 0
@@ -12977,6 +15625,7 @@ GameObject:
   - 212: {fileID: 2143119075}
   - 50: {fileID: 2143119074}
   - 60: {fileID: 2143119073}
+  - 114: {fileID: 2143119077}
   m_Layer: 0
   m_Name: ob_studyroom_book (2)
   m_TagString: Untagged
@@ -13017,7 +15666,7 @@ Rigidbody2D:
   m_GravityScale: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 2
   m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!212 &2143119075
@@ -13062,3 +15711,41 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 18
+--- !u!114 &2143119077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2143119072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 1
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 2143119074}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 2143119075}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
