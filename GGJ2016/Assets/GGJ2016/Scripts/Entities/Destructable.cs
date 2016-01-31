@@ -17,13 +17,11 @@ namespace Assets.GGJ2016.Scripts.Entities
         [SerializeField] private float _maxHealth = 100.0f;
         [SerializeField, Readonly] private float _health; 
         [SerializeField] private float _points = 10.0f;
-		[SerializeField] private bool _disableRigidbodyUntilContact = false;
         [SerializeField] private bool _breakByForce = true;
         [SerializeField] private float _impactVelocityToBreak = 4.5f;
 
         [SerializeField] private Rigidbody2D _rigidbody2D;
-        [SerializeField] private SVGRenderer _svgRenderer;
-		[SerializeField] private SpriteRenderer _spriteRenderer;
+        [SerializeField] private SVGRenderer _renderer;
 
         [SerializeField] private TweenSettings _fadeSettings;
         private ITween _fadeTween;
@@ -59,11 +57,10 @@ namespace Assets.GGJ2016.Scripts.Entities
 
         public event Action<Destructable> Destroyed;
 
-        private void Reset()
+        private void Awake()
         {
             _rigidbody2D = GetComponent<Rigidbody2D>();
-            _svgRenderer = GetComponent<SVGRenderer>();
-			_spriteRenderer = GetComponent<SpriteRenderer>();
+            _renderer = GetComponent<SVGRenderer>();
         }
 
         protected override void OnPostInject()
@@ -71,55 +68,27 @@ namespace Assets.GGJ2016.Scripts.Entities
             _health = _maxHealth;
             Destroyed += OnDestroyed;
 
-			if (_rigidbody2D.IsNull()) {
-				_rigidbody2D = GetComponent<Rigidbody2D>();
-			}
-			if (_svgRenderer.IsNull()) {
-				_svgRenderer = GetComponent<SVGRenderer>();
-			}
-			if (_spriteRenderer.IsNull()) {
-				_spriteRenderer = GetComponent<SpriteRenderer>();
-			}
-
             if (_breakByForce && _rigidbody2D.IsNull())
             {
                 Debug.Log(gameObject.name + " needs a Rigidbody2D to break by force!");
             }
-			if (_disableRigidbodyUntilContact && _rigidbody2D.IsNotNull()) {
-				_rigidbody2D.isKinematic = true;
-			}
         }
 
         private void OnDestroyed(Destructable destructable)
         {
-			if (_svgRenderer.IsNotNull()) {
-            	_fadeTween.SafelyAbort();
-				_fadeTween = _svgRenderer.TweenColor()
-	                .To(ColorUtils.Colors.Translucent, _fadeSettings)
-	                .OnComplete(
-	                    () => {
-	                        Destroy(gameObject);
-	                    }
-	                )
-	                .Start();
-			}
-			else if (_spriteRenderer.IsNotNull()) {
-				_fadeTween.SafelyAbort();
-				_fadeTween = _svgRenderer.TweenColor()
-					.To(ColorUtils.Colors.Translucent, _fadeSettings)
-					.OnComplete(
-						() => {
-							Destroy(gameObject);
-						}
-					)
-					.Start();
-			}
+            _fadeTween.SafelyAbort();
+            _fadeTween = _renderer.TweenColor()
+                .To(ColorUtils.Colors.Translucent, _fadeSettings)
+                .OnComplete(
+                    () => {
+                        Destroy(gameObject);
+                    }
+                )
+                .Start();
         }
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
-			_rigidbody2D.isKinematic = false;
-
             var impactVelocity = _rigidbody2D.GetPointVelocity(collision.contacts.First().point);
             Debug.Log(impactVelocity);
             if (_breakByForce && impactVelocity.magnitude >= _impactVelocityToBreak)
@@ -128,10 +97,5 @@ namespace Assets.GGJ2016.Scripts.Entities
             }
 
         }
-
-		private void OnTriggerEnter2D(Collider2D collider)
-		{
-			_rigidbody2D.isKinematic = false;
-		}
     }
 }
