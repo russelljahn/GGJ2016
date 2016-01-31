@@ -6,12 +6,15 @@ using UnityEngine.UI;
 using Zenject;
 using Assets.GGJ2016.Scripts.Entities;
 using Assets.OutOfTheBox.Scripts;
+using UnityEngine.SceneManagement;
+using Assets.OutOfTheBox.Scripts.Audio;
 
 namespace Assets.GGJ2016.Scripts.Views
 {
     public class GameOverPanel : Panel
     {
 		[Inject] private AppSettings _appSettings;
+		[Inject] private AudioManager _audioManager;
         [Inject] private Controller _controller;
 		[Inject] private CatStats _catStats;
         [Inject] private EventSystem _eventSystem;
@@ -32,6 +35,7 @@ namespace Assets.GGJ2016.Scripts.Views
 
         private void ReplayButtonOnPressed()
         {
+			SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             _navigator.AppState = AppStates.Gameplay;
         }
 
@@ -51,10 +55,14 @@ namespace Assets.GGJ2016.Scripts.Views
 					if (_catStats.Points >= _appSettings.PointsToLevel5) {
 						_winScreen.gameObject.SetActive(true);
 						_gameOverScreen.gameObject.SetActive(false);
+
+						_audioManager.PlayTrackOneShot(AudioClips.BgGameOver);
 					}
 					else {
 						_winScreen.gameObject.SetActive(false);
 						_gameOverScreen.gameObject.SetActive(true);
+
+						_audioManager.PlayTrackOneShot(AudioClips.BgGameOver);
 					}
 
                     _eventSystem.SetSelectedGameObject(_replayButton.gameObject);

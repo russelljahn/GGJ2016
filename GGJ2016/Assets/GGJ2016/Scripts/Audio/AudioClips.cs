@@ -66,6 +66,9 @@ namespace Assets.OutOfTheBox.Scripts.Audio
 				case SfxLevelDown:
                     return Sfx1TrackId;
 
+				case BgGameOver:
+					return Sfx2TrackId;
+
                 default:
                     Debug.LogError(string.Format("Unknown clip name: " + clipName));
                     return Sfx2TrackId;

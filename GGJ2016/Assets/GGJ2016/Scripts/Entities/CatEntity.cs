@@ -88,12 +88,8 @@ namespace Assets.GGJ2016.Scripts.Entities
 			_stats.LevelChanged += StatsOnLevelChanged;
 			_navigator.AppStateChanged += NavigatorOnAppStateChanged;
 
-			_currentBgClipName = AudioClips.BgLevel1;
 			StatsOnLevelChanged(new StateChange<int>(_stats.Level, _stats.Level));
             State = StateType.Idle;
-
-			_audioManager.LoadClip(_currentBgClipName, 1.0f, 1.0f, true);
-			_audioManager.PlayTrack(_currentBgClipName);
         }
 
         private void Update()
@@ -128,10 +124,19 @@ namespace Assets.GGJ2016.Scripts.Entities
 
 		private void NavigatorOnAppStateChanged(StateChange<AppStates> stateChange)
 		{
+			switch (stateChange.Previous)
+			{
+				case AppStates.Gameplay:
+					_audioManager.Fade(_currentBgClipName, 0.0f);
+					break;
+			}
+
 			switch (stateChange.Next)
 			{
 				case AppStates.Gameplay:
 					_rigidbody2D.isKinematic = false;
+
+					_currentBgClipName = AudioClips.BgLevel0;
 					_audioManager.LoadClip(_currentBgClipName, 1.0f, 1.0f, true);
 					_audioManager.PlayTrack(_currentBgClipName);
 					break;
@@ -366,11 +371,13 @@ namespace Assets.GGJ2016.Scripts.Entities
 			_level5SpriteRenderer.gameObject.SetActive(false);
 			_currentSpriteRenderer.gameObject.SetActive(true);
 
-			_audioManager.LoadClip(_currentBgClipName, 0.0f, 1.0f, true);
-			_audioManager.PlayTrack(_currentBgClipName);
+			if (_navigator.AppState == AppStates.Gameplay) {
+				_audioManager.LoadClip(_currentBgClipName, 0.0f, 1.0f, true);
+				_audioManager.PlayTrack(_currentBgClipName);
 
-			if (clipToFadeOut != _currentBgClipName) {
-				_audioManager.Crossfade(clipToFadeOut, _currentBgClipName, 0f, 1f);
+				if (clipToFadeOut != _currentBgClipName) {
+					_audioManager.Crossfade(clipToFadeOut, _currentBgClipName, 0f, 1f);
+				}
 			}
 		}
     }
