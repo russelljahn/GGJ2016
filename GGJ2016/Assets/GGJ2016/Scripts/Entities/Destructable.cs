@@ -116,7 +116,6 @@ namespace Assets.GGJ2016.Scripts.Entities
 			_rigidbody2D.isKinematic = false;
 
             var impactVelocity = _rigidbody2D.GetPointVelocity(collision.contacts.First().point);
-            Debug.Log(impactVelocity);
             if (_breakByForce && impactVelocity.magnitude >= _impactVelocityToBreak)
             {
                 Destroyed.SafelyInvoke(this);

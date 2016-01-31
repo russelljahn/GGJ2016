@@ -36,6 +36,9 @@ namespace Assets.GGJ2016.Scripts.Entities
                 {
                     Destroyed.SafelyInvoke(this);
                 }
+				if (_points >= _appSettings.PointsToLevel5) {
+					_navigator.AppState = AppStates.GameOver;
+				}
             }
         }
 

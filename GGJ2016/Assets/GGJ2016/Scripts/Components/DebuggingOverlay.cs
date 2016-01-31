@@ -16,7 +16,8 @@ namespace Assets.GGJ2016.Scripts.Components
 
         private void Update()
         {
-            _text.text = string.Format("LV: {0}/{1}, Points: {2}", _catStats.Level, _appSettings.MaxCatLevel, _catStats.Points);
+			var points = Mathf.Clamp(Mathf.FloorToInt(_catStats.Points), 0, _appSettings.PointsToLevel5);
+			_text.text = string.Format("<b>LV:</b> {0}/{1}\n<b>Cattiness:</b> {2}", _catStats.Level, _appSettings.MaxCatLevel, points);
         }
     }
 }
