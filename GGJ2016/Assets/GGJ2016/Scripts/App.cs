@@ -13,7 +13,7 @@ namespace Assets.OutOfTheBox.Scripts
 
         protected override void OnPostInject()
         {
-            _navigator.AppState = AppStates.Gameplay;
+            _navigator.AppState = AppStates.MainMenu;
 
             _navigator.AppStateChanged += NavigatorOnAppStateChanged;
         }

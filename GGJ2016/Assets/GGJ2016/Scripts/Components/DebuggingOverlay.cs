@@ -1,6 +1,5 @@
 ﻿using Assets.GGJ2016.Scripts.Entities;
 using Assets.OutOfTheBox.Scripts;
-using Assets.OutOfTheBox.Scripts.Navigation;
 using Sense.Injection;
 using UnityEngine;
 using UnityEngine.UI;

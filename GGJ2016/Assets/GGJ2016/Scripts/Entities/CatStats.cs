@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Assets.OutOfTheBox.Scripts;
 using Assets.OutOfTheBox.Scripts.Extensions;
+using Assets.OutOfTheBox.Scripts.Navigation;
 using Sense.Injection;
 using Sense.PropertyAttributes;
 using UnityEngine;
@@ -14,6 +15,7 @@ namespace Assets.GGJ2016.Scripts.Entities
     public class CatStats : InjectableBehaviour
     {
         [Inject] private AppSettings _appSettings;
+        [Inject] private Navigator _navigator;
 
         [SerializeField, Readonly] private float _points;
         public float Points
@@ -63,12 +65,36 @@ namespace Assets.GGJ2016.Scripts.Entities
 
         protected override void OnPostInject()
         {
-            Points = _appSettings.InitialPoints;
+            Destroyed += OnDestroyed;
+            _navigator.AppStateChanged += NavigatorOnAppStateChanged;
+        }
+
+        private void NavigatorOnAppStateChanged(StateChange<AppStates> stateChange)
+        {
+            switch (stateChange.Next)
+            {
+                case AppStates.Gameplay:
+                    Points = _appSettings.InitialPoints;
+                    break;
+            }
+        }
+
+        private void OnDestroyed(CatStats catStats)
+        {
+            _navigator.AppState = AppStates.GameOver;
         }
 
         private void Update()
         {
-            Points -= _appSettings.PointLossSpeed*Time.deltaTime;
+            if (_navigator.AppState == AppStates.Gameplay)
+            {
+                Points -= _appSettings.PointLossSpeed*Time.deltaTime;
+                if (Points <= 0f)
+                {
+                    Destroyed.SafelyInvoke(this);
+                }
+            }
+
         }
     }
 }

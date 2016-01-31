@@ -1,12 +1,11 @@
-﻿using Assets.OutOfTheBox.Scripts.Extensions;
+﻿using System;
+using Assets.OutOfTheBox.Scripts.Extensions;
 using FlexiTweening;
 using FlexiTweening.Extensions;
 using Sense.Injection;
-using System;
 using UnityEngine;
-using Zenject;
 
-namespace Assets.PaperGhost.Scripts.Views
+namespace Assets.GGJ2016.Scripts.Views
 {
     [RequireComponent(typeof(CanvasGroup))]
     [RequireComponent(typeof(RectTransform))]
