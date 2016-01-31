@@ -6,6 +6,7 @@ using Sense.Injection;
 using Sense.PropertyAttributes;
 using UnityEngine;
 using Zenject;
+using AssemblyCSharp;
 
 namespace Assets.GGJ2016.Scripts.Entities
 {
@@ -17,6 +18,8 @@ namespace Assets.GGJ2016.Scripts.Entities
 
         [SerializeField]
         private SpriteRenderer _spriteRenderer;
+		[SerializeField]
+		private CollisionDetector _groundDetector;
 
         [SerializeField]
         private float _runMultiplier = 1.75f;
@@ -189,8 +192,10 @@ namespace Assets.GGJ2016.Scripts.Entities
 
         void FixedUpdate()
         {
-            _isGrounded = (Physics2D.Raycast(transform.position, -Vector2.up, .15f, _mask.value));
-            var moveX = _controller.MoveX;
+			//_isGrounded = Physics2D.Raycast(transform.position, -Vector2.up, .15f, _mask.value) || _groundDetector.InContact;
+			_isGrounded = Physics2D.Raycast(transform.position, -Vector2.up, .15f, _mask.value);
+            
+			var moveX = _controller.MoveX;
 
             // Horizontal
             if (_isGrounded)
@@ -219,7 +224,8 @@ namespace Assets.GGJ2016.Scripts.Entities
             }
             //air movement
             if (!_isGrounded)
-            {
+			{				
+
                 _rigidbody2D.drag = 1f;
                 _rigidbody2D.AddForce(Vector2.right * moveX * _jumpMultiplierX);
                 _timeInJump += Time.deltaTime;
