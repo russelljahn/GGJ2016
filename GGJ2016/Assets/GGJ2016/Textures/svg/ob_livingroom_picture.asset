@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!43 &4300132
+--- !u!43 &4390680
 Mesh:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -25,36 +25,28 @@ Mesh:
   m_BindPose: []
   m_BoneNameHashes: 
   m_RootBoneNameHash: 0
-  m_MeshCompression: 0
+  m_MeshCompression: 2
   m_IsReadable: 1
   m_KeepVertices: 1
   m_KeepIndices: 1
-  m_IndexBuffer: 00000100020001000000030004000500060004000700050004000800070008000400090005000a0006000b000a00050008000a000b000a0008000900
+  m_IndexBuffer: 
   m_Skin: []
   m_VertexData:
-    m_CurrentChannels: 29
-    m_VertexCount: 12
+    m_CurrentChannels: 0
+    m_VertexCount: 0
     m_Channels:
     - stream: 0
       offset: 0
       format: 0
-      dimension: 3
+      dimension: 0
     - stream: 0
       offset: 0
       format: 0
       dimension: 0
     - stream: 0
-      offset: 12
-      format: 2
-      dimension: 4
-    - stream: 0
-      offset: 16
+      offset: 0
       format: 0
-      dimension: 2
-    - stream: 0
-      offset: 24
-      format: 0
-      dimension: 2
+      dimension: 0
     - stream: 0
       offset: 0
       format: 0
@@ -67,15 +59,23 @@ Mesh:
       offset: 0
       format: 0
       dimension: 0
-    m_DataSize: 384
-    _typelessdata: e04f0dbe10d7a33c00000080627c61ff00000000000000000000000000000000df4f0d3e508d973e00000080627c61ff00000000000000000000000000000000df4f0d3e10d7a33c00000080627c61ff00000000000000000000000000000000e04f0dbe508d973e00000080627c61ff00000000000000000000000000000000c1ca21be00000080000000804556a6ff00000000000000000000000000000000faa9f13d10d7233d000000804556a6ff00000000000000000000000000000000c1ca213e00000080000000804556a6ff00000000000000000000000000000000fda9f1bd10d7233d000000804556a6ff00000000000000000000000000000000fda9f1bde04f8d3e000000804556a6ff00000000000000000000000000000000c1ca21bec1caa13e000000804556a6ff00000000000000000000000000000000c1ca213ec1caa13e000000804556a6ff00000000000000000000000000000000faa9f13de04f8d3e000000804556a6ff00000000000000000000000000000000
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 0
+    _typelessdata: 
   m_CompressedMesh:
     m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
+      m_NumItems: 36
+      m_Range: 0.47400004
+      m_Start: -0.158
+      m_Data: cd0a22605555dd9f32f55555dd9f22605555cd0a32f555550000555555551095ef6a5555aaaa555555559a15ef6a55559a1565ea55550000ffff5555aaaaffff5555109565ea5555
+      m_BitSize: 16
     m_UV:
       m_NumItems: 0
       m_Range: 0
@@ -107,19 +107,19 @@ Mesh:
       m_Data: 
       m_BitSize: 0
     m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
+      m_NumItems: 48
+      m_Range: 0.7294117
+      m_Start: 0.27058825
+      m_Data: ca94fcca94fcca94fcca94fc8011fe8011fe8011fe8011fe8011fe8011fe8011fe8011fe
+      m_BitSize: 6
     m_BoneIndices:
       m_NumItems: 0
       m_Data: 
       m_BitSize: 0
     m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
+      m_NumItems: 30
+      m_Data: 101230544657848794a5b65aa8ab98
+      m_BitSize: 4
     m_UVInfo: 0
   m_LocalAABB:
     m_Center: {x: 0, y: 0.158, z: -0}
@@ -139,9 +139,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
   m_Name: ob_livingroom_picture
   m_EditorClassIdentifier: 
-  _lastTimeModified: 635897935691885120
+  _lastTimeModified: 635898072834609956
   _documentAsset: {fileID: 11453204}
-  _sharedMesh: {fileID: 4300132}
+  _sharedMesh: {fileID: 4390680}
   _antialiasing: 0
   _antialiasingWidth: 0.1
   _generateCollider: 1
@@ -160,8 +160,8 @@ MonoBehaviour:
       width: 0.27600002
       height: 0.27600002
   _format: 1
-  _useGradients: 0
-  _meshCompression: 0
+  _useGradients: 1
+  _meshCompression: 2
   _optimizeMesh: 1
   _generateNormals: 0
   _generateTangents: 0
@@ -193,7 +193,7 @@ MonoBehaviour:
     atlasIndex: 0
     references: 0
   _sharedShaders:
-  - SVG Importer/GradientColor/GradientColorAlphaBlended
+  - SVG Importer/SolidColor/SolidColorAlphaBlended
   _canvasRectangle:
     serializedVersion: 2
     x: 0

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!43 &4322810
+--- !u!43 &4379740
 Mesh:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -25,36 +25,28 @@ Mesh:
   m_BindPose: []
   m_BoneNameHashes: 
   m_RootBoneNameHash: 0
-  m_MeshCompression: 0
+  m_MeshCompression: 2
   m_IsReadable: 1
   m_KeepVertices: 1
   m_KeepIndices: 1
-  m_IndexBuffer: 000001000200010000000300040005000600050004000700080009000a00090008000b00
+  m_IndexBuffer: 
   m_Skin: []
   m_VertexData:
-    m_CurrentChannels: 29
-    m_VertexCount: 12
+    m_CurrentChannels: 0
+    m_VertexCount: 0
     m_Channels:
     - stream: 0
       offset: 0
       format: 0
-      dimension: 3
+      dimension: 0
     - stream: 0
       offset: 0
       format: 0
       dimension: 0
     - stream: 0
-      offset: 12
-      format: 2
-      dimension: 4
-    - stream: 0
-      offset: 16
+      offset: 0
       format: 0
-      dimension: 2
-    - stream: 0
-      offset: 24
-      format: 0
-      dimension: 2
+      dimension: 0
     - stream: 0
       offset: 0
       format: 0
@@ -67,15 +59,23 @@ Mesh:
       offset: 0
       format: 0
       dimension: 0
-    m_DataSize: 384
-    _typelessdata: b91e8dbf5834dd3d00000080afa790ff00000000000000000000000000000000b91e8d3f0000803f00000080afa790ff00000000000000000000000000000000b91e8d3f5834dd3d00000080afa790ff00000000000000000000000000000000b91e8dbf0000803f00000080afa790ff00000000000000000000000000000000b91e8dbf00000080000000800e9385ff00000000000000000000000000000000b91e8d3f5834dd3d000000800e9385ff00000000000000000000000000000000b91e8d3f00000080000000800e9385ff00000000000000000000000000000000b91e8dbf5834dd3d000000800e9385ff00000000000000000000000000000000008eb4bb0000008000000080dcdddeff000000000000000000000000000000000020933b0000803f00000080dcdddeff000000000000000000000000000000000020933b0000008000000080dcdddeff00000000000000000000000000000000008eb4bb0000803f00000080dcdddeff00000000000000000000000000000000
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 0
+    _typelessdata: 
   m_CompressedMesh:
     m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
+      m_NumItems: 36
+      m_Range: 2.2050002
+      m_Start: -1.1025001
+      m_Data: 00008a8c0080ffff19f40080ffff8a8c0080000019f40080000000800080ffff8a8c0080ffff0080008000008a8c00805c7f00800080858019f400808580008000805c7f19f40080
+      m_BitSize: 16
     m_UV:
       m_NumItems: 0
       m_Range: 0
@@ -107,19 +107,19 @@ Mesh:
       m_Data: 
       m_BitSize: 0
     m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
+      m_NumItems: 48
+      m_Range: 0.94509804
+      m_Start: 0.05490196
+      m_Data: 2a2afe2a2afe2a2afe2a2afec0f8fdc0f8fdc0f8fdc0f8fdb66dffb66dffb66dffb66dff
+      m_BitSize: 6
     m_BoneIndices:
       m_NumItems: 0
       m_Data: 
       m_BitSize: 0
     m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
+      m_NumItems: 18
+      m_Data: 101230545674989ab8
+      m_BitSize: 4
     m_UVInfo: 0
   m_LocalAABB:
     m_Center: {x: 0, y: 0.5, z: -0}
@@ -139,9 +139,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
   m_Name: ob_kitchen_01
   m_EditorClassIdentifier: 
-  _lastTimeModified: 635897935692405440
+  _lastTimeModified: 635898072911376821
   _documentAsset: {fileID: 11493792}
-  _sharedMesh: {fileID: 4322810}
+  _sharedMesh: {fileID: 4379740}
   _antialiasing: 0
   _antialiasingWidth: 0.1
   _generateCollider: 1
@@ -160,8 +160,8 @@ MonoBehaviour:
       width: 2.204
       height: 2.204
   _format: 1
-  _useGradients: 0
-  _meshCompression: 0
+  _useGradients: 1
+  _meshCompression: 2
   _optimizeMesh: 1
   _generateNormals: 0
   _generateTangents: 0
@@ -193,7 +193,7 @@ MonoBehaviour:
     atlasIndex: 0
     references: 0
   _sharedShaders:
-  - SVG Importer/GradientColor/GradientColorAlphaBlended
+  - SVG Importer/SolidColor/SolidColorAlphaBlended
   _canvasRectangle:
     serializedVersion: 2
     x: 0

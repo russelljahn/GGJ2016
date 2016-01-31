@@ -4,7 +4,6 @@ using Assets.OutOfTheBox.Scripts.Inputs;
 using Assets.OutOfTheBox.Scripts.Utils;
 using Sense.Injection;
 using Sense.PropertyAttributes;
-using UnityEditor;
 using UnityEngine;
 using Zenject;
 
@@ -13,29 +12,37 @@ namespace Assets.GGJ2016.Scripts.Entities
     [RequireComponent(typeof(Rigidbody2D))]
     public class CatEntity : InjectableBehaviour
     {
-        [Inject] private Controller _controller;
+        [Inject]
+        private Controller _controller;
 
-        [SerializeField] private SpriteRenderer _spriteRenderer;
+        [SerializeField]
+        private SpriteRenderer _spriteRenderer;
 
-        [SerializeField] private float _walkSpeed = 10.0f;
-        [SerializeField] private float _runMultiplier = 1.75f;
-        [SerializeField] private float _jumpMultiplierX = 1.25f;
-        [SerializeField] private float _jumpMultiplierY = 2.0f;
+        [SerializeField]
+        private float _runMultiplier = 1.75f;
+        [SerializeField]
+        private float _jumpMultiplierX = 1.25f;
+        [SerializeField]
+        private float _jumpMultiplierY = 2.0f;
 
-        [SerializeField] private float _frictionMultiplier = 0.975f;
+        [SerializeField]
+        private float _timeUntilMaxJump = 1.0f;
+        [SerializeField]
+        private float _gravity = -0.0075f;
 
-        [SerializeField] private float _timeUntilMaxSpeed = 1.0f;
-        [SerializeField] private float _timeUntilMaxJump = 1.0f;
-        [SerializeField] private float _gravity = -0.0075f;
+        [SerializeField, Readonly]
+        private float _timeInMotion;
+        [SerializeField, Readonly]
+        private float _timeInJump;
+        [SerializeField, Readonly]
+        private float _speedX;
 
-        [SerializeField, Readonly] private float _timeInMotion;
-        [SerializeField, Readonly] private float _timeInJump;
-        [SerializeField, Readonly] private float _speedX;
-
-        [SerializeField] private AnimationCurve _jumpSpeedCurve = AnimationCurveUtils.GetLinearCurve();
 
         private const float WalkMultiplier = 1.0f;
         private const float IdleSpeedThreshold = 0.1f;
+
+        [SerializeField] private LayerMask _mask = 12;
+        [SerializeField, Readonly] private bool _isGrounded;
 
         private Rigidbody2D _rigidbody2D;
 
@@ -48,7 +55,8 @@ namespace Assets.GGJ2016.Scripts.Entities
             Falling
         }
 
-        [SerializeField, Readonly] private StateType _state = StateType.Initial;
+        [SerializeField, Readonly]
+        private StateType _state = StateType.Initial;
         private StateType State
         {
             get { return _state; }
@@ -62,16 +70,6 @@ namespace Assets.GGJ2016.Scripts.Entities
                 _state = value;
                 OnStateChanged(new StateChange<StateType>(previous, _state));
             }
-        }
-
-        private float MaxSpeedX
-        {
-            get { return _walkSpeed*_runMultiplier; }
-        }
-
-        private float MaxSpeedY
-        {
-            get { return _walkSpeed * _jumpMultiplierY; }
         }
 
         protected override void OnPostInject()
@@ -105,11 +103,9 @@ namespace Assets.GGJ2016.Scripts.Entities
                     InJumping();
                     break;
 
-                case StateType.Falling:
-                    InFalling();
-                    break;
+
             }
-           
+
             //Debug.Log("_controller: " + new Vector2(_controller.MoveX, _controller.MoveY));
         }
 
@@ -156,7 +152,7 @@ namespace Assets.GGJ2016.Scripts.Entities
 
         private void InIdle()
         {
-            HandleDisplacement();
+
 
             var movement = _controller.MoveX;
             if (!movement.IsApproximatelyZero())
@@ -171,7 +167,7 @@ namespace Assets.GGJ2016.Scripts.Entities
 
         private void InMoving()
         {
-            HandleDisplacement();
+
 
             if (Mathf.Abs(_speedX) <= IdleSpeedThreshold)
             {
@@ -185,67 +181,56 @@ namespace Assets.GGJ2016.Scripts.Entities
 
         private void InJumping()
         {
-            _timeInJump += Time.deltaTime;
-
-            HandleDisplacement();
-
             if (!_controller.IsJumping)
             {
                 State = StateType.Moving;
             }
         }
 
-        private void InFalling()
+        void FixedUpdate()
         {
-            
-        }
-
-        private void HandleDisplacement()
-        {
-            var displacement = Vector3.zero;
+            _isGrounded = (Physics2D.Raycast(transform.position, -Vector2.up, .15f, _mask.value));
+            var moveX = _controller.MoveX;
 
             // Horizontal
-            var moveX = _controller.MoveX;
-            var baseSpeedMultiplier = _controller.IsRunning ? _runMultiplier : WalkMultiplier;
-            //BUG: _timeInMotion is still > _timeUntilMaxSpeed if run, let go, then run again
-            var speedMultiplier = Mathf.Lerp(WalkMultiplier, baseSpeedMultiplier, _timeInMotion / _timeUntilMaxSpeed);
-
-            if (_controller.IsJumping)
+            if (_isGrounded)
             {
-                speedMultiplier *= _jumpMultiplierX;
+                _timeInJump = 0;
+                _rigidbody2D.AddForce(Vector2.right * moveX * _runMultiplier, ForceMode2D.Impulse);
+                if (_rigidbody2D.velocity.magnitude > 3)
+                    _rigidbody2D.drag = 4;
+                else
+                    _rigidbody2D.drag = 1;
+
+            }
+            if (_controller.MoveX > 0)
+                _spriteRenderer.flipX = true;
+            if (_controller.MoveX < 0)
+                _spriteRenderer.flipX = false;
+
+            //addGravity
+            _rigidbody2D.AddForce(Vector2.up * _gravity);
+
+            //jump
+            bool canJump = _controller.IsJumping;
+            if (canJump && _isGrounded)
+            {
+                _rigidbody2D.AddForce(Vector2.up * _jumpMultiplierY);
+            }
+            //air movement
+            if (!_isGrounded)
+            {
+                _rigidbody2D.drag = 1f;
+                _rigidbody2D.AddForce(Vector2.right * moveX * _jumpMultiplierX);
+                _timeInJump += Time.deltaTime;
+                //continue jumping in air
+                if (_timeInJump < _timeUntilMaxJump && canJump)
+                    _rigidbody2D.AddForce(Vector2.up * _jumpMultiplierY * .2f);
+                //get stuck fix
+                if (_rigidbody2D.velocity.magnitude < 2)
+                    _rigidbody2D.AddForce(Vector2.right * moveX * _runMultiplier);
             }
 
-            var speedIsFasterThanWalking = Mathf.Abs(_speedX) > _walkSpeed;
-            if (_controller.IsRunning || !speedIsFasterThanWalking)
-            {
-                _speedX += moveX * speedMultiplier;
-            }
-            if (moveX.IsApproximatelyZero() || speedIsFasterThanWalking)
-            {
-                _speedX *= _frictionMultiplier;
-            }
-            else
-            {
-                _spriteRenderer.flipX = _controller.MoveX > 0f;
-            }
-
-            _speedX = Mathf.Clamp(_speedX, -MaxSpeedX, MaxSpeedX);
-            displacement.x = _speedX * Time.deltaTime;
-
-            //Debug.Log("_speedX: " + _speedX + ", speedMultiplier: " + speedMultiplier);
-
-            // Vertical
-            var moveY = _controller.IsJumping ? 1.0f : 0.0f;
-            if (_timeInJump < _timeUntilMaxJump)
-            {
-                var speedY = moveY*_jumpMultiplierY*_jumpSpeedCurve.Evaluate(Mathf.Clamp01(_timeInJump/_timeUntilMaxJump));
-                speedY = Mathf.Clamp(speedY, -MaxSpeedY, MaxSpeedY);
-                displacement.y += speedY * Time.deltaTime;
-            }
-
-            displacement.y += _gravity;
-
-            _rigidbody2D.MovePosition(transform.position + displacement);
         }
     }
 }

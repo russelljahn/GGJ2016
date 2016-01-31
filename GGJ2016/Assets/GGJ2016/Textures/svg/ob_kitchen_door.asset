@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!43 &4380652
+--- !u!43 &4303966
 Mesh:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -25,36 +25,28 @@ Mesh:
   m_BindPose: []
   m_BoneNameHashes: 
   m_RootBoneNameHash: 0
-  m_MeshCompression: 0
+  m_MeshCompression: 2
   m_IsReadable: 1
   m_KeepVertices: 1
   m_KeepIndices: 1
-  m_IndexBuffer: 0000010002000100000003000400050006000400070005000800070004000800090007000a00090008000a000b0009000c000b000a000c000d000b000e000d000c000d000e000f00
+  m_IndexBuffer: 
   m_Skin: []
   m_VertexData:
-    m_CurrentChannels: 29
-    m_VertexCount: 16
+    m_CurrentChannels: 0
+    m_VertexCount: 0
     m_Channels:
     - stream: 0
       offset: 0
       format: 0
-      dimension: 3
+      dimension: 0
     - stream: 0
       offset: 0
       format: 0
       dimension: 0
     - stream: 0
-      offset: 12
-      format: 2
-      dimension: 4
-    - stream: 0
-      offset: 16
+      offset: 0
       format: 0
-      dimension: 2
-    - stream: 0
-      offset: 24
-      format: 0
-      dimension: 2
+      dimension: 0
     - stream: 0
       offset: 0
       format: 0
@@ -67,15 +59,23 @@ Mesh:
       offset: 0
       format: 0
       dimension: 0
-    m_DataSize: 512
-    _typelessdata: ccccccbe0000008000000080583c3fff00000000000000000000000000000000cccccc3eb9a50b4000000080583c3fff00000000000000000000000000000000cccccc3e0000008000000080583c3fff00000000000000000000000000000000ccccccbeb9a50b4000000080583c3fff0000000000000000000000000000000051cb76beb2635b3f00000080ff653eff00000000000000000000000000000000848f48be240f633f00000080ff653eff000000000000000000000000000000007a4963bea8605c3f00000080ff653eff00000000000000000000000000000000439e44be9cef673f00000080ff653eff00000000000000000000000000000000452585bea8605c3f00000080ff653eff00000000000000000000000000000000848f48be6acf6c3f00000080ff653eff00000000000000000000000000000000408292be240f633f00000080ff653eff000000000000000000000000000000007a4963bee87d733f00000080ff653eff00000000000000000000000000000000e07a94be9cef673f00000080ff653eff0000000000000000000000000000000051cb76bee07a743f00000080ff653eff00000000000000000000000000000000408292be6acf6c3f00000080ff653eff00000000000000000000000000000000452585bee87d733f00000080ff653eff00000000000000000000000000000000
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 0
+    _typelessdata: 
   m_CompressedMesh:
     m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
+      m_NumItems: 48
+      m_Range: 2.5819898
+      m_Start: -0.39999998
+      m_Data: 0000a927a927514fffffa927514fa927a9270000ffffa927c30fa07ca9273d14997fa927a711027da9279f147c81a927e00d027da9273d146083a9274a0b997fa927a711f685a927e80a7c81a927c30f5886a9274a0b6083a927e00df685a927
+      m_BitSize: 16
     m_UV:
       m_NumItems: 0
       m_Range: 0
@@ -107,19 +107,19 @@ Mesh:
       m_Data: 
       m_BitSize: 0
     m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
+      m_NumItems: 64
+      m_Range: 0.7647059
+      m_Start: 0.23529412
+      m_Data: 0910fc0910fc0910fc0910fc7f13fc7f13fc7f13fc7f13fc7f13fc7f13fc7f13fc7f13fc7f13fc7f13fc7f13fc7f13fc
+      m_BitSize: 6
     m_BoneIndices:
       m_NumItems: 0
       m_Data: 
       m_BitSize: 0
     m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
+      m_NumItems: 36
+      m_Data: 1012305446577884799aa89bbccabddedcfe
+      m_BitSize: 4
     m_UVInfo: 0
   m_LocalAABB:
     m_Center: {x: 0, y: 1.090995, z: -0}
@@ -139,9 +139,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
   m_Name: ob_kitchen_door
   m_EditorClassIdentifier: 
-  _lastTimeModified: 635897935691405970
+  _lastTimeModified: 635898072835067371
   _documentAsset: {fileID: 11484948}
-  _sharedMesh: {fileID: 4380652}
+  _sharedMesh: {fileID: 4303966}
   _antialiasing: 0
   _antialiasingWidth: 0.1
   _generateCollider: 1
@@ -160,8 +160,8 @@ MonoBehaviour:
       width: 0.799
       height: 0.799
   _format: 1
-  _useGradients: 0
-  _meshCompression: 0
+  _useGradients: 1
+  _meshCompression: 2
   _optimizeMesh: 1
   _generateNormals: 0
   _generateTangents: 0
@@ -193,7 +193,7 @@ MonoBehaviour:
     atlasIndex: 0
     references: 0
   _sharedShaders:
-  - SVG Importer/GradientColor/GradientColorAlphaBlended
+  - SVG Importer/SolidColor/SolidColorAlphaBlended
   _canvasRectangle:
     serializedVersion: 2
     x: 0

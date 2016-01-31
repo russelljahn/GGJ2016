@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!43 &4310124
+--- !u!43 &4333716
 Mesh:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -25,36 +25,28 @@ Mesh:
   m_BindPose: []
   m_BoneNameHashes: 
   m_RootBoneNameHash: 0
-  m_MeshCompression: 0
+  m_MeshCompression: 2
   m_IsReadable: 1
   m_KeepVertices: 1
   m_KeepIndices: 1
-  m_IndexBuffer: 000001000200010000000300040005000600050004000700
+  m_IndexBuffer: 
   m_Skin: []
   m_VertexData:
-    m_CurrentChannels: 29
-    m_VertexCount: 8
+    m_CurrentChannels: 0
+    m_VertexCount: 0
     m_Channels:
     - stream: 0
       offset: 0
       format: 0
-      dimension: 3
+      dimension: 0
     - stream: 0
       offset: 0
       format: 0
       dimension: 0
     - stream: 0
-      offset: 12
-      format: 2
-      dimension: 4
-    - stream: 0
-      offset: 16
+      offset: 0
       format: 0
-      dimension: 2
-    - stream: 0
-      offset: 24
-      format: 0
-      dimension: 2
+      dimension: 0
     - stream: 0
       offset: 0
       format: 0
@@ -67,15 +59,23 @@ Mesh:
       offset: 0
       format: 0
       dimension: 0
-    m_DataSize: 256
-    _typelessdata: 2ae395bf9088413f000000805c5c5fff000000000000000000000000000000002ae3953faf0d4d3f000000805c5c5fff000000000000000000000000000000002ae3953f9088413f000000805c5c5fff000000000000000000000000000000002ae395bfaf0d4d3f000000805c5c5fff00000000000000000000000000000000eaad87bf0000008000000080bba981ff00000000000000000000000000000000da72883f9088413f00000080bba981ff00000000000000000000000000000000da72883f0000008000000080bba981ff00000000000000000000000000000000eaad87bf9088413f00000080bba981ff00000000000000000000000000000000
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 0
+    _typelessdata: 
   m_CompressedMesh:
     m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
+      m_NumItems: 24
+      m_Range: 2.34199
+      m_Start: -1.170995
+      m_Data: 0000a2d20080ffff8dd70080ffffa2d2008000008dd70080220c0080008085f4a2d2008085f400800080220ca2d20080
+      m_BitSize: 16
     m_UV:
       m_NumItems: 0
       m_Range: 0
@@ -107,19 +107,19 @@ Mesh:
       m_Data: 
       m_BitSize: 0
     m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
+      m_NumItems: 32
+      m_Range: 0.6392157
+      m_Start: 0.36078432
+      m_Data: 0010fc0010fc0010fc0010fca5e7fca5e7fca5e7fca5e7fc
+      m_BitSize: 6
     m_BoneIndices:
       m_NumItems: 0
       m_Data: 
       m_BitSize: 0
     m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
+      m_NumItems: 12
+      m_Data: 8882b12e0f
+      m_BitSize: 3
     m_UVInfo: 0
   m_LocalAABB:
     m_Center: {x: 0, y: 0.40049502, z: -0}
@@ -139,9 +139,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
   m_Name: ob_kitchen_counter
   m_EditorClassIdentifier: 
-  _lastTimeModified: 635897935619900470
+  _lastTimeModified: 635898072834771030
   _documentAsset: {fileID: 11471438}
-  _sharedMesh: {fileID: 4310124}
+  _sharedMesh: {fileID: 4333716}
   _antialiasing: 0
   _antialiasingWidth: 0.1
   _generateCollider: 1
@@ -164,8 +164,8 @@ MonoBehaviour:
       width: 2.3400002
       height: 2.236
   _format: 1
-  _useGradients: 0
-  _meshCompression: 0
+  _useGradients: 1
+  _meshCompression: 2
   _optimizeMesh: 1
   _generateNormals: 0
   _generateTangents: 0
@@ -197,7 +197,7 @@ MonoBehaviour:
     atlasIndex: 0
     references: 0
   _sharedShaders:
-  - SVG Importer/GradientColor/GradientColorAlphaBlended
+  - SVG Importer/SolidColor/SolidColorAlphaBlended
   _canvasRectangle:
     serializedVersion: 2
     x: 0

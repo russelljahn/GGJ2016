@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!43 &4397366
+--- !u!43 &4379526
 Mesh:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -25,36 +25,28 @@ Mesh:
   m_BindPose: []
   m_BoneNameHashes: 
   m_RootBoneNameHash: 0
-  m_MeshCompression: 0
+  m_MeshCompression: 2
   m_IsReadable: 1
   m_KeepVertices: 1
   m_KeepIndices: 1
-  m_IndexBuffer: 000001000200010000000300040005000600050004000700080009000a0008000b00090006000b00080005000b00060005000c000b000c0005000d00
+  m_IndexBuffer: 
   m_Skin: []
   m_VertexData:
-    m_CurrentChannels: 29
-    m_VertexCount: 14
+    m_CurrentChannels: 0
+    m_VertexCount: 0
     m_Channels:
     - stream: 0
       offset: 0
       format: 0
-      dimension: 3
+      dimension: 0
     - stream: 0
       offset: 0
       format: 0
       dimension: 0
     - stream: 0
-      offset: 12
-      format: 2
-      dimension: 4
-    - stream: 0
-      offset: 16
+      offset: 0
       format: 0
-      dimension: 2
-    - stream: 0
-      offset: 24
-      format: 0
-      dimension: 2
+      dimension: 0
     - stream: 0
       offset: 0
       format: 0
@@ -67,15 +59,23 @@ Mesh:
       offset: 0
       format: 0
       dimension: 0
-    m_DataSize: 448
-    _typelessdata: 8ec275bc58c58b3e00000080dadaccff0000000000000000000000000000000004d4543c060dad3e00000080dadaccff0000000000000000000000000000000004d4543c58c58b3e00000080dadaccff00000000000000000000000000000000a49b44bc060dad3e00000080dadaccff000000000000000000000000000000005b5f24bdb0f37d3d00000080e48771ff00000000000000000000000000000000701283bbe851b83d00000080e48771ff00000000000000000000000000000000583934bda09b443d00000080e48771ff00000000000000000000000000000000508d17bd4837893d00000080e48771ff00000000000000000000000000000000583934bd0000008000000080e48771ff000000000000000000000000000000000cd7233d88c2753d00000080e48771ff000000000000000000000000000000005839343d0000008000000080e48771ff000000000000000000000000000000004460653c325eba3d00000080e48771ff000000000000000000000000000000007012833ba8c68b3e00000080e48771ff00000000000000000000000000000000603c03bc58c58b3e00000080e48771ff00000000000000000000000000000000
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 0
+    _typelessdata: 
   m_CompressedMesh:
     m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
+      m_NumItems: 42
+      m_Range: 0.38199
+      m_Start: -0.044
+      m_Data: 6f136fd47d1d3126ffff7d1d31266fd47d1d7215ffff7d1d98020a477d1dce1acd597d1d0000a83d7d1db104634a7d1d00007d1d7d1d4b38b2457d1df93a7d1d7d1ddf26795a7d1d2b2071d47d1d1f186fd47d1d
+      m_BitSize: 16
     m_UV:
       m_NumItems: 0
       m_Range: 0
@@ -107,19 +107,19 @@ Mesh:
       m_Data: 
       m_BitSize: 0
     m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
+      m_NumItems: 56
+      m_Range: 0.5568627
+      m_Start: 0.44313726
+      m_Data: ef8bfeef8bfeef8bfeef8bfeb302fcb302fcb302fcb302fcb302fcb302fcb302fcb302fcb302fcb302fc
+      m_BitSize: 6
     m_BoneIndices:
       m_NumItems: 0
       m_Data: 
       m_BitSize: 0
     m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
+      m_NumItems: 30
+      m_Data: 101230545674988a9bb6586bc5cbd5
+      m_BitSize: 4
     m_UVInfo: 0
   m_LocalAABB:
     m_Center: {x: 0, y: 0.168995, z: -0}
@@ -139,9 +139,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
   m_Name: ob_kitchen_spoon_02
   m_EditorClassIdentifier: 
-  _lastTimeModified: 635897935688070340
+  _lastTimeModified: 635898072912487917
   _documentAsset: {fileID: 11466876}
-  _sharedMesh: {fileID: 4397366}
+  _sharedMesh: {fileID: 4379526}
   _antialiasing: 0
   _antialiasingWidth: 0.1
   _generateCollider: 1
@@ -170,8 +170,8 @@ MonoBehaviour:
       width: 0.086
       height: 0.033
   _format: 1
-  _useGradients: 0
-  _meshCompression: 0
+  _useGradients: 1
+  _meshCompression: 2
   _optimizeMesh: 1
   _generateNormals: 0
   _generateTangents: 0
@@ -203,7 +203,7 @@ MonoBehaviour:
     atlasIndex: 0
     references: 0
   _sharedShaders:
-  - SVG Importer/GradientColor/GradientColorAlphaBlended
+  - SVG Importer/SolidColor/SolidColorAlphaBlended
   _canvasRectangle:
     serializedVersion: 2
     x: 0
