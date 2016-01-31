@@ -59,6 +59,8 @@ namespace Assets.GGJ2016.Scripts.Entities
                 {
                     var destructable = _destructablesInRange[i];
                     destructable.Health -= _appSettings.ScratchDamage;
+					//instantiate shit
+
                 }
                 _currentAttackCooldown = _attackCooldown;
             }

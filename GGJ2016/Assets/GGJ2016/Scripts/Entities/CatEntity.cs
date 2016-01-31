@@ -7,6 +7,7 @@ using Sense.PropertyAttributes;
 using UnityEngine;
 using Zenject;
 using AssemblyCSharp;
+using Assets.OutOfTheBox.Scripts.Navigation;
 
 namespace Assets.GGJ2016.Scripts.Entities
 {
@@ -15,8 +16,8 @@ namespace Assets.GGJ2016.Scripts.Entities
     {
         [Inject] private Controller _controller;
 		[Inject] private CatStats _stats;
+		[Inject] private Navigator _navigator;
 
-        [SerializeField] private SpriteRenderer _spriteRenderer;
 		[SerializeField] private CollisionDetector _groundDetector;
 
         [SerializeField] private float _runMultiplier = 1.75f;
@@ -38,6 +39,19 @@ namespace Assets.GGJ2016.Scripts.Entities
         [SerializeField, Readonly] private bool _isGrounded;
 
         private Rigidbody2D _rigidbody2D;
+		private SpriteRenderer _currentSpriteRenderer;
+		private Animator _currentAnimator;
+
+		[SerializeField] private SpriteRenderer _level1SpriteRenderer;
+		[SerializeField] private Animator _level1Animator;
+		[SerializeField] private SpriteRenderer _level2SpriteRenderer;
+		[SerializeField] private Animator _level2Animator;
+		[SerializeField] private SpriteRenderer _level3SpriteRenderer;
+		[SerializeField] private Animator _level3Animator;
+		[SerializeField] private SpriteRenderer _level4SpriteRenderer;
+		[SerializeField] private Animator _level4Animator;
+		[SerializeField] private SpriteRenderer _level5SpriteRenderer;
+		[SerializeField] private Animator _level5Animator;
 
         private enum StateType
         {
@@ -69,7 +83,9 @@ namespace Assets.GGJ2016.Scripts.Entities
         {
             _rigidbody2D = GetComponent<Rigidbody2D>();
 			_stats.LevelChanged += StatsOnLevelChanged;
+			_navigator.AppStateChanged += NavigatorOnAppStateChanged;
 
+			StatsOnLevelChanged(new StateChange<int>(_stats.Level, _stats.Level));
             State = StateType.Idle;
         }
 
@@ -102,6 +118,20 @@ namespace Assets.GGJ2016.Scripts.Entities
 
             //Debug.Log("_controller: " + new Vector2(_controller.MoveX, _controller.MoveY));
         }
+
+		private void NavigatorOnAppStateChanged(StateChange<AppStates> stateChange)
+		{
+			switch (stateChange.Next)
+			{
+				case AppStates.Gameplay:
+					_rigidbody2D.isKinematic = false;
+					break;
+
+				default:
+					_rigidbody2D.isKinematic = true;
+					break;
+			}
+		}
 
         private void OnStateChanged(StateChange<StateType> stateChange)
         {
@@ -199,10 +229,21 @@ namespace Assets.GGJ2016.Scripts.Entities
                     _rigidbody2D.drag = 1;
 
             }
+
+			if (_controller.MoveX.IsApproximatelyZero()) {
+				_currentAnimator.speed = 0;
+				_currentAnimator.SetTime(0f);
+			}
+			else {
+				_currentAnimator.speed = 1.0f;
+			}
+
+
+
             if (_controller.MoveX > 0)
-                _spriteRenderer.flipX = true;
+				_currentSpriteRenderer.flipX = true;
             if (_controller.MoveX < 0)
-                _spriteRenderer.flipX = false;
+				_currentSpriteRenderer.flipX = false;
 
             //addGravity
             _rigidbody2D.AddForce(Vector2.up * _gravity);
@@ -233,20 +274,46 @@ namespace Assets.GGJ2016.Scripts.Entities
 		private void StatsOnLevelChanged(StateChange<int> stateChange) {
 			switch (stateChange.Next) {
 				case 0:
+					_currentAnimator = _level1Animator;
+					_currentSpriteRenderer = _level1SpriteRenderer;
 					break;
+
 				case 1:
+					_currentAnimator = _level1Animator;
+					_currentSpriteRenderer = _level1SpriteRenderer;
 					break;
+
 				case 2:
+					_currentAnimator = _level1Animator;
+					_currentSpriteRenderer = _level1SpriteRenderer;
 					break;
+
 				case 3:
+					_currentAnimator = _level1Animator;
+					_currentSpriteRenderer = _level1SpriteRenderer;
 					break;
+
 				case 4:
+					_currentAnimator = _level1Animator;
+					_currentSpriteRenderer = _level1SpriteRenderer;
 					break;
+
 				case 5:
+					_currentAnimator = _level1Animator;
+					_currentSpriteRenderer = _level1SpriteRenderer;
 					break;
+
 				default:
 					break;
 			}
+
+			_level1SpriteRenderer.gameObject.SetActive(false);
+			_level2SpriteRenderer.gameObject.SetActive(false);
+			_level3SpriteRenderer.gameObject.SetActive(false);
+			_level4SpriteRenderer.gameObject.SetActive(false);
+			_level5SpriteRenderer.gameObject.SetActive(false);
+			_currentSpriteRenderer.gameObject.SetActive(true);
+
 		}
     }
 }
