@@ -15,6 +15,7 @@ namespace Assets.OutOfTheBox.Scripts.Audio
 
 		public const string BgBabyRoom = "BgBabyRoom";
 		public const string BgGameOver = "BgGameOver";
+		public const string BgWin = "BgWin";
 		public const string BgLevel0 = "BgLevel0";
 		public const string BgLevel1 = "BgLevel1";
 		public const string BgLevel2 = "BgLevel2";
@@ -24,6 +25,18 @@ namespace Assets.OutOfTheBox.Scripts.Audio
         public const string SfxClick = "SfxClick";
 		public const string SfxLevelUp = "SfxLevelUp";
 		public const string SfxLevelDown = "SfxLevelDown";
+		public const string SfxJump1 = "jumplvl1";
+		public const string SfxJump2 = "jumplvl2";
+		public const string SfxJump3 = "jumplvl3";
+		public const string SfxJump4 = "jumplvl4";
+		public const string SfxAttack1 = "scratchvl1";
+		public const string SfxAttack2 = "scratchlvl2";
+		public const string SfxAttack3 = "scratchlvl3";
+		public const string SfxAttack4 = "scratchlvl4";
+		public const string SfxWalk1 = "steplvl1";
+		public const string SfxWalk2 = "steplvl2";
+		public const string SfxWalk3 = "steplvl3";
+		public const string SfxWalk4 = "steplvl4";
 
         private const int Bg1TrackId = 0;
         private const int Bg2TrackId = 1;
@@ -67,6 +80,15 @@ namespace Assets.OutOfTheBox.Scripts.Audio
                     return Sfx1TrackId;
 
 				case BgGameOver:
+				case BgWin:
+				case SfxJump1:
+				case SfxJump2:
+				case SfxJump3:
+				case SfxJump4:
+				case SfxAttack1:
+				case SfxAttack2:
+				case SfxAttack3:
+				case SfxAttack4:
 					return Sfx2TrackId;
 
                 default:

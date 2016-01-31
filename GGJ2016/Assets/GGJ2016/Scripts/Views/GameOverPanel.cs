@@ -56,7 +56,7 @@ namespace Assets.GGJ2016.Scripts.Views
 						_winScreen.gameObject.SetActive(true);
 						_gameOverScreen.gameObject.SetActive(false);
 
-						_audioManager.PlayTrackOneShot(AudioClips.BgGameOver);
+						_audioManager.PlayTrackOneShot(AudioClips.BgWin);
 					}
 					else {
 						_winScreen.gameObject.SetActive(false);

@@ -115,8 +115,6 @@ namespace Assets.GGJ2016.Scripts.Entities
                 case StateType.Jumping:
                     InJumping();
                     break;
-
-
             }
 
             //Debug.Log("_controller: " + new Vector2(_controller.MoveX, _controller.MoveY));
@@ -264,6 +262,27 @@ namespace Assets.GGJ2016.Scripts.Entities
             if (canJump && _isGrounded)
             {
                 _rigidbody2D.AddForce(Vector2.up * _jumpMultiplierY);
+				var jumpSoundName = AudioClips.SfxJump1;
+				float jumpVolume = 0.5f;
+				switch(_stats.Level) {
+					case 0:
+					case 1:
+						jumpSoundName = AudioClips.SfxJump1;
+						break;
+					case 2:
+						jumpSoundName = AudioClips.SfxJump2;
+						break;
+
+					case 3:
+						jumpSoundName = AudioClips.SfxJump3;
+						break;
+
+					case 4:
+					case 5:
+						jumpSoundName = AudioClips.SfxJump4;
+						break;
+				}
+				_audioManager.PlayTrackOneShot(jumpSoundName, jumpVolume);
             }
             //air movement
             if (!_isGrounded)
@@ -355,12 +374,13 @@ namespace Assets.GGJ2016.Scripts.Entities
 					break;
 			}
 
+			var levelUpVolume = 0.5f;
 			if (stateChange.Previous < stateChange.Next) {
-				_audioManager.PlayTrackOneShot(AudioClips.SfxLevelUp);
+				_audioManager.PlayTrackOneShot(AudioClips.SfxLevelUp, levelUpVolume);
 			}
 
 			if (stateChange.Previous > stateChange.Next) {
-				_audioManager.PlayTrackOneShot(AudioClips.SfxLevelDown);
+				_audioManager.PlayTrackOneShot(AudioClips.SfxLevelDown, levelUpVolume);
 			}
 
 			_level0SpriteRenderer.gameObject.SetActive(false);
