@@ -9,12 +9,15 @@ using Sense.Injection;
 using Sense.PropertyAttributes;
 using SVGImporter;
 using UnityEngine;
+using Zenject;
 
 namespace Assets.GGJ2016.Scripts.Entities
 {
     
 	public class Destructable : InjectableBehaviour, IInteractable
     {
+		[Inject] private CatStats _stats;
+
         [SerializeField] private float _maxHealth = 100.0f;
         [SerializeField, Readonly] private float _health; 
         [SerializeField] private float _points = 10.0f;
@@ -93,6 +96,8 @@ namespace Assets.GGJ2016.Scripts.Entities
 
         private void OnDestroyed(Destructable destructable)
         {
+			_stats.Points += _points;
+
 			Instantiate(DestroyedObject, transform.position, Quaternion.identity);
 			if (_svgRenderer.IsNotNull()) {
 	            _fadeTween.SafelyAbort();

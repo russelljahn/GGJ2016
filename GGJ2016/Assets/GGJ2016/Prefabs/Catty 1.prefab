@@ -1,24 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &100512
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 466350}
-  - 20: {fileID: 2000924}
-  - 124: {fileID: 12437352}
-  - 92: {fileID: 9217208}
-  - 81: {fileID: 8157824}
-  m_Layer: 8
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &102708
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,7 +149,6 @@ Transform:
   - {fileID: 413268}
   - {fileID: 484256}
   - {fileID: 465134}
-  - {fileID: 466350}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &454060
@@ -178,7 +158,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 102708}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.24900007, y: -0.031999946, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 419526}
@@ -195,18 +175,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 419526}
   m_RootOrder: 5
---- !u!4 &466350
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100512}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 419526}
-  m_RootOrder: 6
 --- !u!4 &481158
 Transform:
   m_ObjectHideFlags: 1
@@ -243,40 +211,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 419526}
   m_RootOrder: 4
---- !u!20 &2000924
-Camera:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100512}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.09803922, g: 0.09803922, b: 0.09803922, a: 1}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 20000
-  field of view: 25
-  orthographic: 1
-  orthographic size: 3
-  m_Depth: 2
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
-  m_StereoMirrorMode: 0
 --- !u!50 &5081028
 Rigidbody2D:
   serializedVersion: 2
@@ -307,7 +241,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.75
+  m_Radius: 0.21187973
 --- !u!58 &5864638
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -322,20 +256,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.01}
   serializedVersion: 2
   m_Radius: 0.1
---- !u!81 &8157824
-AudioListener:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100512}
-  m_Enabled: 1
---- !u!92 &9217208
-Behaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100512}
-  m_Enabled: 1
 --- !u!95 &9530844
 Animator:
   serializedVersion: 3
@@ -446,6 +366,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _attackCooldown: 0.25
+  CatScratch: {fileID: 0}
 --- !u!114 &11499980
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -482,13 +403,6 @@ MonoBehaviour:
   _level5SpriteRenderer: {fileID: 21295000}
   _level5Animator: {fileID: 9558296}
   _state: 0
---- !u!124 &12437352
-Behaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100512}
-  m_Enabled: 1
 --- !u!212 &21206504
 SpriteRenderer:
   m_ObjectHideFlags: 1

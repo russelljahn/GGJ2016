@@ -43,13 +43,9 @@ namespace Assets.GGJ2016.Scripts.Entities
 		private Animator _currentAnimator;
 		private string _currentBgClipName;
 
-<<<<<<< Updated upstream
+
 		[SerializeField] private SpriteRenderer _level0SpriteRenderer;
 		[SerializeField] private Animator _level0Animator;
-=======
-		public ParticleSystem CatPuff;
-
->>>>>>> Stashed changes
 		[SerializeField] private SpriteRenderer _level1SpriteRenderer;
 		[SerializeField] private Animator _level1Animator;
 		[SerializeField] private SpriteRenderer _level2SpriteRenderer;
