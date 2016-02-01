@@ -91,8 +91,12 @@ namespace Assets.GGJ2016.Scripts.Entities
                     var destructable = _destructablesInRange[i];
                     destructable.Health -= _appSettings.ScratchDamage;
 					Vector3 NewPos = new Vector3(transform.position.x, transform.position.y, transform.position.z -1f);
-					Instantiate(CatScratch,NewPos,Quaternion.identity);
+					var go = (ParticleSystem)Instantiate(CatScratch,NewPos,Quaternion.identity);
+					var destroyScript = go.GetComponent<DestroyAfterTime>();
 
+					if (destroyScript.IsNotNull()) {
+						destroyScript.ShouldDestroy = true;
+					}
                 }
                 _currentAttackCooldown = _attackCooldown;
             }

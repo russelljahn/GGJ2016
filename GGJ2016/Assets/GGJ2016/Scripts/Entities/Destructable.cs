@@ -10,6 +10,7 @@ using Sense.PropertyAttributes;
 using SVGImporter;
 using UnityEngine;
 using Zenject;
+using Assets.OutOfTheBox.Scripts;
 
 namespace Assets.GGJ2016.Scripts.Entities
 {
@@ -98,7 +99,12 @@ namespace Assets.GGJ2016.Scripts.Entities
         {
 			_stats.Points += _points;
 
-			Instantiate(DestroyedObject, transform.position, Quaternion.identity);
+			var go = (GameObject)Instantiate(DestroyedObject, transform.position, Quaternion.identity);
+			var destroyScript = go.GetComponent<DestroyAfterTime>();
+
+			if (destroyScript.IsNotNull()) {
+				destroyScript.ShouldDestroy = true;
+			}
 			if (_svgRenderer.IsNotNull()) {
 	            _fadeTween.SafelyAbort();
 	            _fadeTween = _svgRenderer.TweenColor()

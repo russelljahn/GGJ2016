@@ -9,6 +9,8 @@ using Zenject;
 using AssemblyCSharp;
 using Assets.OutOfTheBox.Scripts.Navigation;
 using Assets.OutOfTheBox.Scripts.Audio;
+using Assets.OutOfTheBox.Scripts;
+using Sense.Extensions;
 
 namespace Assets.GGJ2016.Scripts.Entities
 {
@@ -56,6 +58,8 @@ namespace Assets.GGJ2016.Scripts.Entities
 		[SerializeField] private Animator _level4Animator;
 		[SerializeField] private SpriteRenderer _level5SpriteRenderer;
 		[SerializeField] private Animator _level5Animator;
+
+		public GameObject Poof;
 
         private enum StateType
         {
@@ -399,6 +403,13 @@ namespace Assets.GGJ2016.Scripts.Entities
 				if (clipToFadeOut != _currentBgClipName) {
 					_audioManager.Crossfade(clipToFadeOut, _currentBgClipName, 0f, 1f);
 				}
+			}
+
+			var go = (GameObject)Instantiate(Poof,transform.position,Quaternion.identity);
+			var destroyScript = go.GetComponent<DestroyAfterTime>();
+
+			if (destroyScript.IsNotNull()) {
+				destroyScript.ShouldDestroy = true;
 			}
 		}
     }
