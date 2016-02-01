@@ -12,12 +12,14 @@ using Zenject;
 
 namespace Assets.GGJ2016.Scripts.Entities
 {
-    public class InteractionArea : InjectableBehaviour
+	public class InteractionArea : InjectableBehaviour
     {
         [Inject] private Controller _controller;
         [Inject] private AppSettings _appSettings;
 
         [SerializeField] private float _attackCooldown = 0.25f;
+
+		public ParticleSystem CatScratch;
 
         private readonly List<Destructable> _destructablesInRange = new List<Destructable>();
         private float _currentAttackCooldown;
@@ -59,7 +61,8 @@ namespace Assets.GGJ2016.Scripts.Entities
                 {
                     var destructable = _destructablesInRange[i];
                     destructable.Health -= _appSettings.ScratchDamage;
-					//instantiate shit
+					Vector3 NewPos = new Vector3(transform.position.x, transform.position.y, transform.position.z -1f);
+					Instantiate(CatScratch,NewPos,Quaternion.identity);
 
                 }
                 _currentAttackCooldown = _attackCooldown;

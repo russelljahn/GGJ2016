@@ -196,9 +196,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 1
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -223,6 +223,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &13290168
 Transform:
   m_ObjectHideFlags: 0
@@ -361,6 +362,7 @@ GameObject:
   - 60: {fileID: 59224107}
   - 50: {fileID: 59224105}
   - 212: {fileID: 59224106}
+  - 114: {fileID: 59224108}
   m_Layer: 0
   m_Name: ob_bed_book_02
   m_TagString: Untagged
@@ -433,6 +435,45 @@ PolygonCollider2D:
       - {x: 0.046000004, y: 0}
       - {x: -0.119, y: 0.328}
       - {x: -0.046000004, y: 0.365}
+--- !u!114 &59224108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 59224104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 10
+  _health: 0
+  _points: 5
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 59224105}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 59224106}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &59224111
 Transform:
   m_ObjectHideFlags: 0
@@ -505,7 +546,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 9
 --- !u!58 &82859064
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -548,7 +589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 20
   _health: 0
   _points: 10
   _freezeRigidbodyUntilCollision: 1
@@ -575,6 +616,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+<<<<<<< Updated upstream
 --- !u!1 &96121635
 GameObject:
   m_ObjectHideFlags: 0
@@ -648,6 +690,9 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 96121635}
+=======
+  DestroyedObject: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!1 &120510872
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,9 +804,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 1
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -786,6 +831,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &120510879
 Transform:
   m_ObjectHideFlags: 0
@@ -1041,7 +1087,7 @@ Transform:
   m_LocalScale: {x: 2.4177313, y: 2.4177327, z: 2.4177327}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 18
 --- !u!50 &146663455
 Rigidbody2D:
   serializedVersion: 2
@@ -1084,9 +1130,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 30
   _health: 0
-  _points: 10
+  _points: 20
   _freezeRigidbodyUntilCollision: 1
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -1111,6 +1157,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!1 &154702383
 GameObject:
   m_ObjectHideFlags: 0
@@ -1169,6 +1216,84 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1287044646}
   m_RootOrder: 4
+--- !u!1 &155380267
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 121754, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 155380269}
+  - 212: {fileID: 155380270}
+  - 95: {fileID: 155380268}
+  m_Layer: 8
+  m_Name: BlobCatGraphic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &155380268
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9596284, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 155380267}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7a710f76bb1cb43ac9d37ba2b9a47086, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!4 &155380269
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 481158, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 155380267}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.009000063, y: 0, z: 0}
+  m_LocalScale: {x: 0.35, y: 0.35, z: 0.35}
+  m_Children: []
+  m_Father: {fileID: 431969804}
+  m_RootOrder: 1
+--- !u!212 &155380270
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21232490, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 155380267}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 7
+  m_Sprite: {fileID: 21300000, guid: 55bda0073a9bc460c96a6d2656de0c71, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1 &203322557
 GameObject:
   m_ObjectHideFlags: 0
@@ -1361,7 +1486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
   _points: 10
   _freezeRigidbodyUntilCollision: 0
@@ -1388,6 +1513,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &205885086
 Transform:
   m_ObjectHideFlags: 0
@@ -1543,9 +1669,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 1
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -1570,6 +1696,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &225570790
 Transform:
   m_ObjectHideFlags: 0
@@ -1876,6 +2003,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &248067609
 Transform:
   m_ObjectHideFlags: 0
@@ -2133,7 +2261,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 22
 --- !u!114 &315415294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2145,9 +2273,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 1
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -2172,6 +2300,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!1 &316727322
 GameObject:
   m_ObjectHideFlags: 0
@@ -2183,6 +2312,7 @@ GameObject:
   - 60: {fileID: 316727324}
   - 212: {fileID: 316727323}
   - 50: {fileID: 316727325}
+  - 114: {fileID: 316727326}
   m_Layer: 0
   m_Name: ob_bed_book_01
   m_TagString: Untagged
@@ -2255,6 +2385,45 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &316727326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 316727322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 10
+  _health: 0
+  _points: 5
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 316727325}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 316727323}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &316727328
 Transform:
   m_ObjectHideFlags: 0
@@ -2420,9 +2589,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 0
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -2447,6 +2616,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!1 &354395383
 GameObject:
   m_ObjectHideFlags: 0
@@ -2516,6 +2686,7 @@ GameObject:
   - 60: {fileID: 402567182}
   - 212: {fileID: 402567181}
   - 50: {fileID: 402567183}
+  - 114: {fileID: 402567184}
   m_Layer: 0
   m_Name: ob_bed_book_05
   m_TagString: Untagged
@@ -2588,6 +2759,45 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &402567184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 402567180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 10
+  _health: 0
+  _points: 5
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 402567183}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 402567181}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &402567186
 Transform:
   m_ObjectHideFlags: 0
@@ -2714,9 +2924,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 30
   _health: 0
-  _points: 10
+  _points: 20
   _freezeRigidbodyUntilCollision: 0
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -2741,6 +2951,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &403966343
 Transform:
   m_ObjectHideFlags: 0
@@ -2753,10 +2964,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1287044646}
   m_RootOrder: 70
---- !u!4 &431969804 stripped
+--- !u!4 &431969804
 Transform:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 419526, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34, type: 2}
-  m_PrefabInternal: {fileID: 880608629}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 702379125}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.52, y: 1.74, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1292618287}
+  - {fileID: 155380269}
+  - {fileID: 1266567596}
+  - {fileID: 1313626145}
+  - {fileID: 492238134}
+  m_Father: {fileID: 735390767}
+  m_RootOrder: 3
 --- !u!1 &460873042
 GameObject:
   m_ObjectHideFlags: 0
@@ -2943,9 +3167,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 0
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -2970,6 +3194,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &464241341
 Transform:
   m_ObjectHideFlags: 0
@@ -3076,7 +3301,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 17
 --- !u!50 &480449936
 Rigidbody2D:
   serializedVersion: 2
@@ -3119,9 +3344,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 50
   _health: 0
-  _points: 10
+  _points: 25
   _freezeRigidbodyUntilCollision: 0
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -3146,6 +3371,85 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
+--- !u!1 &492238132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 189642, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 492238134}
+  - 212: {fileID: 492238135}
+  - 95: {fileID: 492238133}
+  m_Layer: 8
+  m_Name: RealCatGraphic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &492238133
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9558296, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 492238132}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f919e61cf4e794b93ac69ff901804cac, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!4 &492238134
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 465134, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 492238132}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: -0.25, y: 0.25, z: 0.25}
+  m_Children: []
+  m_Father: {fileID: 431969804}
+  m_RootOrder: 4
+--- !u!212 &492238135
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21295000, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 492238132}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 7
+  m_Sprite: {fileID: 21300000, guid: 3647902dd9e6043a3b1070a138ca8a5c, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1 &494601662
 GameObject:
   m_ObjectHideFlags: 0
@@ -3344,9 +3648,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 0
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -3371,6 +3675,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &505986687
 Transform:
   m_ObjectHideFlags: 0
@@ -3476,6 +3781,7 @@ GameObject:
   - 212: {fileID: 551978515}
   - 50: {fileID: 551978517}
   - 60: {fileID: 551978516}
+  - 114: {fileID: 551978518}
   m_Layer: 0
   m_Name: ob_livingroom_tv table
   m_TagString: Untagged
@@ -3548,6 +3854,45 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &551978518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 551978514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 40
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 551978517}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 551978515}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &551978520
 Transform:
   m_ObjectHideFlags: 0
@@ -3666,9 +4011,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 0
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -3693,6 +4038,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &564651130
 Transform:
   m_ObjectHideFlags: 0
@@ -3716,6 +4062,7 @@ GameObject:
   - 60: {fileID: 581200305}
   - 212: {fileID: 581200304}
   - 114: {fileID: 581200306}
+  - 50: {fileID: 581200307}
   m_Layer: 0
   m_Name: ob_kitchen_table
   m_TagString: Untagged
@@ -3798,9 +4145,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 50
   _health: 0
-  _points: 10
+  _points: 25
   _freezeRigidbodyUntilCollision: 0
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -3825,6 +4172,24 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
+--- !u!50 &581200307
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 581200303}
+  m_UseAutoMass: 0
+  m_Mass: 3
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!4 &581200309
 Transform:
   m_ObjectHideFlags: 0
@@ -4031,7 +4396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 100
   _health: 0
-  _points: 10
+  _points: 50
   _freezeRigidbodyUntilCollision: 0
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -4056,6 +4421,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &598627209
 Transform:
   m_ObjectHideFlags: 0
@@ -4179,9 +4545,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 1
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -4206,6 +4572,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &606148590
 Transform:
   m_ObjectHideFlags: 0
@@ -4417,7 +4784,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 15
 --- !u!60 &643902089
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4512,9 +4879,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 1
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -4539,6 +4906,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!1 &649452781
 GameObject:
   m_ObjectHideFlags: 0
@@ -4794,12 +5162,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 1
   _breakByForce: 1
-  _impactVelocityToBreak: 4.5
+  _impactVelocityToBreak: 0
   _rigidbody2D: {fileID: 665714213}
   _svgRenderer: {fileID: 0}
   _spriteRenderer: {fileID: 665714211}
@@ -4821,6 +5189,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &665714216
 Transform:
   m_ObjectHideFlags: 0
@@ -4889,11 +5258,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 693556355}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.513, y: 1.23, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 15.96, y: 1.23, z: 0}
+  m_LocalScale: {x: -0.972845, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 6
 --- !u!60 &693556358
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4966,7 +5335,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 693556355}
   m_UseAutoMass: 0
-  m_Mass: 8
+  m_Mass: 5
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -4988,7 +5357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 100
   _health: 0
-  _points: 10
+  _points: 75
   _freezeRigidbodyUntilCollision: 0
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -5013,6 +5382,95 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
+--- !u!1 &702379125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 160866, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 431969804}
+  - 58: {fileID: 702379128}
+  - 50: {fileID: 702379127}
+  - 114: {fileID: 702379126}
+  - 114: {fileID: 1505938325}
+  m_Layer: 8
+  m_Name: Catty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &702379126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11499980, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 702379125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30bfd3d6a06e8904390e5b09c3169c13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _runMultiplier: 0.4
+  _jumpMultiplierX: 6
+  _jumpMultiplierY: 300
+  _timeUntilMaxJump: 0.25
+  _gravity: -10
+  _timeInMotion: 0
+  _timeInJump: 0
+  _speedX: 0
+  _mask:
+    serializedVersion: 2
+    m_Bits: 4294967039
+  _isGrounded: 0
+  CatPuff: {fileID: 1113073954}
+  _level1SpriteRenderer: {fileID: 1266567597}
+  _level1Animator: {fileID: 1266567595}
+  _level2SpriteRenderer: {fileID: 155380270}
+  _level2Animator: {fileID: 155380268}
+  _level3SpriteRenderer: {fileID: 1313626146}
+  _level3Animator: {fileID: 1313626144}
+  _level4SpriteRenderer: {fileID: 492238135}
+  _level4Animator: {fileID: 492238133}
+  _level5SpriteRenderer: {fileID: 492238135}
+  _level5Animator: {fileID: 492238133}
+  _state: 0
+--- !u!50 &702379127
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5081028, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 702379125}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
+--- !u!58 &702379128
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5864638, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 702379125}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 101a8b6c30def4199b64ae9bfe5f655c, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: -0.01}
+  serializedVersion: 2
+  m_Radius: 0.1
 --- !u!1 &711217468
 GameObject:
   m_ObjectHideFlags: 0
@@ -5106,6 +5564,7 @@ GameObject:
   - 212: {fileID: 718620177}
   - 50: {fileID: 718620176}
   - 60: {fileID: 718620175}
+  - 114: {fileID: 718620179}
   m_Layer: 0
   m_Name: ob_studyroom_mac_01 (1)
   m_TagString: Untagged
@@ -5203,7 +5662,46 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 24
+--- !u!114 &718620179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 718620174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 30
+  _health: 0
+  _points: 15
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 718620176}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 718620177}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!1 &720196402
 GameObject:
   m_ObjectHideFlags: 0
@@ -5306,9 +5804,10 @@ Transform:
   m_Children:
   - {fileID: 465576073}
   - {fileID: 1642872533}
+  - {fileID: 1638656677}
   - {fileID: 431969804}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 4
 --- !u!114 &735390768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5457,7 +5956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 30
   _health: 0
   _points: 10
   _freezeRigidbodyUntilCollision: 0
@@ -5484,6 +5983,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &769692062
 Transform:
   m_ObjectHideFlags: 0
@@ -5556,7 +6056,7 @@ Transform:
   m_LocalScale: {x: 0.92949545, y: 0.92949533, z: 0.92949533}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 5
 --- !u!60 &797015139
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5640,9 +6140,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 0
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -5667,6 +6167,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!1 &810007709
 GameObject:
   m_ObjectHideFlags: 0
@@ -5932,7 +6433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 20
   _health: 0
   _points: 10
   _freezeRigidbodyUntilCollision: 0
@@ -5959,6 +6460,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &842012383
 Transform:
   m_ObjectHideFlags: 0
@@ -5982,6 +6484,7 @@ GameObject:
   - 60: {fileID: 853467783}
   - 212: {fileID: 853467782}
   - 50: {fileID: 853467784}
+  - 114: {fileID: 853467785}
   m_Layer: 0
   m_Name: ob_bed_book_04 (3)
   m_TagString: Untagged
@@ -6054,6 +6557,45 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &853467785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 853467781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 10
+  _health: 0
+  _points: 5
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 853467784}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 853467782}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &853467787
 Transform:
   m_ObjectHideFlags: 0
@@ -6182,9 +6724,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 0
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -6209,6 +6751,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &868983139
 Transform:
   m_ObjectHideFlags: 0
@@ -6221,6 +6764,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1287044646}
   m_RootOrder: 64
+<<<<<<< Updated upstream
 --- !u!1001 &880608629
 Prefab:
   m_ObjectHideFlags: 0
@@ -6334,6 +6878,8 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 882651886}
+=======
+>>>>>>> Stashed changes
 --- !u!1 &888767300
 GameObject:
   m_ObjectHideFlags: 0
@@ -6394,7 +6940,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 8
 --- !u!60 &888767303
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6472,6 +7018,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!1 &896695652
 GameObject:
   m_ObjectHideFlags: 0
@@ -6600,9 +7147,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 50
   _health: 0
-  _points: 10
+  _points: 30
   _freezeRigidbodyUntilCollision: 0
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -6627,6 +7174,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &896695658
 Transform:
   m_ObjectHideFlags: 0
@@ -6819,7 +7367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 20
   _health: 0
   _points: 10
   _freezeRigidbodyUntilCollision: 0
@@ -6846,6 +7394,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!50 &935683462
 Rigidbody2D:
   serializedVersion: 2
@@ -6874,6 +7423,7 @@ GameObject:
   - 212: {fileID: 942886562}
   - 50: {fileID: 942886564}
   - 60: {fileID: 942886563}
+  - 114: {fileID: 942886565}
   m_Layer: 0
   m_Name: ob_bathroom_sink
   m_TagString: Untagged
@@ -7013,6 +7563,45 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &942886565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 942886561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 60
+  _health: 0
+  _points: 30
+  _freezeRigidbodyUntilCollision: 1
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 942886564}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 942886562}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &942886567
 Transform:
   m_ObjectHideFlags: 0
@@ -7146,9 +7735,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 0
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -7173,6 +7762,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &953017693
 Transform:
   m_ObjectHideFlags: 0
@@ -7289,9 +7879,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 0
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -7316,6 +7906,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &958160609
 Transform:
   m_ObjectHideFlags: 0
@@ -7516,12 +8107,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 1
   _breakByForce: 1
-  _impactVelocityToBreak: 4.5
+  _impactVelocityToBreak: 0
   _rigidbody2D: {fileID: 1007431608}
   _svgRenderer: {fileID: 0}
   _spriteRenderer: {fileID: 1007431606}
@@ -7543,6 +8134,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1007431611
 Transform:
   m_ObjectHideFlags: 0
@@ -7704,12 +8296,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 1
   _breakByForce: 1
-  _impactVelocityToBreak: 4.5
+  _impactVelocityToBreak: 0
   _rigidbody2D: {fileID: 1014161292}
   _svgRenderer: {fileID: 0}
   _spriteRenderer: {fileID: 1014161290}
@@ -7731,6 +8323,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1014161295
 Transform:
   m_ObjectHideFlags: 0
@@ -7834,12 +8427,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 1
   _breakByForce: 1
-  _impactVelocityToBreak: 4.5
+  _impactVelocityToBreak: 0
   _rigidbody2D: {fileID: 1030013098}
   _svgRenderer: {fileID: 0}
   _spriteRenderer: {fileID: 1030013096}
@@ -7861,6 +8454,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1030013101
 Transform:
   m_ObjectHideFlags: 0
@@ -7984,9 +8578,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 1
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -8011,6 +8605,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1090420064
 Transform:
   m_ObjectHideFlags: 0
@@ -8023,6 +8618,77 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1287044646}
   m_RootOrder: 13
+--- !u!1001 &1113073953
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 473416, guid: 76bc4bed36d5a47269f82314e5d8edd2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -7.2697268
+      objectReference: {fileID: 0}
+    - target: {fileID: 473416, guid: 76bc4bed36d5a47269f82314e5d8edd2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -7.809746
+      objectReference: {fileID: 0}
+    - target: {fileID: 473416, guid: 76bc4bed36d5a47269f82314e5d8edd2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473416, guid: 76bc4bed36d5a47269f82314e5d8edd2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473416, guid: 76bc4bed36d5a47269f82314e5d8edd2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473416, guid: 76bc4bed36d5a47269f82314e5d8edd2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473416, guid: 76bc4bed36d5a47269f82314e5d8edd2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 473416, guid: 76bc4bed36d5a47269f82314e5d8edd2, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19831578, guid: 76bc4bed36d5a47269f82314e5d8edd2, type: 2}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 19831578, guid: 76bc4bed36d5a47269f82314e5d8edd2, type: 2}
+      propertyPath: InitialModule.startLifetime.maxCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19831578, guid: 76bc4bed36d5a47269f82314e5d8edd2, type: 2}
+      propertyPath: InitialModule.startLifetime.minCurve.m_Curve.Array.data[0].value
+      value: 0.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 19831578, guid: 76bc4bed36d5a47269f82314e5d8edd2, type: 2}
+      propertyPath: InitialModule.startLifetime.minCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19831578, guid: 76bc4bed36d5a47269f82314e5d8edd2, type: 2}
+      propertyPath: InitialModule.startLifetime.maxCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19831578, guid: 76bc4bed36d5a47269f82314e5d8edd2, type: 2}
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 76bc4bed36d5a47269f82314e5d8edd2, type: 2}
+  m_IsPrefabParent: 0
+--- !u!198 &1113073954 stripped
+ParticleSystem:
+  m_PrefabParentObject: {fileID: 19831578, guid: 76bc4bed36d5a47269f82314e5d8edd2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1113073953}
 --- !u!1 &1119711876
 GameObject:
   m_ObjectHideFlags: 0
@@ -8317,9 +8983,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 0
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -8344,6 +9010,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1165582257
 Transform:
   m_ObjectHideFlags: 0
@@ -8434,6 +9101,7 @@ GameObject:
   - 60: {fileID: 1209430563}
   - 212: {fileID: 1209430562}
   - 50: {fileID: 1209430564}
+  - 114: {fileID: 1209430565}
   m_Layer: 0
   m_Name: ob_bed_book_04
   m_TagString: Untagged
@@ -8506,6 +9174,45 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1209430565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1209430561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 10
+  _health: 0
+  _points: 5
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1209430564}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1209430562}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1209430567
 Transform:
   m_ObjectHideFlags: 0
@@ -8629,9 +9336,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 1
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -8656,6 +9363,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1226927131
 Transform:
   m_ObjectHideFlags: 0
@@ -8725,7 +9433,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 23
 --- !u!1 &1251687881
 GameObject:
   m_ObjectHideFlags: 0
@@ -8867,9 +9575,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 0
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -8894,6 +9602,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1251687887
 Transform:
   m_ObjectHideFlags: 0
@@ -9031,6 +9740,84 @@ MonoBehaviour:
   _sortingOrder: 1
   _overrideSorter: 0
   _overrideSorterChildren: 0
+--- !u!1 &1266567594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 108404, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1266567596}
+  - 212: {fileID: 1266567597}
+  - 95: {fileID: 1266567595}
+  m_Layer: 8
+  m_Name: BlockHeadCatGraphic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &1266567595
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9568096, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1266567594}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 90aec9df3eab44619bb0f68ea87e40e4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!4 &1266567596
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 413268, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1266567594}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.35, y: 0.35, z: 0.35}
+  m_Children: []
+  m_Father: {fileID: 431969804}
+  m_RootOrder: 2
+--- !u!212 &1266567597
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21262800, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1266567594}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 6
+  m_Sprite: {fileID: 21300000, guid: 756b6274ec3644d34bfcd1718fc3c83d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1 &1287044645
 GameObject:
   m_ObjectHideFlags: 0
@@ -9153,6 +9940,64 @@ Transform:
   - {fileID: 1420456594}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!1 &1292618286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 102708, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1292618287}
+  - 58: {fileID: 1292618289}
+  - 114: {fileID: 1292618288}
+  m_Layer: 8
+  m_Name: InteractionArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1292618287
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 454060, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1292618286}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.249, y: -0.032, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 431969804}
+  m_RootOrder: 0
+--- !u!114 &1292618288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11449746, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1292618286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ddbd82d9fb900a4fa8ae3cf3857beef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _attackCooldown: 0.25
+  CatScratch: {fileID: 1309450318}
+--- !u!58 &1292618289
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5863990, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1292618286}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.21187973
 --- !u!1 &1308594935
 GameObject:
   m_ObjectHideFlags: 0
@@ -9248,6 +10093,57 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1287044646}
   m_RootOrder: 31
+--- !u!1001 &1309450317
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 402168, guid: d59c7089ae671458ba18788f0b52d60a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.3099236
+      objectReference: {fileID: 0}
+    - target: {fileID: 402168, guid: d59c7089ae671458ba18788f0b52d60a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -7.6586137
+      objectReference: {fileID: 0}
+    - target: {fileID: 402168, guid: d59c7089ae671458ba18788f0b52d60a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 402168, guid: d59c7089ae671458ba18788f0b52d60a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 402168, guid: d59c7089ae671458ba18788f0b52d60a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 402168, guid: d59c7089ae671458ba18788f0b52d60a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 402168, guid: d59c7089ae671458ba18788f0b52d60a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 402168, guid: d59c7089ae671458ba18788f0b52d60a, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19987040, guid: d59c7089ae671458ba18788f0b52d60a, type: 2}
+      propertyPath: m_SortingOrder
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d59c7089ae671458ba18788f0b52d60a, type: 2}
+  m_IsPrefabParent: 0
+--- !u!198 &1309450318 stripped
+ParticleSystem:
+  m_PrefabParentObject: {fileID: 19811174, guid: d59c7089ae671458ba18788f0b52d60a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1309450317}
 --- !u!1 &1310857627
 GameObject:
   m_ObjectHideFlags: 0
@@ -9321,6 +10217,84 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1310857627}
+--- !u!1 &1313626143
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 156996, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1313626145}
+  - 212: {fileID: 1313626146}
+  - 95: {fileID: 1313626144}
+  m_Layer: 8
+  m_Name: PixelCatGraphic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &1313626144
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9582056, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1313626143}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a0d5205cef74840b0b54a4100afd5e09, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!4 &1313626145
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 484256, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1313626143}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.35, y: 0.35, z: 0.35}
+  m_Children: []
+  m_Father: {fileID: 431969804}
+  m_RootOrder: 3
+--- !u!212 &1313626146
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21251312, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1313626143}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 21300000, guid: 301a5bd3665cbb646a94c385c97b4251, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1 &1322131262
 GameObject:
   m_ObjectHideFlags: 0
@@ -9332,6 +10306,7 @@ GameObject:
   - 60: {fileID: 1322131264}
   - 50: {fileID: 1322131269}
   - 212: {fileID: 1322131263}
+  - 114: {fileID: 1322131265}
   m_Layer: 0
   m_Name: ob_bed_vase_01
   m_TagString: Untagged
@@ -9433,6 +10408,45 @@ PolygonCollider2D:
       - {x: -0.119, y: 0.018000001}
       - {x: -0.081, y: 0.002}
       - {x: 0.059000004, y: 0}
+--- !u!114 &1322131265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1322131262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 20
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1322131269}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1322131263}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1322131268
 Transform:
   m_ObjectHideFlags: 0
@@ -9635,7 +10649,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 20
 --- !u!114 &1349375537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9647,9 +10661,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 1
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -9674,6 +10688,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!1 &1364439164
 GameObject:
   m_ObjectHideFlags: 0
@@ -9685,6 +10700,7 @@ GameObject:
   - 60: {fileID: 1364439167}
   - 50: {fileID: 1364439165}
   - 212: {fileID: 1364439166}
+  - 114: {fileID: 1364439168}
   m_Layer: 0
   m_Name: ob_bed_book_04 (1)
   m_TagString: Untagged
@@ -9757,6 +10773,45 @@ PolygonCollider2D:
       - {x: -0.032, y: 0}
       - {x: -0.032, y: 0.23}
       - {x: 0.032, y: 0.23}
+--- !u!114 &1364439168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1364439164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 10
+  _health: 0
+  _points: 5
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1364439165}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1364439166}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1364439171
 Transform:
   m_ObjectHideFlags: 0
@@ -9938,9 +10993,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 1
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -9965,6 +11020,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1390241426
 Transform:
   m_ObjectHideFlags: 0
@@ -10098,8 +11154,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1420456593}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -46.83, y: 1.23, z: 0}
-  m_LocalScale: {x: 123.646355, y: 19.905577, z: 1}
+  m_LocalPosition: {x: -46.9, y: 1.28, z: 0}
+  m_LocalScale: {x: -116.83312, y: 19.905577, z: 1}
   m_Children: []
   m_Father: {fileID: 1287044646}
   m_RootOrder: 94
@@ -10259,7 +11315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
   _points: 10
   _freezeRigidbodyUntilCollision: 0
@@ -10286,6 +11342,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1427030165
 Transform:
   m_ObjectHideFlags: 0
@@ -10298,6 +11355,48 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1287044646}
   m_RootOrder: 50
+--- !u!1001 &1437719048
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 412670, guid: ece4693c4f2904c70bde73fbe4fef41b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.31386328
+      objectReference: {fileID: 0}
+    - target: {fileID: 412670, guid: ece4693c4f2904c70bde73fbe4fef41b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -6.872989
+      objectReference: {fileID: 0}
+    - target: {fileID: 412670, guid: ece4693c4f2904c70bde73fbe4fef41b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 412670, guid: ece4693c4f2904c70bde73fbe4fef41b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 412670, guid: ece4693c4f2904c70bde73fbe4fef41b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.004061143
+      objectReference: {fileID: 0}
+    - target: {fileID: 412670, guid: ece4693c4f2904c70bde73fbe4fef41b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 412670, guid: ece4693c4f2904c70bde73fbe4fef41b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.9999918
+      objectReference: {fileID: 0}
+    - target: {fileID: 412670, guid: ece4693c4f2904c70bde73fbe4fef41b, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ece4693c4f2904c70bde73fbe4fef41b, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1455413593
 GameObject:
   m_ObjectHideFlags: 0
@@ -10309,6 +11408,7 @@ GameObject:
   - 60: {fileID: 1455413596}
   - 50: {fileID: 1455413594}
   - 212: {fileID: 1455413595}
+  - 114: {fileID: 1455413597}
   m_Layer: 0
   m_Name: ob_livingroom_flowers
   m_TagString: Untagged
@@ -10407,6 +11507,45 @@ PolygonCollider2D:
       - {x: -0.102000006, y: 0.017}
       - {x: -0.09200001, y: 0}
       - {x: 0.002, y: 0}
+--- !u!114 &1455413597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1455413593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 10
+  _health: 0
+  _points: 5
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1455413594}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1455413595}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1455413600
 Transform:
   m_ObjectHideFlags: 0
@@ -10530,9 +11669,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 1
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -10557,6 +11696,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1457662374
 Transform:
   m_ObjectHideFlags: 0
@@ -10808,9 +11948,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 30
   _health: 0
-  _points: 10
+  _points: 15
   _freezeRigidbodyUntilCollision: 0
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -10835,6 +11975,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1493935647
 Transform:
   m_ObjectHideFlags: 0
@@ -11019,12 +12160,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1287044646}
   m_RootOrder: 32
---- !u!114 &1505938325 stripped
+--- !u!114 &1505938325
 MonoBehaviour:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11418648, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34,
     type: 2}
-  m_PrefabInternal: {fileID: 880608629}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 702379125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8ed4550f213addc40b83632d17edd00f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _points: 0
+  _level: 0
 --- !u!1 &1509445592
 GameObject:
   m_ObjectHideFlags: 0
@@ -11147,7 +12296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 20
   _health: 0
   _points: 10
   _freezeRigidbodyUntilCollision: 1
@@ -11174,6 +12323,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1509445598
 Transform:
   m_ObjectHideFlags: 0
@@ -11279,7 +12429,7 @@ Transform:
   m_LocalScale: {x: 0.40935528, y: 0.40935528, z: 0.40935528}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 14
 --- !u!50 &1527327061
 Rigidbody2D:
   serializedVersion: 2
@@ -11310,7 +12460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 100
   _health: 0
-  _points: 10
+  _points: 75
   _freezeRigidbodyUntilCollision: 0
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -11335,6 +12485,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!1 &1535993473
 GameObject:
   m_ObjectHideFlags: 0
@@ -11395,7 +12546,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 12
 --- !u!60 &1535993476
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11462,9 +12613,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 50
   _health: 0
-  _points: 10
+  _points: 25
   _freezeRigidbodyUntilCollision: 1
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -11489,6 +12640,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!1 &1556307878
 GameObject:
   m_ObjectHideFlags: 0
@@ -11597,7 +12749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 20
   _health: 0
   _points: 10
   _freezeRigidbodyUntilCollision: 1
@@ -11624,6 +12776,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1556307884
 Transform:
   m_ObjectHideFlags: 0
@@ -11647,6 +12800,7 @@ GameObject:
   - 60: {fileID: 1560108076}
   - 212: {fileID: 1560108075}
   - 50: {fileID: 1560108077}
+  - 114: {fileID: 1560108078}
   m_Layer: 0
   m_Name: ob_bed_book_04 (2)
   m_TagString: Untagged
@@ -11719,6 +12873,45 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1560108078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1560108074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 10
+  _health: 0
+  _points: 5
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1560108077}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1560108075}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1560108080
 Transform:
   m_ObjectHideFlags: 0
@@ -11847,9 +13040,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 0
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -11874,6 +13067,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1573608952
 Transform:
   m_ObjectHideFlags: 0
@@ -12000,7 +13194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 100
   _health: 0
-  _points: 10
+  _points: 75
   _freezeRigidbodyUntilCollision: 0
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -12025,6 +13219,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1600362624
 Transform:
   m_ObjectHideFlags: 0
@@ -12095,6 +13290,110 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1287044646}
   m_RootOrder: 60
+--- !u!1 &1638656676
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100512, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1638656677}
+  - 20: {fileID: 1638656681}
+  - 124: {fileID: 1638656680}
+  - 92: {fileID: 1638656679}
+  - 81: {fileID: 1638656678}
+  - 114: {fileID: 1638656682}
+  m_Layer: 8
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1638656677
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 466350, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1638656676}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.52, y: 1.74, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 735390767}
+  m_RootOrder: 2
+--- !u!81 &1638656678
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8157824, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1638656676}
+  m_Enabled: 1
+--- !u!92 &1638656679
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9217208, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1638656676}
+  m_Enabled: 1
+--- !u!124 &1638656680
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 12437352, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1638656676}
+  m_Enabled: 1
+--- !u!20 &1638656681
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2000924, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1638656676}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.09803922, g: 0.09803922, b: 0.09803922, a: 1}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 20000
+  field of view: 25
+  orthographic: 1
+  orthographic size: 3
+  m_Depth: 2
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+  m_StereoMirrorMode: 0
+--- !u!114 &1638656682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1638656676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 155d5ab7e9a314f23b471ef7d83544c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Catty: {fileID: 431969804}
+  Speed: 2
 --- !u!1 &1642872529
 GameObject:
   m_ObjectHideFlags: 0
@@ -12334,7 +13633,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 16
 --- !u!50 &1676278084
 Rigidbody2D:
   serializedVersion: 2
@@ -12395,7 +13694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 20
   _health: 0
   _points: 10
   _freezeRigidbodyUntilCollision: 1
@@ -12422,6 +13721,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+<<<<<<< Updated upstream
 --- !u!1 &1693978037
 GameObject:
   m_ObjectHideFlags: 0
@@ -12505,6 +13805,9 @@ MonoBehaviour:
   _renderMode: 0
   _texture: {fileID: 0}
   _tintColor: {r: 1, g: 1, b: 1, a: 1}
+=======
+  DestroyedObject: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!1 &1695788174
 GameObject:
   m_ObjectHideFlags: 0
@@ -12616,9 +13919,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 1
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -12643,6 +13946,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1695788180
 Transform:
   m_ObjectHideFlags: 0
@@ -12771,9 +14075,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 0
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -12798,6 +14102,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1705707725
 Transform:
   m_ObjectHideFlags: 0
@@ -12870,7 +14175,7 @@ Transform:
   m_LocalScale: {x: 0.41481978, y: 0.41481978, z: 0.41481978}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 10
 --- !u!50 &1715912225
 Rigidbody2D:
   serializedVersion: 2
@@ -13022,9 +14327,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 0
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -13049,6 +14354,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!1 &1734324617
 GameObject:
   m_ObjectHideFlags: 0
@@ -13163,9 +14469,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 30
   _health: 0
-  _points: 10
+  _points: 20
   _freezeRigidbodyUntilCollision: 0
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -13190,6 +14496,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1734324623
 Transform:
   m_ObjectHideFlags: 0
@@ -13501,9 +14808,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 0
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -13528,6 +14835,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1762628861
 Transform:
   m_ObjectHideFlags: 0
@@ -13551,6 +14859,7 @@ GameObject:
   - 60: {fileID: 1769868947}
   - 50: {fileID: 1769868945}
   - 212: {fileID: 1769868946}
+  - 114: {fileID: 1769868948}
   m_Layer: 0
   m_Name: ob_bed_lamp_01
   m_TagString: Untagged
@@ -13645,6 +14954,45 @@ PolygonCollider2D:
       - {x: -0.055000003, y: 0.017}
       - {x: -0.051000003, y: 0}
       - {x: 0.054, y: 0}
+--- !u!114 &1769868948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1769868944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 30
+  _health: 0
+  _points: 10
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1769868945}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1769868946}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1769868951
 Transform:
   m_ObjectHideFlags: 0
@@ -13763,9 +15111,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 0
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -13790,6 +15138,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1864166670
 Transform:
   m_ObjectHideFlags: 0
@@ -13813,6 +15162,7 @@ GameObject:
   - 60: {fileID: 1877695633}
   - 50: {fileID: 1877695631}
   - 212: {fileID: 1877695632}
+  - 114: {fileID: 1877695634}
   m_Layer: 0
   m_Name: ob_bed_book_04
   m_TagString: Untagged
@@ -13885,6 +15235,45 @@ PolygonCollider2D:
       - {x: -0.032, y: 0}
       - {x: -0.032, y: 0.23}
       - {x: 0.032, y: 0.23}
+--- !u!114 &1877695634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1877695630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 10
+  _health: 0
+  _points: 5
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1877695631}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1877695632}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1877695637
 Transform:
   m_ObjectHideFlags: 0
@@ -13908,6 +15297,7 @@ GameObject:
   - 60: {fileID: 1895579867}
   - 212: {fileID: 1895579866}
   - 50: {fileID: 1895579868}
+  - 114: {fileID: 1895579869}
   m_Layer: 0
   m_Name: ob_bed_book_02
   m_TagString: Untagged
@@ -13980,6 +15370,45 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1895579869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1895579865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 10
+  _health: 0
+  _points: 5
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1895579868}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1895579866}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1895579871
 Transform:
   m_ObjectHideFlags: 0
@@ -14076,6 +15505,7 @@ GameObject:
   - 60: {fileID: 1927347945}
   - 50: {fileID: 1927347943}
   - 212: {fileID: 1927347944}
+  - 114: {fileID: 1927347946}
   m_Layer: 0
   m_Name: ob_bed_book_01
   m_TagString: Untagged
@@ -14148,6 +15578,45 @@ PolygonCollider2D:
       - {x: -0.065000005, y: 0}
       - {x: -0.065000005, y: 0.23}
       - {x: 0.065000005, y: 0.23}
+--- !u!114 &1927347946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1927347942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 10
+  _health: 0
+  _points: 5
+  _freezeRigidbodyUntilCollision: 0
+  _breakByForce: 1
+  _impactVelocityToBreak: 4.5
+  _rigidbody2D: {fileID: 1927347943}
+  _svgRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1927347944}
+  _fadeSettings:
+    _duration: 0.5
+    _easing:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1927347949
 Transform:
   m_ObjectHideFlags: 0
@@ -14305,7 +15774,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 11
 --- !u!50 &1947685487
 Rigidbody2D:
   serializedVersion: 2
@@ -14372,9 +15841,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 0
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -14399,6 +15868,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!1 &1961257675
 GameObject:
   m_ObjectHideFlags: 0
@@ -14490,12 +15960,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 1
   _breakByForce: 1
-  _impactVelocityToBreak: 4.5
+  _impactVelocityToBreak: 0
   _rigidbody2D: {fileID: 1961257678}
   _svgRenderer: {fileID: 0}
   _spriteRenderer: {fileID: 1961257676}
@@ -14517,6 +15987,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1961257681
 Transform:
   m_ObjectHideFlags: 0
@@ -14696,7 +16167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 30
   _health: 0
   _points: 10
   _freezeRigidbodyUntilCollision: 0
@@ -14723,6 +16194,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &1976293288
 Transform:
   m_ObjectHideFlags: 0
@@ -14869,7 +16341,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 13
 --- !u!60 &1996667604
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -14986,9 +16458,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 30
   _health: 0
-  _points: 10
+  _points: 15
   _freezeRigidbodyUntilCollision: 1
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -15013,6 +16485,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!1 &2015462805
 GameObject:
   m_ObjectHideFlags: 0
@@ -15185,7 +16658,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 7
 --- !u!50 &2058560392
 Rigidbody2D:
   serializedVersion: 2
@@ -15302,9 +16775,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 30
   _health: 0
-  _points: 10
+  _points: 20
   _freezeRigidbodyUntilCollision: 1
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -15329,6 +16802,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!1 &2068326682
 GameObject:
   m_ObjectHideFlags: 0
@@ -15537,7 +17011,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 19
 --- !u!114 &2085809794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15549,9 +17023,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 1
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -15576,6 +17050,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!1 &2113279438
 GameObject:
   m_ObjectHideFlags: 0
@@ -15698,6 +17173,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &2113279445
 Transform:
   m_ObjectHideFlags: 0
@@ -15930,7 +17406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
   _points: 10
   _freezeRigidbodyUntilCollision: 1
@@ -15957,6 +17433,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}
 --- !u!4 &2138762118
 Transform:
   m_ObjectHideFlags: 0
@@ -16065,7 +17542,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 21
 --- !u!114 &2143119077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16077,9 +17554,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0f90d13f3b7e747be8040643bfd02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 10
   _health: 0
-  _points: 10
+  _points: 5
   _freezeRigidbodyUntilCollision: 1
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
@@ -16104,3 +17581,4 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  DestroyedObject: {fileID: 0}

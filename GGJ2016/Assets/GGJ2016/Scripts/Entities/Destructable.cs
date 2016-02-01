@@ -12,7 +12,8 @@ using UnityEngine;
 
 namespace Assets.GGJ2016.Scripts.Entities
 {
-    public class Destructable : InjectableBehaviour, IInteractable
+    
+	public class Destructable : InjectableBehaviour, IInteractable
     {
         [SerializeField] private float _maxHealth = 100.0f;
         [SerializeField, Readonly] private float _health; 
@@ -28,10 +29,18 @@ namespace Assets.GGJ2016.Scripts.Entities
         [SerializeField] private TweenSettings _fadeSettings;
         private ITween _fadeTween;
 
-        public float MaxHealth
+		public GameObject DestroyedObject;
+
+		void Start()
+		{
+			DestroyedObject = GameObject.Find("objectFallEffect");
+		}
+
+		public float MaxHealth
         {
             get { return _maxHealth; }
         }
+			
 
         public float Health
         {
@@ -84,6 +93,7 @@ namespace Assets.GGJ2016.Scripts.Entities
 
         private void OnDestroyed(Destructable destructable)
         {
+			Instantiate(DestroyedObject, transform.position, Quaternion.identity);
 			if (_svgRenderer.IsNotNull()) {
 	            _fadeTween.SafelyAbort();
 	            _fadeTween = _svgRenderer.TweenColor()

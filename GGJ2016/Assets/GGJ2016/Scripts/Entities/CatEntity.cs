@@ -43,8 +43,13 @@ namespace Assets.GGJ2016.Scripts.Entities
 		private Animator _currentAnimator;
 		private string _currentBgClipName;
 
+<<<<<<< Updated upstream
 		[SerializeField] private SpriteRenderer _level0SpriteRenderer;
 		[SerializeField] private Animator _level0Animator;
+=======
+		public ParticleSystem CatPuff;
+
+>>>>>>> Stashed changes
 		[SerializeField] private SpriteRenderer _level1SpriteRenderer;
 		[SerializeField] private Animator _level1Animator;
 		[SerializeField] private SpriteRenderer _level2SpriteRenderer;
@@ -250,9 +255,9 @@ namespace Assets.GGJ2016.Scripts.Entities
 
 
             if (_controller.MoveX > 0)
-				_currentSpriteRenderer.flipX = true;
+				transform.rotation = Quaternion.Euler(0,-180,0);
             if (_controller.MoveX < 0)
-				_currentSpriteRenderer.flipX = false;
+				transform.rotation = Quaternion.Euler(0,0,0);
 
             //addGravity
             _rigidbody2D.AddForce(Vector2.up * _gravity);
