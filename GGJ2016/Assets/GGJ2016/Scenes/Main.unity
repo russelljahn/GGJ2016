@@ -626,11 +626,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 419526, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.997
+      value: -29.5
       objectReference: {fileID: 0}
     - target: {fileID: 419526, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.356
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 419526, guid: 2ed7afcbdf2754b1397bccb4bfa6dc34, type: 2}
       propertyPath: m_LocalPosition.z
@@ -9741,6 +9741,18 @@ Prefab:
     - target: {fileID: 19987040, guid: d59c7089ae671458ba18788f0b52d60a, type: 2}
       propertyPath: m_SortingOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 19811174, guid: d59c7089ae671458ba18788f0b52d60a, type: 2}
+      propertyPath: InitialModule.startSize.minCurve.m_Curve.Array.data[0].value
+      value: 0.625
+      objectReference: {fileID: 0}
+    - target: {fileID: 19811174, guid: d59c7089ae671458ba18788f0b52d60a, type: 2}
+      propertyPath: InitialModule.startSize.scalar
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 19811174, guid: d59c7089ae671458ba18788f0b52d60a, type: 2}
+      propertyPath: InitialModule.startSize.maxCurve.m_Curve.Array.data[0].value
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d59c7089ae671458ba18788f0b52d60a, type: 2}

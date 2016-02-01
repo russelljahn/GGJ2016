@@ -29,7 +29,7 @@ namespace Assets.OutOfTheBox.Scripts.Audio
 		public const string SfxJump2 = "jumplvl2";
 		public const string SfxJump3 = "jumplvl3";
 		public const string SfxJump4 = "jumplvl4";
-		public const string SfxAttack1 = "scratchvl1";
+		public const string SfxAttack1 = "scratchlvl1";
 		public const string SfxAttack2 = "scratchlvl2";
 		public const string SfxAttack3 = "scratchlvl3";
 		public const string SfxAttack4 = "scratchlvl4";
