@@ -17928,7 +17928,7 @@ MonoBehaviour:
   _maxHealth: 30
   _health: 0
   _points: 15
-  _freezeRigidbodyUntilCollision: 0
+  _freezeRigidbodyUntilCollision: 1
   _breakByForce: 1
   _impactVelocityToBreak: 4.5
   _rigidbody2D: {fileID: 1493935644}
