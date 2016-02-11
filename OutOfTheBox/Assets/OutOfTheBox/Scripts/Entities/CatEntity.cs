@@ -230,7 +230,8 @@ namespace Assets.OutOfTheBox.Scripts.Entities
 
         void FixedUpdate()
         {
-			_isGrounded = Physics2D.Raycast(transform.position, -Vector2.up, .15f, _mask.value);
+            var raycastDistance = 0.15f;
+			_isGrounded = Physics2D.Raycast(transform.position, -Vector2.up, raycastDistance, _mask.value);
             
 			var moveX = _controller.MoveX;
 
@@ -400,8 +401,12 @@ namespace Assets.OutOfTheBox.Scripts.Entities
 				_audioManager.LoadClip(_currentBgClipName, 0.0f, 1.0f, true);
 				_audioManager.PlayTrack(_currentBgClipName);
 
-				if (clipToFadeOut != _currentBgClipName) {
-					_audioManager.Crossfade(clipToFadeOut, _currentBgClipName, 0f, 1f);
+				if (clipToFadeOut != _currentBgClipName)
+				{
+				    var clipToFadeOutTime = _audioManager.GetTime(clipToFadeOut);
+                    _audioManager.SetTime(_currentBgClipName, clipToFadeOutTime);
+
+                    _audioManager.Crossfade(clipToFadeOut, _currentBgClipName);
 				}
 			}
 

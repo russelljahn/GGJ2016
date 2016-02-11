@@ -118,17 +118,22 @@ namespace Assets.OutOfTheBox.Scripts.Entities
 	                )
 	                .Start();
 			}
-			else if (_spriteRenderer.IsNotNull()) {
-				_fadeTween.SafelyAbort();
-				_fadeTween = _spriteRenderer.TweenColor()
-					.To(ColorUtils.Colors.Translucent, _fadeSettings)
-					.OnComplete(
-						() => {
-							Destroy(gameObject);
-						}
-					)
-					.Start();
+			else if (_spriteRenderer.IsNotNull())
+			{
+			    _fadeTween.SafelyAbort();
+			    _fadeTween = _spriteRenderer.TweenColor()
+			        .To(ColorUtils.Colors.Translucent, _fadeSettings)
+			        .OnComplete(
+			            () => {
+			                Destroy(gameObject);
+			            }
+			        )
+			        .Start();
 			}
+			else
+			{
+				Destroy(gameObject);
+            }
         }
 
         private void OnCollisionEnter2D(Collision2D collision)
@@ -136,8 +141,10 @@ namespace Assets.OutOfTheBox.Scripts.Entities
 			if (_rigidbody2D.IsNull() || IsDestroyed) {
 				return;
 			}
-			_rigidbody2D.isKinematic = false;
-
+            if (_rigidbody2D.IsNotNull() && _freezeRigidbodyUntilCollision)
+            {
+                _rigidbody2D.isKinematic = false;
+            }
             var impactVelocity = _rigidbody2D.GetPointVelocity(collision.contacts.First().point);
             if (_breakByForce && impactVelocity.magnitude >= _impactVelocityToBreak)
             {

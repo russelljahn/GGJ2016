@@ -127,6 +127,22 @@ namespace Assets.OutOfTheBox.Scripts.Audio
             Crossfade(fadeOutTrackId, fadeInTrackId, fadeOutVolume, fadeInVolume);
         }
 
+        public float GetTime(string clipName)
+        {
+            var trackId = _audioClips.GetClipTrackId(clipName);
+            var track = _tracks[trackId];
+
+            return track.time;
+        }
+
+        public void SetTime(string clipName, float time)
+        {
+            time = Mathf.Max(0f, time);
+            var trackId = _audioClips.GetClipTrackId(clipName);
+            var track = _tracks[trackId];
+
+            track.time = time;
+        }
 
         private void Crossfade(int fadeOutTrackId, int fadeInTrackId, float fadeOutVolume = 0.0f,
             float fadeInVolume = 1.0f)
