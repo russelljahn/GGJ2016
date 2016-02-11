@@ -9,11 +9,10 @@ namespace Assets.OutOfTheBox.Scripts.Inputs
 {
     public class Controller : InjectableBehaviour
     {
-        private class GearVrActionSet : PlayerActionSet
+        private class ControllerActionSet : PlayerActionSet
         {
             public readonly PlayerAction Submit;
             public readonly PlayerAction Cancel;
-            public readonly PlayerAction Run;
             public readonly PlayerAction Jump;
             public readonly PlayerAction Attack;
 
@@ -28,12 +27,11 @@ namespace Assets.OutOfTheBox.Scripts.Inputs
             public readonly PlayerAction CameraDown;
             public readonly PlayerTwoAxisAction Camera;
 
-            public GearVrActionSet()
+            public ControllerActionSet()
             {
                 Submit = CreatePlayerAction("IsSubmitting");
                 Cancel = CreatePlayerAction("IsCancelling");
 
-                Run = CreatePlayerAction("IsRunning");
                 Jump = CreatePlayerAction("IsJumping");
                 Attack = CreatePlayerAction("IsAttacking");
 
@@ -53,7 +51,7 @@ namespace Assets.OutOfTheBox.Scripts.Inputs
 
 
         [Inject] private InControlInputModule _inControlInputModule;
-        private GearVrActionSet _actionSet;
+        private ControllerActionSet _actionSet;
 
         public bool IsSubmitting
         {
@@ -63,11 +61,6 @@ namespace Assets.OutOfTheBox.Scripts.Inputs
         public bool IsCancelling
         {
             get { return _actionSet.Cancel; }
-        }
-
-        public bool IsRunning
-        {
-            get { return _actionSet.Run; }
         }
 
         public bool IsAttacking
@@ -118,18 +111,15 @@ namespace Assets.OutOfTheBox.Scripts.Inputs
 
         private void BindActions()
         {
-            _actionSet = new GearVrActionSet();
+            _actionSet = new ControllerActionSet();
 
-            _actionSet.Attack.AddDefaultBinding(InputControlType.RightTrigger);
+            _actionSet.Attack.AddDefaultBinding(InputControlType.Action3);
             _actionSet.Attack.AddDefaultBinding(Key.K);
 			_actionSet.Attack.AddDefaultBinding(Mouse.LeftButton);
 
             _actionSet.Jump.AddDefaultBinding(InputControlType.Action1);
             _actionSet.Jump.AddDefaultBinding(Key.J);
             _actionSet.Jump.AddDefaultBinding(Key.Space);
-
-            _actionSet.Run.AddDefaultBinding(InputControlType.Action3);
-            _actionSet.Run.AddDefaultBinding(Key.Shift);
 
             _actionSet.Submit.AddDefaultBinding(InputControlType.Action1);
             _actionSet.Submit.AddDefaultBinding(InputControlType.Start);

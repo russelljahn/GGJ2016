@@ -34,6 +34,7 @@ namespace Assets.OutOfTheBox.Scripts.Entities
         private ITween _fadeTween;
 
 		private GameObject _destroyedObject;
+        public bool IsDestroyed { get; private set; }
 
 		void Start()
 		{
@@ -54,7 +55,7 @@ namespace Assets.OutOfTheBox.Scripts.Entities
             }
             set
             {
-                if (_health <= 0.0f && value <= 0.0f)
+                if (IsDestroyed)
                 {
                     return;
                 }
@@ -97,7 +98,8 @@ namespace Assets.OutOfTheBox.Scripts.Entities
 
         private void OnDestroyed(Destructable destructable)
         {
-			_stats.Points += _points;
+            IsDestroyed = true;
+            _stats.Points += _points;
 
 			var go = (GameObject)Instantiate(_destroyedObject, transform.position, Quaternion.identity);
 			var destroyScript = go.GetComponent<DestroyAfterTime>();
@@ -131,7 +133,7 @@ namespace Assets.OutOfTheBox.Scripts.Entities
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
-			if (_rigidbody2D.IsNull()) {
+			if (_rigidbody2D.IsNull() || IsDestroyed) {
 				return;
 			}
 			_rigidbody2D.isKinematic = false;

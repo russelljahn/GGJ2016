@@ -8503,6 +8503,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 112764, guid: 76bc4bed36d5a47269f82314e5d8edd2, type: 2}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76bc4bed36d5a47269f82314e5d8edd2, type: 2}
   m_IsPrefabParent: 0
@@ -9829,6 +9833,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 189728, guid: d59c7089ae671458ba18788f0b52d60a, type: 2}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 111810, guid: d59c7089ae671458ba18788f0b52d60a, type: 2}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d59c7089ae671458ba18788f0b52d60a, type: 2}
   m_IsPrefabParent: 0
@@ -11087,6 +11099,18 @@ Prefab:
     - target: {fileID: 160126, guid: ece4693c4f2904c70bde73fbe4fef41b, type: 2}
       propertyPath: m_TagString
       value: FallEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 198266, guid: ece4693c4f2904c70bde73fbe4fef41b, type: 2}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 143552, guid: ece4693c4f2904c70bde73fbe4fef41b, type: 2}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 160126, guid: ece4693c4f2904c70bde73fbe4fef41b, type: 2}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ece4693c4f2904c70bde73fbe4fef41b, type: 2}
