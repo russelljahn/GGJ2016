@@ -1,0 +1,240 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4300626
+Mesh:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ob_livingroom_cushion_03
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 60
+    topology: 0
+    firstVertex: 0
+    vertexCount: 22
+    localAABB:
+      m_Center: {x: 0, y: 0.101995, z: -0}
+      m_Extent: {x: 0.2985, y: 0.101995, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 2
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 0
+    m_VertexCount: 0
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 0
+    _typelessdata: 
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 66
+      m_Range: 0.597
+      m_Start: -0.2985
+      m_Data: 08dde48000807df857930080a6ec818700801afff5a2008042d400800080ffffbcab00801aff82b400807df820c40080a6ecf7cf008008dd94d6008042d478d70080bc2b00800080f622e4800080581381870080810757930080e400f5a200800000bcab0080bc2b78d70080e40082b40080f62294d60080810720c400805813f7cf0080
+      m_BitSize: 16
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 88
+      m_Range: 0.5960784
+      m_Start: 0.40392157
+      m_Data: 0020fc0020fc0020fc0020fc0020fc0020fc0020fc0020fc0020fc0020fc0020fc0020fc0020fc0020fc0020fc0020fc0020fc0020fc0020fc0020fc0020fc0020fc
+      m_BitSize: 6
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 60
+      m_Data: 20083002198094414c21c71074484244a5a50853ab29e6547bca41f56054324239239d72d20a
+      m_BitSize: 5
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0.101995, z: -0}
+    m_Extent: {x: 0.2985, y: 0.101995, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
+  m_Name: ob_livingroom_cushion_03
+  m_EditorClassIdentifier: 
+  _lastTimeModified: 635898072910813374
+  _documentAsset: {fileID: 11419368}
+  _sharedMesh: {fileID: 4300626}
+  _antialiasing: 0
+  _antialiasingWidth: 0.1
+  _generateCollider: 1
+  _keepSVGFile: 1
+  _ignoreSVGCanvas: 1
+  _colliderShape:
+  - points:
+    - {x: 0.216, y: 0.201}
+    - {x: 0.25300002, y: 0.186}
+    - {x: 0.28, y: 0.158}
+    - {x: 0.296, y: 0.12200001}
+    - {x: 0.298, y: 0.101}
+    - {x: 0.296, y: 0.081}
+    - {x: 0.28, y: 0.045}
+    - {x: 0.25300002, y: 0.017}
+    - {x: 0.216, y: 0.002}
+    - {x: 0.19600001, y: 0}
+    - {x: -0.19600001, y: 0}
+    - {x: -0.216, y: 0.002}
+    - {x: -0.25300002, y: 0.017}
+    - {x: -0.28, y: 0.045}
+    - {x: -0.296, y: 0.081}
+    - {x: -0.298, y: 0.101}
+    - {x: -0.296, y: 0.12200001}
+    - {x: -0.28, y: 0.158}
+    - {x: -0.25300002, y: 0.186}
+    - {x: -0.216, y: 0.201}
+    - {x: -0.19600001, y: 0.20300001}
+    - {x: 0.19600001, y: 0.20300001}
+    bounds:
+      serializedVersion: 2
+      x: -0.298
+      y: 0.216
+      width: 0.596
+      height: 0.412
+  _format: 1
+  _useGradients: 1
+  _meshCompression: 2
+  _optimizeMesh: 1
+  _generateNormals: 0
+  _generateTangents: 0
+  _scale: 0.01
+  _vpm: 1000
+  _depthOffset: 0.01
+  _compressDepth: 1
+  _pivotPoint: {x: 0.5, y: 1}
+  _customPivotPoint: 0
+  _border: {x: 0, y: 0, z: 0, w: 0}
+  _sliceMesh: 0
+  _sharedGradients:
+  - colorKeys:
+    - time: 1
+      color:
+        serializedVersion: 2
+        rgba: 4294967295
+    - time: 0
+      color:
+        serializedVersion: 2
+        rgba: 4294967295
+    alphaKeys:
+    - time: 1
+      alpha: 1
+    - time: 0
+      alpha: 1
+    _hash: GC999FFFFFFC000FFFFFFA999999A000999
+    index: 0
+    atlasIndex: 0
+    references: 0
+  _sharedShaders:
+  - SVG Importer/SolidColor/SolidColorAlphaBlended
+  _canvasRectangle:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0.597
+    height: 0.204
+--- !u!114 &11419368
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363e9872ad27a4ca59c07d233fdf0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _errors: 
+  _svgFile: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!-- Generator: Adobe Illustrator
+    19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\n<svg version=\"1.1\"
+    id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"
+    x=\"0px\" y=\"0px\"\n\t viewBox=\"0 0 59.7 20.4\" style=\"enable-background:new
+    0 0 59.7 20.4;\" xml:space=\"preserve\">\n<style type=\"text/css\">\n\t.st0{fill:#67686B;}\n</style>\n<path
+    class=\"st0\" d=\"M49.5,20.4H10.2C4.6,20.4,0,15.8,0,10.2l0,0C0,4.6,4.6,0,10.2,0h39.3c5.6,0,10.2,4.6,10.2,10.2l0,0\n\tC59.7,15.8,55.1,20.4,49.5,20.4z\"/>\n</svg>\n"
+  _title: 
+  _description: 

@@ -1,0 +1,278 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4317930
+Mesh:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ob_livingroom_bowl_table
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 156
+    topology: 0
+    firstVertex: 0
+    vertexCount: 60
+    localAABB:
+      m_Center: {x: 0, y: 0.19649501, z: -0}
+      m_Extent: {x: 0.4665, y: 0.19649501, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 2
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 0
+    m_VertexCount: 0
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 0
+    _typelessdata: 
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 180
+      m_Range: 0.933
+      m_Start: -0.4665
+      m_Data: f2fb58db0080ffff66e1008077ffdede008069f9d1da0080ffff3ee5008077ffc7e70080f2fb4deb008069f9d4eb00809606d1da00800d0458db00808700dede0080000067e1008000003ee500809606d4eb00808700c7e700800d044deb008078da23c8008085de32ce0080fedda9cb0080efd79cc7008085de0ad20080fedd92d4008078da18d80080efd79fd800800f289cc70080862523c800800022a9cb0080792132ce008079210ad200800f289fd80080002292d40080862518d800808638008000805a3f838400806a3b93800080ee3f68870080a13593800080b131838400801c3168870080ee3fa0ca00805a3f85cd00806a3b75d10080863809d200801c31a0ca0080b13185cd0080a13575d1008065c90080008039d08384008049cc93800080cdd06887008080c69380008090c283840080fcc168870080cdd0a0ca008039d085cd008049cc75d10080fcc1a0ca008065c909d2008090c285cd008080c675d10080
+      m_BitSize: 16
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 240
+      m_Range: 0.9764706
+      m_Start: 0.023529412
+      m_Data: 2a09fc2a09fc2a09fc2a09fc2a09fc2a09fc2a09fc2a09fc2a09fc2a09fc2a09fc2a09fc2a09fc2a09fc2a09fc2a09fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fcdbd4fc
+      m_BitSize: 6
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 156
+      m_Data: 40200c013010c1501083510c87811c437220ca912c87c21c0bd31c4ec334ce0345d2144113154d153559d57459d8356517a65dd97669dcb571dde5755ce77d60288263488e603992e6589ae768a2a799a2a69aaeaac9aaabcab6ee0bbbf12bc7ee1ccb743cd3754cdb357ddbf84de3f9ade778aeef
+      m_BitSize: 6
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0.19649501, z: -0}
+    m_Extent: {x: 0.4665, y: 0.19649501, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
+  m_Name: ob_livingroom_bowl_table
+  m_EditorClassIdentifier: 
+  _lastTimeModified: 635898072834965375
+  _documentAsset: {fileID: 11406172}
+  _sharedMesh: {fileID: 4317930}
+  _antialiasing: 0
+  _antialiasingWidth: 0.1
+  _generateCollider: 1
+  _keepSVGFile: 1
+  _ignoreSVGCanvas: 1
+  _colliderShape:
+  - points:
+    - {x: 0.45100003, y: 0.33200002}
+    - {x: 0.46400002, y: 0.34500003}
+    - {x: 0.46600002, y: 0.354}
+    - {x: 0.46600002, y: 0.36800003}
+    - {x: 0.46400002, y: 0.37800002}
+    - {x: 0.45100003, y: 0.39100003}
+    - {x: 0.44200003, y: 0.39200002}
+    - {x: -0.44200003, y: 0.39200002}
+    - {x: -0.45100003, y: 0.39100003}
+    - {x: -0.46400002, y: 0.37800002}
+    - {x: -0.46600002, y: 0.36800003}
+    - {x: -0.46600002, y: 0.35500002}
+    - {x: -0.46400002, y: 0.34500003}
+    - {x: -0.45100003, y: 0.33200002}
+    - {x: -0.44200003, y: 0.33100003}
+    - {x: 0.44200003, y: 0.33100003}
+    bounds:
+      serializedVersion: 2
+      x: -0.46600002
+      y: 0.45100003
+      width: 0.93200004
+      height: 0.89300007
+  - points:
+    - {x: 0.27800003, y: 0.002}
+    - {x: 0.29200003, y: 0.016}
+    - {x: 0.294, y: 0.027}
+    - {x: 0.294, y: 0.261}
+    - {x: 0.32000002, y: 0.261}
+    - {x: 0.32900003, y: 0.26200002}
+    - {x: 0.342, y: 0.275}
+    - {x: 0.344, y: 0.28500003}
+    - {x: 0.344, y: 0.29900002}
+    - {x: 0.342, y: 0.30800003}
+    - {x: 0.32900003, y: 0.321}
+    - {x: 0.32000002, y: 0.323}
+    - {x: -0.32000002, y: 0.323}
+    - {x: -0.32900003, y: 0.321}
+    - {x: -0.342, y: 0.30800003}
+    - {x: -0.344, y: 0.29900002}
+    - {x: -0.344, y: 0.28500003}
+    - {x: -0.342, y: 0.275}
+    - {x: -0.32900003, y: 0.26200002}
+    - {x: -0.32000002, y: 0.261}
+    - {x: -0.287, y: 0.261}
+    - {x: -0.287, y: 0.027}
+    - {x: -0.28500003, y: 0.016}
+    - {x: -0.27100003, y: 0.002}
+    - {x: -0.26000002, y: 0}
+    - {x: -0.24900001, y: 0.002}
+    - {x: -0.23500001, y: 0.016}
+    - {x: -0.23300001, y: 0.027}
+    - {x: -0.23300001, y: 0.261}
+    - {x: 0.24000001, y: 0.261}
+    - {x: 0.24000001, y: 0.027}
+    - {x: 0.24200001, y: 0.016}
+    - {x: 0.256, y: 0.002}
+    - {x: 0.26700002, y: 0}
+    bounds:
+      serializedVersion: 2
+      x: -0.344
+      y: 0.344
+      width: 0.688
+      height: 0.686
+  _format: 1
+  _useGradients: 1
+  _meshCompression: 2
+  _optimizeMesh: 1
+  _generateNormals: 0
+  _generateTangents: 0
+  _scale: 0.01
+  _vpm: 1000
+  _depthOffset: 0.01
+  _compressDepth: 1
+  _pivotPoint: {x: 0.5, y: 1}
+  _customPivotPoint: 0
+  _border: {x: 0, y: 0, z: 0, w: 0}
+  _sliceMesh: 0
+  _sharedGradients:
+  - colorKeys:
+    - time: 1
+      color:
+        serializedVersion: 2
+        rgba: 4294967295
+    - time: 0
+      color:
+        serializedVersion: 2
+        rgba: 4294967295
+    alphaKeys:
+    - time: 1
+      alpha: 1
+    - time: 0
+      alpha: 1
+    _hash: GC999FFFFFFC000FFFFFFA999999A000999
+    index: 0
+    atlasIndex: 0
+    references: 0
+  _sharedShaders:
+  - SVG Importer/SolidColor/SolidColorAlphaBlended
+  _canvasRectangle:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0.933
+    height: 0.39299998
+--- !u!114 &11406172
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363e9872ad27a4ca59c07d233fdf0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _errors: 
+  _svgFile: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!-- Generator: Adobe Illustrator
+    19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\n<svg version=\"1.1\"
+    id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"
+    x=\"0px\" y=\"0px\"\n\t viewBox=\"0 0 93.3 39.3\" style=\"enable-background:new
+    0 0 93.3 39.3;\" xml:space=\"preserve\">\n<style type=\"text/css\">\n\t.st0{fill:#AD9306;}\n\t.st1{fill:#6F533A;}\n</style>\n<path
+    class=\"st0\" d=\"M90.9,6.2H2.4C1.1,6.2,0,5.1,0,3.8V2.4C0,1.1,1.1,0,2.4,0h88.5c1.3,0,2.4,1.1,2.4,2.4v1.4\n\tC93.3,5.1,92.2,6.2,90.9,6.2z\"/>\n<path
+    class=\"st1\" d=\"M78.7,13.2H14.6c-1.3,0-2.4-1.1-2.4-2.4V9.4c0-1.3,1.1-2.4,2.4-2.4h64.1c1.3,0,2.4,1.1,2.4,2.4v1.4\n\tC81.1,12.1,80,13.2,78.7,13.2z\"/>\n<path
+    class=\"st1\" d=\"M20.6,39.3L20.6,39.3c-1.5,0-2.7-1.2-2.7-2.7V12.1c0-1.5,1.2-2.7,2.7-2.7l0,0c1.5,0,2.7,1.2,2.7,2.7v24.5\n\tC23.3,38.1,22.1,39.3,20.6,39.3z\"/>\n<path
+    class=\"st1\" d=\"M73.4,39.3L73.4,39.3c-1.5,0-2.7-1.2-2.7-2.7V12.1c0-1.5,1.2-2.7,2.7-2.7l0,0c1.5,0,2.7,1.2,2.7,2.7v24.5\n\tC76.1,38.1,74.9,39.3,73.4,39.3z\"/>\n</svg>\n"
+  _title: 
+  _description: 

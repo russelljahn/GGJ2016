@@ -1,0 +1,244 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4344726
+Mesh:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ob_kitchen_spoon_04
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 42
+    topology: 0
+    firstVertex: 0
+    vertexCount: 18
+    localAABB:
+      m_Center: {x: 0.0000000018626451, y: 0.168995, z: -0}
+      m_Extent: {x: 0.039805003, y: 0.168995, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 2
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 0
+    m_VertexCount: 0
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 0
+    _typelessdata: 
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 54
+      m_Range: 0.37779498
+      m_Start: -0.039805
+      m_Data: 9914a1d4f91ade24fffff91ade24a1d4f91a9914fffff91a1000663ef91a6c060f4af91afd174e59f91a711ff91af91af235f52df91ad625c91df91abc14a31bf91ab8340242f91a13074b23f91a512c264ff91a00004433f91a2020a258f91ac31ef4d3f91afd17f4d3f91a
+      m_BitSize: 16
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 72
+      m_Range: 0.5568627
+      m_Start: 0.44313726
+      m_Data: 1479fd1479fd1479fd1479fdb302fcb302fcb302fcb302fcb302fcb302fcb302fcb302fcb302fcb302fcb302fcb302fcb302fcb302fc
+      m_BitSize: 6
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 42
+      m_Data: 2088000629e6a0a4d0510bb1a5585bae31f71a79ce3c62e0832602
+      m_BitSize: 5
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0.0000000018626451, y: 0.168995, z: -0}
+    m_Extent: {x: 0.039805003, y: 0.168995, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
+  m_Name: ob_kitchen_spoon_04
+  m_EditorClassIdentifier: 
+  _lastTimeModified: 635898072911938572
+  _documentAsset: {fileID: 11413566}
+  _sharedMesh: {fileID: 4344726}
+  _antialiasing: 0
+  _antialiasingWidth: 0.1
+  _generateCollider: 1
+  _keepSVGFile: 1
+  _ignoreSVGCanvas: 1
+  _colliderShape:
+  - points:
+    - {x: 0.014, y: 0.337}
+    - {x: -0.009000001, y: 0.337}
+    - {x: -0.009000001, y: 0.273}
+    - {x: 0.014, y: 0.273}
+    bounds:
+      serializedVersion: 2
+      x: -0.009000001
+      y: 0.014
+      width: 0.023000002
+      height: 0
+  - points:
+    - {x: 0.016, y: 0.004}
+    - {x: 0.039, y: 0.028}
+    - {x: 0.037, y: 0.057000004}
+    - {x: 0.025, y: 0.076000005}
+    - {x: 0.007, y: 0.09}
+    - {x: 0.0050000004, y: 0.272}
+    - {x: -0.004, y: 0.272}
+    - {x: -0.004, y: 0.091000006}
+    - {x: -0.030000001, y: 0.069000006}
+    - {x: -0.039, y: 0.052}
+    - {x: -0.039, y: 0.035}
+    - {x: -0.029000001, y: 0.012}
+    - {x: -0.009000001, y: 0}
+    - {x: 0.006, y: 0}
+    bounds:
+      serializedVersion: 2
+      x: -0.039
+      y: 0.006
+      width: 0.078
+      height: 0.035
+  _format: 1
+  _useGradients: 1
+  _meshCompression: 2
+  _optimizeMesh: 1
+  _generateNormals: 0
+  _generateTangents: 0
+  _scale: 0.01
+  _vpm: 1000
+  _depthOffset: 0.01
+  _compressDepth: 1
+  _pivotPoint: {x: 0.5, y: 1}
+  _customPivotPoint: 0
+  _border: {x: 0, y: 0, z: 0, w: 0}
+  _sliceMesh: 0
+  _sharedGradients:
+  - colorKeys:
+    - time: 1
+      color:
+        serializedVersion: 2
+        rgba: 4294967295
+    - time: 0
+      color:
+        serializedVersion: 2
+        rgba: 4294967295
+    alphaKeys:
+    - time: 1
+      alpha: 1
+    - time: 0
+      alpha: 1
+    _hash: GC999FFFFFFC000FFFFFFA999999A000999
+    index: 0
+    atlasIndex: 0
+    references: 0
+  _sharedShaders:
+  - SVG Importer/SolidColor/SolidColorAlphaBlended
+  _canvasRectangle:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0.083
+    height: 0.338
+--- !u!114 &11413566
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363e9872ad27a4ca59c07d233fdf0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _errors: 
+  _svgFile: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!-- Generator: Adobe Illustrator
+    19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\n<svg version=\"1.1\"
+    id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"
+    x=\"0px\" y=\"0px\"\n\t viewBox=\"0 0 8.3 33.8\" style=\"enable-background:new
+    0 0 8.3 33.8;\" xml:space=\"preserve\">\n<style type=\"text/css\">\n\t.st0{fill:#9DC3A4;}\n\t.st1{fill:#E48771;}\n</style>\n<g>\n\t<rect
+    x=\"3.1\" class=\"st0\" width=\"2.4\" height=\"6.4\"/>\n\t<path class=\"st1\"
+    d=\"M3.6,6.5v18.1c0,0-3.9,2.4-3.6,4.9c0,0-0.1,4.6,4.7,4.3c0,0,6.5-2.1,1.9-7.7l-1.8-1.4L4.6,6.5L3.6,6.5L3.6,6.5\n\t\tz\"/>\n</g>\n</svg>\n"
+  _title: 
+  _description: 

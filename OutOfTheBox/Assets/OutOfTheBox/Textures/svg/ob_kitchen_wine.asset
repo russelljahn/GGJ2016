@@ -1,0 +1,249 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4317468
+Mesh:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ob_kitchen_wine
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 57
+    topology: 0
+    firstVertex: 0
+    vertexCount: 23
+    localAABB:
+      m_Center: {x: -0.0000000018626451, y: 0.23719001, z: -0}
+      m_Extent: {x: 0.057500005, y: 0.23719001, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 2
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 0
+    m_VertexCount: 0
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 0
+    _typelessdata: 
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 69
+      m_Range: 0.53188
+      m_Start: -0.057500005
+      m_Data: 4b12c1dfad1b1a24ffffad1b1a24c1dfad1b4b12ffffad1bb918ad1bad1b5a371423ad1b682c3f1ead1b7404b620ad1b00001423ad1b5837a88cad1bb334789dad1bbd2effa8ad1be02936adad1b00002888ad1be82724b3ad1b40010a97ad1bce082ba8ad1b3c0f7db0ad1b971427c1ad1b8920c3d1ad1bbb2044dfad1b5e164dd9ad1b2416c1dfad1b
+      m_BitSize: 16
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 92
+      m_Range: 0.54509807
+      m_Start: 0.45490196
+      m_Data: 1df8fd1df8fd1df8fd1df8fd8043fd8043fd8043fd8043fd8043fd8043fd8043fd8043fd8043fd8043fd8043fd8043fd8043fd8043fd8043fd8043fd8043fd8043fd8043fd
+      m_BitSize: 6
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 57
+      m_Data: 2088000629e61482ca41a92095d05288adc65073ecb906dd8b0e4a17e57492ce4a25ad16
+      m_BitSize: 5
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: -0.0000000018626451, y: 0.23719001, z: -0}
+    m_Extent: {x: 0.057500005, y: 0.23719001, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
+  m_Name: ob_kitchen_wine
+  m_EditorClassIdentifier: 
+  _lastTimeModified: 635898072911883502
+  _documentAsset: {fileID: 11403236}
+  _sharedMesh: {fileID: 4317468}
+  _antialiasing: 0
+  _antialiasingWidth: 0.1
+  _generateCollider: 1
+  _keepSVGFile: 1
+  _ignoreSVGCanvas: 1
+  _colliderShape:
+  - points:
+    - {x: 0.017, y: 0.47400004}
+    - {x: -0.019000001, y: 0.47400004}
+    - {x: -0.019000001, y: 0.407}
+    - {x: 0.017, y: 0.407}
+    bounds:
+      serializedVersion: 2
+      x: -0.019000001
+      y: 0.017
+      width: 0.036000002
+      height: 0
+  - points:
+    - {x: 0.034, y: 0.0050000004}
+    - {x: 0.057000004, y: 0.015000001}
+    - {x: 0.057000004, y: 0.23400001}
+    - {x: 0.051000003, y: 0.26900002}
+    - {x: 0.039, y: 0.293}
+    - {x: 0.029000001, y: 0.30200002}
+    - {x: 0.025, y: 0.314}
+    - {x: 0.010000001, y: 0.37800002}
+    - {x: 0.010000001, y: 0.40600002}
+    - {x: -0.011000001, y: 0.407}
+    - {x: -0.011000001, y: 0.393}
+    - {x: -0.014, y: 0.34300002}
+    - {x: -0.025, y: 0.30900002}
+    - {x: -0.039, y: 0.291}
+    - {x: -0.054, y: 0.256}
+    - {x: -0.057000004, y: 0.22500001}
+    - {x: -0.057000004, y: 0.015000001}
+    - {x: -0.048, y: 0.010000001}
+    - {x: -0.006, y: 0}
+    bounds:
+      serializedVersion: 2
+      x: -0.057000004
+      y: -0.006
+      width: 0.11400001
+      height: 0.051000003
+  _format: 1
+  _useGradients: 1
+  _meshCompression: 2
+  _optimizeMesh: 1
+  _generateNormals: 0
+  _generateTangents: 0
+  _scale: 0.01
+  _vpm: 1000
+  _depthOffset: 0.01
+  _compressDepth: 1
+  _pivotPoint: {x: 0.5, y: 1}
+  _customPivotPoint: 0
+  _border: {x: 0, y: 0, z: 0, w: 0}
+  _sliceMesh: 0
+  _sharedGradients:
+  - colorKeys:
+    - time: 1
+      color:
+        serializedVersion: 2
+        rgba: 4294967295
+    - time: 0
+      color:
+        serializedVersion: 2
+        rgba: 4294967295
+    alphaKeys:
+    - time: 1
+      alpha: 1
+    - time: 0
+      alpha: 1
+    _hash: GC999FFFFFFC000FFFFFFA999999A000999
+    index: 0
+    atlasIndex: 0
+    references: 0
+  _sharedShaders:
+  - SVG Importer/SolidColor/SolidColorAlphaBlended
+  _canvasRectangle:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0.114999995
+    height: 0.475
+--- !u!114 &11403236
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363e9872ad27a4ca59c07d233fdf0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _errors: 
+  _svgFile: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!-- Generator: Adobe Illustrator
+    19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\n<svg version=\"1.1\"
+    id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"
+    x=\"0px\" y=\"0px\"\n\t viewBox=\"0 0 11.5 47.5\" style=\"enable-background:new
+    0 0 11.5 47.5;\" xml:space=\"preserve\">\n<style type=\"text/css\">\n\t.st0{fill:#B4BAB9;enable-background:new
+    \   ;}\n\t.st1{fill:#7492A1;}\n</style>\n<rect x=\"3.9\" class=\"st0\" width=\"3.7\"
+    height=\"6.7\"/>\n<path class=\"st1\" d=\"M4.7,6.7c0,0,0.6,8.3-2.4,11.1c0,0-2.4,2.4-2.2,7.1l0,21c0,0,5.3,3.5,11.5,0v-21c0,0,0.3-5.8-2.8-7.7\n\tc0,0-2.7-7.6-1.9-10.4H4.7z\"/>\n</svg>\n"
+  _title: 
+  _description: 

@@ -1,0 +1,254 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4311530
+Mesh:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ob_bathroom_mirror
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 102
+    topology: 0
+    firstVertex: 0
+    vertexCount: 36
+    localAABB:
+      m_Center: {x: 0, y: 0.442, z: -0}
+      m_Extent: {x: 0.442, y: 0.442, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 2
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 0
+    m_VertexCount: 0
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 0
+    _typelessdata: 
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 108
+      m_Range: 1.326
+      m_Start: -0.442
+      m_Data: fe7da35f55552b9766745555998bd46855555ca001825555b26e2c595555d3a64d9155550d5ec655555539aaf2a15555555555555555aaaaaaaa55559d4cc655555539aa62b35555f83b2c595555d3a607c45555ac2ca35f55555ca053d35555111fd46855552b97eee055557f1366745555998b80ec55554e0a01825555fe7db1f55555d7034d915555b26e28fc55557100f2a155550d5e8eff55550000aaaa55555555ffff5555710062b355559d4c8eff5555d70307c45555f83b28fc55554e0a53d35555ac2cb1f555557f13eee05555111f80ec5555
+      m_BitSize: 16
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 144
+      m_Range: 0.09019607
+      m_Start: 0.9098039
+      m_Data: 0810fe0810fe0810fe0810fe0810fe0810fe0810fe0810fe0810fe0810fe0810fe0810fe0810fe0810fe0810fe0810fe0810fe0810fe0810fe0810fe0810fe0810fe0810fe0810fe0810fe0810fe0810fe0810fe0810fe0810fe0810fe0810fe0810fe0810fe0810fe0810fe
+      m_BitSize: 6
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 102
+      m_Data: 40200043400c00510c46411847811c06921c4a82284bc22c0ad32c4ec3384f033d0e143d52044953444d12554d56455957855d16965d5a86695bc66d1ad76d5ec7795f077e1e187e620886e208
+      m_BitSize: 6
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0.442, z: -0}
+    m_Extent: {x: 0.442, y: 0.442, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
+  m_Name: ob_bathroom_mirror
+  m_EditorClassIdentifier: 
+  _lastTimeModified: 635898072911242905
+  _documentAsset: {fileID: 11469392}
+  _sharedMesh: {fileID: 4311530}
+  _antialiasing: 0
+  _antialiasingWidth: 0.1
+  _generateCollider: 1
+  _keepSVGFile: 1
+  _ignoreSVGCanvas: 1
+  _colliderShape:
+  - points:
+    - {x: 0.045, y: 0.88100004}
+    - {x: 0.13100001, y: 0.864}
+    - {x: 0.21000001, y: 0.83000004}
+    - {x: 0.28100002, y: 0.78300005}
+    - {x: 0.34100002, y: 0.72300005}
+    - {x: 0.388, y: 0.652}
+    - {x: 0.42200002, y: 0.573}
+    - {x: 0.439, y: 0.48700002}
+    - {x: 0.44200003, y: 0.44200003}
+    - {x: 0.439, y: 0.39600003}
+    - {x: 0.42200002, y: 0.31}
+    - {x: 0.388, y: 0.231}
+    - {x: 0.34100002, y: 0.16000001}
+    - {x: 0.28100002, y: 0.1}
+    - {x: 0.21000001, y: 0.053000003}
+    - {x: 0.13100001, y: 0.019000001}
+    - {x: 0.045, y: 0.002}
+    - {x: 0, y: 0}
+    - {x: -0.045, y: 0.002}
+    - {x: -0.13100001, y: 0.019000001}
+    - {x: -0.21000001, y: 0.053000003}
+    - {x: -0.28100002, y: 0.1}
+    - {x: -0.34100002, y: 0.16000001}
+    - {x: -0.388, y: 0.231}
+    - {x: -0.42200002, y: 0.31}
+    - {x: -0.439, y: 0.39600003}
+    - {x: -0.44200003, y: 0.44200003}
+    - {x: -0.439, y: 0.48700002}
+    - {x: -0.42200002, y: 0.573}
+    - {x: -0.388, y: 0.652}
+    - {x: -0.34100002, y: 0.72300005}
+    - {x: -0.28100002, y: 0.78300005}
+    - {x: -0.21000001, y: 0.83000004}
+    - {x: -0.13100001, y: 0.864}
+    - {x: -0.045, y: 0.88100004}
+    - {x: 0, y: 0.88400006}
+    bounds:
+      serializedVersion: 2
+      x: -0.44200003
+      y: 0
+      width: 0.88400006
+      height: 0
+  _format: 1
+  _useGradients: 1
+  _meshCompression: 2
+  _optimizeMesh: 1
+  _generateNormals: 0
+  _generateTangents: 0
+  _scale: 0.01
+  _vpm: 1000
+  _depthOffset: 0.01
+  _compressDepth: 1
+  _pivotPoint: {x: 0.5, y: 1}
+  _customPivotPoint: 0
+  _border: {x: 0, y: 0, z: 0, w: 0}
+  _sliceMesh: 0
+  _sharedGradients:
+  - colorKeys:
+    - time: 1
+      color:
+        serializedVersion: 2
+        rgba: 4294967295
+    - time: 0
+      color:
+        serializedVersion: 2
+        rgba: 4294967295
+    alphaKeys:
+    - time: 1
+      alpha: 1
+    - time: 0
+      alpha: 1
+    _hash: GC999FFFFFFC000FFFFFFA999999A000999
+    index: 0
+    atlasIndex: 0
+    references: 0
+  _sharedShaders:
+  - SVG Importer/SolidColor/SolidColorAlphaBlended
+  _canvasRectangle:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0.884
+    height: 0.884
+--- !u!114 &11469392
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363e9872ad27a4ca59c07d233fdf0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _errors: 
+  _svgFile: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!-- Generator: Adobe Illustrator
+    19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\n<svg version=\"1.1\"
+    id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"
+    x=\"0px\" y=\"0px\"\n\t viewBox=\"0 0 88.4 88.4\" style=\"enable-background:new
+    0 0 88.4 88.4;\" xml:space=\"preserve\">\n<style type=\"text/css\">\n\t.st0{fill:#EBE8F4;}\n</style>\n<circle
+    class=\"st0\" cx=\"44.2\" cy=\"44.2\" r=\"44.2\"/>\n</svg>\n"
+  _title: 
+  _description: 

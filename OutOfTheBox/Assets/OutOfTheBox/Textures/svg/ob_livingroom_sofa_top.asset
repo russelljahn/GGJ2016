@@ -1,0 +1,217 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4324238
+Mesh:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ob_livingroom_sofa_top
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 426
+    topology: 0
+    firstVertex: 0
+    vertexCount: 160
+    localAABB:
+      m_Center: {x: 0, y: 0, z: -0}
+      m_Extent: {x: 1.1174951, y: 0.35599503, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 2
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 0
+    m_VertexCount: 0
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 0
+    _typelessdata: 
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 480
+      m_Range: 2.2349901
+      m_Start: -1.1174951
+      m_Data: 37e96c670080d8f1376d008020ee80690080ebf32072008074e62567008033f4e374008033f4079b0080ebf3ca9d0080d8f1b3a2008020ee6ba6008037e97fa8008074e6c6a80080722125670080af1e6c670080c619806900800e16376d0080fb1320720080b313e3740080b313079b00807221c6a80080fb13ca9d0080af1e7fa800800e16b3a20080c6196ba6008037fcaa580080d2fffc5d008086fef45a008033f96557008085f739570080ffffb35f0080d3ff696100808efe7264008044fcbb6600803cf90168008085f72d6800807a0839570080c30665570080bb03aa5800807101f45a00802c00fc5d00800000b35f00807a082d6800802c0069610080c30601680080bb03bb660080710172640080070e765700805c156b5c008033123c5900802017a3600080af0b395700805d17056300805709765700802b053a5900800102645c00803d00906000800000e76200805d17928000802017ea8200805c15168700803312408a0080070e048c0080000092800080af0b418c00803d00ea8200805709048c00800102168700802b05408a0080c837e7870080cb3b8f8a008079393e880080223c418c0080cb3bf38d008016363e880080c5338f8a0080793944900080c8379b9000806e33418c0080c533f38d0080163644900080786ce78700807b708f8a00802a6e3e880080d270418c00807b70f38d0080c76a3e88008075688f8a00802a6e44900080786c9b9000801e68418c00807568f38d0080c76a4490008046a1e787008048a58f8a0080f7a23e880080a0a5418c008048a5f38d0080949f3e880080439d8f8a0080f7a24490008046a19b900080ec9c418c0080439df38d0080949f44900080a1cee7870080a4d28f8a008053d03e880080fbd2418c0080a4d2f38d0080f0cc3e8800809fca8f8a008053d044900080a1ce9b90008047ca418c00809fcaf38d0080f0cc4490008094f676570080f5fd6b5c0080cbfa3c590080aeffa360008033f439570080e2ff05630080dbf176570080afed3a59008085ea645c0080c1e89060008084e8e8620080e2ff92800080a5ffea820080e1fd16870080b7fa408a00808bf6048c008084e89280008033f4418c0080c1e8ea820080dbf1048c008085ea16870080afed408a0080070e765700805c156b5c008033123c5900802017a3600080af0b395700805d17056300805709765700802b053a5900800102645c00803d00906000800000e76200805d17928000802017ea8200805c15168700803312408a0080070e048c0080000092800080af0b418c00803d00ea8200805709048c00800102168700802b05408a0080
+      m_BitSize: 16
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 640
+      m_Range: 1
+      m_Start: 0
+      m_Data: a9a7fda9a7fda9a7fda9a7fda9a7fda9a7fda9a7fda9a7fda9a7fda9a7fda9a7fda9a7fda9a7fda9a7fda9a7fda9a7fda9a7fda9a7fda9a7fda9a7fda9a7fda9a7fda9a7fda9a7fde3e7fde3e7fde3e7fde3e7fde3e7fde3e7fde3e7fde3e7fde3e7fde3e7fde3e7fde3e7fde3e7fde3e7fde3e7fde3e7fde3e7fde3e7fde3e7fde3e7fde3e7fde3e7fd4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc4c00fc5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd5555fd
+      m_BitSize: 6
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 426
+      m_Data: 000102000301040300040503040605040706040807040908040a09040b0a0c0b040d0b0c0e0b0d0f0b0e100b0f110b10120b1112130b14131214151316151415161718191a1b19181c191b1c1d191c1e1d1c1f1e1c201f1c21201c222123221c2422232522242622252722262822272829222a29282a2b292a2c2b2c2a2d2e2f302e312f32312e323331343332353334363335373336383337383933383a39383b3a383c3b383d3c3e3d383e3f3d403f3e40413f4241404142434445464447454448474948444a48494a4b484a4c4b4d4c4a4e4c4d4c4e4f5051525053515054535554505654555657545658575958565a5859585a5b5c5d5e5c5f5d5c605f61605c62606162636062646365646266646564666768696a686b69686c6b6d6c686e6c6d6e6f6c6e706f71706e7270717072737475767477757877747879777a79787b797a7c797b7d797c7e797d7e7f797e807f7e81807e82817e838284837e8485838685848687858887868788898a8b8c8a8d8b8e8d8a8e8f8d908f8e918f90928f91938f92948f9394958f9496959497969498979499989a99949a9b999c9b9a9c9d9b9e9d9c9d9e9f
+      m_BitSize: 8
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: -0}
+    m_Extent: {x: 1.1174951, y: 0.35599503, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
+  m_Name: ob_livingroom_sofa_top
+  m_EditorClassIdentifier: 
+  _lastTimeModified: 635898072912003632
+  _documentAsset: {fileID: 11468168}
+  _sharedMesh: {fileID: 4324238}
+  _antialiasing: 0
+  _antialiasingWidth: 0.1
+  _generateCollider: 0
+  _keepSVGFile: 1
+  _ignoreSVGCanvas: 1
+  _colliderShape: []
+  _format: 1
+  _useGradients: 1
+  _meshCompression: 2
+  _optimizeMesh: 1
+  _generateNormals: 0
+  _generateTangents: 0
+  _scale: 0.01
+  _vpm: 1000
+  _depthOffset: 0.01
+  _compressDepth: 1
+  _pivotPoint: {x: 0.5, y: 0.5}
+  _customPivotPoint: 0
+  _border: {x: 0, y: 0, z: 0, w: 0}
+  _sliceMesh: 0
+  _sharedGradients:
+  - colorKeys:
+    - time: 1
+      color:
+        serializedVersion: 2
+        rgba: 4294967295
+    - time: 0
+      color:
+        serializedVersion: 2
+        rgba: 4294967295
+    alphaKeys:
+    - time: 1
+      alpha: 1
+    - time: 0
+      alpha: 1
+    _hash: GC999FFFFFFC000FFFFFFA999999A000999
+    index: 0
+    atlasIndex: 0
+    references: 0
+  _sharedShaders:
+  - SVG Importer/SolidColor/SolidColorAlphaBlended
+  _canvasRectangle:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 2.235
+    height: 0.71199995
+--- !u!114 &11468168
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363e9872ad27a4ca59c07d233fdf0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _errors: 
+  _svgFile: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!-- Generator: Adobe Illustrator
+    19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\n<svg version=\"1.1\"
+    id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"
+    x=\"0px\" y=\"0px\"\n\t viewBox=\"0 0 223.5 71.2\" style=\"enable-background:new
+    0 0 223.5 71.2;\" xml:space=\"preserve\">\n<style type=\"text/css\">\n\t.st0{fill:#A57B69;}\n\t.st1{fill:#8D7E79;}\n\t.st2{fill:#310400;}\n\t.st3{fill:#545456;}\n</style>\n<path
+    class=\"st0\" d=\"M201.2,57.3h-172c-6.6,0-12-5.4-12-12V12c0-6.6,5.4-12,12-12h172c6.6,0,12,5.4,12,12v33.3\n\tC213.2,51.9,207.8,57.3,201.2,57.3z\"/>\n<path
+    class=\"st1\" d=\"M216.1,71.2H7.4c-4.1,0-7.4-3.3-7.4-7.4l0,0c0-4.1,3.3-7.4,7.4-7.4h208.7c4.1,0,7.4,3.3,7.4,7.4l0,0\n\tC223.5,67.9,220.1,71.2,216.1,71.2z\"/>\n<path
+    class=\"st2\" d=\"M10.2,71.2L10.2,71.2C4.6,71.2,0,66.6,0,61V35.1c0-5.6,4.6-10.2,10.2-10.2l0,0c5.6,0,10.2,4.6,10.2,10.2v25.8\n\tC20.4,66.6,15.8,71.2,10.2,71.2z\"/>\n<circle
+    class=\"st2\" cx=\"48.7\" cy=\"24.9\" r=\"3.8\"/>\n<circle class=\"st2\" cx=\"94.7\"
+    cy=\"24.9\" r=\"3.8\"/>\n<circle class=\"st2\" cx=\"140.8\" cy=\"24.9\" r=\"3.8\"/>\n<circle
+    class=\"st2\" cx=\"180.4\" cy=\"24.9\" r=\"3.8\"/>\n<path class=\"st3\" d=\"M213.2,71.2L213.2,71.2c-5.6,0-10.2-4.6-10.2-10.2V35.1c0-5.6,4.6-10.2,10.2-10.2l0,0c5.6,0,10.2,4.6,10.2,10.2\n\tv25.8C223.5,66.6,218.9,71.2,213.2,71.2z\"/>\n<path
+    class=\"st3\" d=\"M10.2,71.2L10.2,71.2C4.6,71.2,0,66.6,0,61V35.1c0-5.6,4.6-10.2,10.2-10.2l0,0c5.6,0,10.2,4.6,10.2,10.2v25.8\n\tC20.4,66.6,15.8,71.2,10.2,71.2z\"/>\n</svg>\n"
+  _title: 
+  _description: 

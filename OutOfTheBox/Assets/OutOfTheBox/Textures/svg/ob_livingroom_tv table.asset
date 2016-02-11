@@ -1,0 +1,224 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4384492
+Mesh:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ob_livingroom_tv table
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 72
+    topology: 0
+    firstVertex: 0
+    vertexCount: 32
+    localAABB:
+      m_Center: {x: 0, y: 0.20750001, z: -0}
+      m_Extent: {x: 0.958495, y: 0.20750001, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 2
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 0
+    m_VertexCount: 0
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 0
+    _typelessdata: 
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 96
+      m_Range: 1.91699
+      m_Start: -0.958495
+      m_Data: 0000ff7fff7fffff6bb7ff7fffffff7fff7f00006bb7ff7fdd2a268aff7f22d520a5ff7f22d5268aff7fdd2a20a5ff7f404c3a93ff7f5050ec95ff7ff74d9393ff7fa850a397ff7f894a9393ff7f50505999ff7f3148ec95ff7ff74db29bff7f404c0b9cff7fd847a397ff7f31485999ff7f894ab29bff7f7db93a93ff7f8cbdec95ff7f34bb9393ff7fe5bda397ff7f8cbd5999ff7fc6b79393ff7f6db5ec95ff7f34bbb29bff7f7db90b9cff7f14b5a397ff7f6db55999ff7fc6b7b29bff7f
+      m_BitSize: 16
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 128
+      m_Range: 0.8117647
+      m_Start: 0.1882353
+      m_Data: 0c51fc0c51fc0c51fc0c51fc5925fd5925fd5925fd5925fd9500fc9500fc9500fc9500fc9500fc9500fc9500fc9500fc9500fc9500fc9500fc9500fc9500fc9500fc9500fc9500fc9500fc9500fc9500fc9500fc9500fc9500fc9500fc9500fc
+      m_BitSize: 6
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 72
+      m_Data: 2088000629a6908392422bb185585bae31f79a832f4227618472d26ae9ad14df8ca9c6596facf9ee5c7bdeb9ff
+      m_BitSize: 5
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0.20750001, z: -0}
+    m_Extent: {x: 0.958495, y: 0.20750001, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
+  m_Name: ob_livingroom_tv table
+  m_EditorClassIdentifier: 
+  _lastTimeModified: 635898072911479392
+  _documentAsset: {fileID: 11420250}
+  _sharedMesh: {fileID: 4384492}
+  _antialiasing: 0
+  _antialiasingWidth: 0.1
+  _generateCollider: 1
+  _keepSVGFile: 1
+  _ignoreSVGCanvas: 1
+  _colliderShape:
+  - points:
+    - {x: 0.95800006, y: 0.41500002}
+    - {x: -0.95800006, y: 0.41500002}
+    - {x: -0.95800006, y: 0}
+    - {x: 0.95800006, y: 0}
+    bounds:
+      serializedVersion: 2
+      x: -0.95800006
+      y: 0.95800006
+      width: 1.9160001
+      height: 1.9160001
+  _format: 1
+  _useGradients: 1
+  _meshCompression: 2
+  _optimizeMesh: 1
+  _generateNormals: 0
+  _generateTangents: 0
+  _scale: 0.01
+  _vpm: 1000
+  _depthOffset: 0.01
+  _compressDepth: 1
+  _pivotPoint: {x: 0.5, y: 1}
+  _customPivotPoint: 0
+  _border: {x: 0, y: 0, z: 0, w: 0}
+  _sliceMesh: 0
+  _sharedGradients:
+  - colorKeys:
+    - time: 1
+      color:
+        serializedVersion: 2
+        rgba: 4294967295
+    - time: 0
+      color:
+        serializedVersion: 2
+        rgba: 4294967295
+    alphaKeys:
+    - time: 1
+      alpha: 1
+    - time: 0
+      alpha: 1
+    _hash: GC999FFFFFFC000FFFFFFA999999A000999
+    index: 0
+    atlasIndex: 0
+    references: 0
+  _sharedShaders:
+  - SVG Importer/SolidColor/SolidColorAlphaBlended
+  _canvasRectangle:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1.9169999
+    height: 0.415
+--- !u!114 &11420250
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363e9872ad27a4ca59c07d233fdf0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _errors: 
+  _svgFile: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!-- Generator: Adobe Illustrator
+    19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\n<svg version=\"1.1\"
+    id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"
+    x=\"0px\" y=\"0px\"\n\t viewBox=\"0 0 191.7 41.5\" style=\"enable-background:new
+    0 0 191.7 41.5;\" xml:space=\"preserve\">\n<style type=\"text/css\">\n\t.st0{fill:#583C3F;}\n\t.st1{fill:#83746A;}\n\t.st2{fill:#753730;}\n</style>\n<rect
+    class=\"st0\" width=\"191.7\" height=\"41.5\"/>\n<rect x=\"32.1\" y=\"13.7\" class=\"st1\"
+    width=\"127.5\" height=\"20.2\"/>\n<circle class=\"st2\" cx=\"57.1\" cy=\"23.8\"
+    r=\"3.3\"/>\n<circle class=\"st2\" cx=\"138.9\" cy=\"23.8\" r=\"3.3\"/>\n</svg>\n"
+  _title: 
+  _description: 

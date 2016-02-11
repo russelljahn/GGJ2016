@@ -1,0 +1,228 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4384944
+Mesh:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ob_livingroom_picture_01
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 516
+    topology: 0
+    firstVertex: 0
+    vertexCount: 192
+    localAABB:
+      m_Center: {x: 0, y: 0.26149502, z: -0}
+      m_Extent: {x: 0.4815, y: 0.26149502, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 2
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 0
+    m_VertexCount: 0
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 0
+    _typelessdata: 
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 576
+      m_Range: 1.00449
+      m_Start: -0.4815
+      m_Data: 1905cf7fb67a53f0e6fab67a53f0cf7fb67a1905e6fab67a0000b67ab67a3aebe884b67a6cf5b67ab67a320ae884b67a320acdf5b67a0000ffffb67a3aebcdf5b67a6cf5ffffb67ae347dbd0b67ae24f37d6b67a714cc6d2b67acd51c5dab67a524598d0b67a105256ddb67ac042dbd0b67acd51e8dfb67a323ec6d2b67ae24f76e4b67ac13a37d6b67a714ce7e7b67ad638c5dab67ae347d2e9b67a943856ddb67a524514eab67ad638e8dfb67ac042d2e9b67ac13a76e4b67a323ee7e7b67a162b5faab67a1633bcafb67aa42f4aacb67a01354ab4b67a85281caab67a4335dbb6b67af4255faab67a01356cb9b67a66214aacb67a1633fabdb67af51dbcafb67aa42f6bc1b67a091c4ab4b67a162b57c3b67a852899c3b67ac71bdbb6b67a091c6cb9b67af42557c3b67af51dfabdb67a66216bc1b67a145ff5aeb67a136752b4b67aa263e1b0b67afe68e0b8b67a825cb3aeb67a406972bbb67af159f5aeb67afe6803beb67a6355e1b0b67a136790c2b67af25152b4b67aa26302c6b67a145fedc7b67a0750e0b8b67ac44f72bbb67a825c30c8b67a075003beb67af159edc7b67af25190c2b67a635502c6b67a10443487b67a0f4c908cb67a9e481f89b67afb4d1e91b67a7f41f186b67a3d4eaf93b67aee3e3487b67afb4d4196b67a603a1f89b67a0f4ccf9ab67aee36908cb67a9e48409eb67a03351e91b67a10442ba0b67ac134af93b67a7f416da0b67aee3e2ba0b67a03354196b67aee36cf9ab67a603a409eb67a687d94cfb67a6785f1d4b67af68180d1b67a52877fd9b67ad77a52cfb67a958710dcb67a457894cfb67a5287a2deb67ab77380d1b67a67852fe3b67af681a1e6b67a4670f1d4b67a5a6e7fd9b67a687d8ce8b67a196e10dcb67ad77acee8b67a5a6ea2deb67a45788ce8b67a46702fe3b67ab773a1e6b67a3a81f293b67a3a894e99b67ac885dd95b67a258bdc9db67aa97eaf93b67a678b6da0b67a187cf293b67a258bffa2b67a8a77dd95b67a3a898da7b67a18744e99b67ac885feaab67a2d72dc9db67a3a81e9acb67aeb716da0b67aa97e2badb67a2d72ffa2b67a187ce9acb67a18748da7b67a8a77feaab67aeeb403c5b67a4bba02cdb67a5fb874c8b67a60b017c3b67aceadd5c2b67a8dba93cfb67a4bba25d2b67a3dab17c3b67ab0a603c5b67a5fb8b3d6b67aeeb424dab67a3ea374c8b67a53a102cdb67a60b00fdcb67a10a193cfb67acead51dcb67a53a125d2b67a3dab0fdcb67ab0a624dab67a3ea3b3d6b67a82c48d99b67a81ccea9eb67a10c9789bb67a6dce78a3b67af1c14b99b67aafce09a6b67a60bf8d99b67a6dce9aa8b67ad2ba789bb67a81cc28adb67a60b7ea9eb67a10c999b0b67a75b578a3b67a82c485b2b67a32b509a6b67af1c1c7b2b67a75b59aa8b67a60bf85b2b67a60b728adb67ad2ba99b0b67abddd9ac3b67abce5f7c8b67a4be285c5b67aa8e785cdb67a2cdb58c3b67aeae716d0b67a9bd89ac3b67aa8e7a7d2b67abce535d7b67a0dd485c5b67a9bd0f7c8b67a4be2a6dab67ab0ce85cdb67abddd92dcb67a6ece16d0b67a2cdbd4dcb67ab0cea7d2b67a9bd892dcb67a9bd035d7b67a0dd4a6dab67a
+      m_BitSize: 16
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 768
+      m_Range: 1
+      m_Start: 0
+      m_Data: 9fe9fd9fe9fd9fe9fd9fe9fd80c5fd80c5fd80c5fd80c5fd80c5fd80c5fd80c5fd80c5fd50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc92e4fc92e4fc92e4fc92e4fc92e4fc92e4fc92e4fc92e4fc92e4fc92e4fc92e4fc92e4fc92e4fc92e4fc92e4fc92e4fc92e4fc92e4fc92e4fc92e4fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc00c4fc00c4fc00c4fc00c4fc00c4fc00c4fc00c4fc00c4fc00c4fc00c4fc00c4fc00c4fc00c4fc00c4fc00c4fc00c4fc00c4fc00c4fc00c4fc00c4fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fcd877fcd877fcd877fcd877fcd877fcd877fcd877fcd877fcd877fcd877fcd877fcd877fcd877fcd877fcd877fcd877fcd877fcd877fcd877fcd877fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc50f6fc
+      m_BitSize: 6
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 516
+      m_Data: 0001020100030405060407050408070804090a06050a0b06080b0a0b08090c0d0e0c0f0d100f0c10110f1211101213111413121415131615141617151817161819171a19181a1b191c1b1a1c1d1b1e1d1c1d1e1f2021222023212423202425232625242627252827262829272a29282a2b292c2b2a2c2d2b2c2e2d2f2e2c302e2f30312e3231303132333435363437353837343839373a39383a3b393c3b3a3c3d3b3e3d3c3e3f3d3e403f41403e42404142434044434244454346454445464748494a484b494c4b484c4d4b4e4d4c4e4f4d504f4e50514f5251505253515453525455535655545657555658575958565a5859585a5b5c5d5e5c5f5d605f5c60615f6261606263616463626465636466656766646866676869666a69686a6b696c6b6a6c6d6b6e6d6c6d6e6f7071727073717473707475737675747677757877767879777a79787a7b797c7b7a7c7d7b7e7d7c7e7f7d807f7e80817f828180818283848586878584888587888985888a898b8a888c8a8b8c8d8a8c8e8d8f8e8c908e8f90918e92919092939194939294959394969596949798999a989b999c9b989c9d9b9e9d9c9e9f9da09f9ea0a19fa2a1a0a2a3a1a4a3a2a4a5a3a6a5a4a6a7a5a8a7a6a8a9a7aaa9a8a9aaabacadaeacafadb0afacb0b1afb2b1b0b2b3b1b2b4b3b5b4b2b6b4b5b6b7b4b8b7b6b8b9b7bab9b8babbb9bcbbbabcbdbbbebdbcbdbebf
+      m_BitSize: 8
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0.26149502, z: -0}
+    m_Extent: {x: 0.4815, y: 0.26149502, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
+  m_Name: ob_livingroom_picture_01
+  m_EditorClassIdentifier: 
+  _lastTimeModified: 635898072911764903
+  _documentAsset: {fileID: 11454606}
+  _sharedMesh: {fileID: 4384944}
+  _antialiasing: 0
+  _antialiasingWidth: 0.1
+  _generateCollider: 1
+  _keepSVGFile: 1
+  _ignoreSVGCanvas: 1
+  _colliderShape:
+  - points:
+    - {x: 0.46100003, y: 0.50200003}
+    - {x: -0.46100003, y: 0.50200003}
+    - {x: -0.46100003, y: 0.020000001}
+    - {x: 0.46100003, y: 0.020000001}
+    bounds:
+      serializedVersion: 2
+      x: -0.46100003
+      y: 0.46100003
+      width: 0.92200005
+      height: 0.92200005
+  _format: 1
+  _useGradients: 1
+  _meshCompression: 2
+  _optimizeMesh: 1
+  _generateNormals: 0
+  _generateTangents: 0
+  _scale: 0.01
+  _vpm: 1000
+  _depthOffset: 0.01
+  _compressDepth: 1
+  _pivotPoint: {x: 0.5, y: 1}
+  _customPivotPoint: 0
+  _border: {x: 0, y: 0, z: 0, w: 0}
+  _sliceMesh: 0
+  _sharedGradients:
+  - colorKeys:
+    - time: 1
+      color:
+        serializedVersion: 2
+        rgba: 4294967295
+    - time: 0
+      color:
+        serializedVersion: 2
+        rgba: 4294967295
+    alphaKeys:
+    - time: 1
+      alpha: 1
+    - time: 0
+      alpha: 1
+    _hash: GC999FFFFFFC000FFFFFFA999999A000999
+    index: 0
+    atlasIndex: 0
+    references: 0
+  _sharedShaders:
+  - SVG Importer/SolidColor/SolidColorAlphaBlended
+  _canvasRectangle:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0.963
+    height: 0.523
+--- !u!114 &11454606
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363e9872ad27a4ca59c07d233fdf0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _errors: 
+  _svgFile: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!-- Generator: Adobe Illustrator
+    19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\n<svg version=\"1.1\"
+    id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"
+    x=\"0px\" y=\"0px\"\n\t viewBox=\"0 0 96.3 52.3\" style=\"enable-background:new
+    0 0 96.3 52.3;\" xml:space=\"preserve\">\n<style type=\"text/css\">\n\t.st0{fill:#7F9A7A;stroke:#005973;stroke-width:4;stroke-miterlimit:10;}\n\t.st1{fill:#3F643E;}\n\t.st2{fill:#494A38;}\n\t.st3{fill:#003F32;}\n\t.st4{fill:#607D1D;}\n</style>\n<rect
+    x=\"2\" y=\"2\" class=\"st0\" width=\"92.3\" height=\"48.3\"/>\n<circle class=\"st1\"
+    cx=\"27.2\" cy=\"13.6\" r=\"5\"/>\n<circle class=\"st2\" cx=\"15.9\" cy=\"28.7\"
+    r=\"5\"/>\n<circle class=\"st1\" cx=\"36.3\" cy=\"26.9\" r=\"5\"/>\n<circle class=\"st1\"
+    cx=\"25.7\" cy=\"42.5\" r=\"5\"/>\n<circle class=\"st3\" cx=\"48.2\" cy=\"14.1\"
+    r=\"5\"/>\n<circle class=\"st1\" cx=\"49.7\" cy=\"37.5\" r=\"5\"/>\n<circle class=\"st1\"
+    cx=\"68.2\" cy=\"19\" r=\"5\"/>\n<circle class=\"st4\" cx=\"76.1\" cy=\"35.3\"
+    r=\"5\"/>\n<circle class=\"st1\" cx=\"86\" cy=\"18.8\" r=\"5\"/>\n</svg>\n"
+  _title: 
+  _description: 
